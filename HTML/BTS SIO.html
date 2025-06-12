@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS SIO</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+
+  <body>
+    <!-- Bouton Thème Sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <section>
+        <h1>Qu'est-ce que le BTS SIO ?</h1>
+        <p>
+          Le BTS SIO (Services Informatiques aux Organisations) est un diplôme
+          d'État préparé en deux ans qui permet d'accéder aux métiers de
+          l’informatique. Il propose deux parcours : l’option SISR (Solutions
+          d’Infrastructure, Systèmes et Réseaux), orientée vers la gestion des
+          réseaux et systèmes informatiques, et l’option SLAM (Solutions
+          Logicielles et Applications Métiers), centrée sur le développement
+          d’applications logicielles.
+        </p>
+      </section>
+
+      <section>
+        <h1>BTS SIO au Lycée Voillaume</h1>
+        <p>
+          Le lycée Voillaume d’Aulnay-sous-Bois propose cette formation complète
+          avec un accompagnement pédagogique rigoureux, permettant aux étudiants
+          de se former à la fois à la théorie et à la pratique. Voici la
+          plaquette officielle de la formation :
+        </p>
+        <button
+          class="glow-on-hover"
+          onclick="window.location='../Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
+        >
+          Télécharger
+        </button>
+        <p>
+          Ce BTS est accessible après un baccalauréat technologique comme le
+          STMG, un baccalauréat professionnel ou un bac général. Il prépare les
+          étudiants à des fonctions opérationnelles dans l’univers numérique.
+        </p>
+        <img
+          src="../IMG/Logo BTS-SIO.png"
+          alt="Logo BTS SIO"
+          style="max-width: 200px; margin-top: 15px"
+          loading="lazy"
+        />
+      </section>
+
+      <section>
+        <h1>Services Informatiques aux Organisations</h1>
+        <p>
+          Le BTS SIO forme à des compétences solides dans les domaines du
+          développement, de la cybersécurité, de l’administration réseau, de la
+          gestion de projet et de l’exploitation des systèmes informatiques,
+          tout en intégrant une approche méthodologique et rigoureuse de la
+          conduite de projets numériques.
+        </p>
+      </section>
+
+      <section>
+        <h1>Option SLAM</h1>
+        <img
+          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-slam-768x512.jpg"
+          alt="Option SLAM"
+          width="200"
+          loading="lazy"
+        />
+        <p>
+          L’option SLAM, qui signifie Solutions Logicielles et Applications
+          Métiers, prépare aux métiers liés à la conception, au développement et
+          à la maintenance de logiciels. Elle permet de devenir développeur
+          d’applications, programmeur analyste ou encore chargé d’études
+          informatiques. Les étudiants apprennent à construire des applications
+          web, mobiles ou de bureau adaptées aux besoins des entreprises.
+        </p>
+      </section>
+
+      <section>
+        <h1>Option SISR</h1>
+        <img
+          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-sisr.jpeg"
+          alt="Option SISR"
+          width="200"
+          loading="lazy"
+        />
+        <p>
+          L’option SISR, qui signifie Solutions d’Infrastructure, Systèmes et
+          Réseaux, forme des professionnels capables d’installer, configurer et
+          administrer des serveurs, des équipements réseaux et des postes de
+          travail. Elle ouvre la voie à des métiers comme technicien systèmes et
+          réseaux, administrateur infrastructure ou pilote d’exploitation.
+          L’accent est mis sur la sécurité des systèmes et la continuité de
+          service.
+        </p>
+      </section>
+
+      <section>
+        <h1>Après le BTS SIO</h1>
+        <p>
+          À l’issue du BTS SIO, les diplômés peuvent choisir de poursuivre leurs
+          études en Licence professionnelle ou en Bachelor informatique,
+          intégrer directement le monde du travail dans des entreprises de
+          services du numérique, des administrations ou créer leur propre
+          activité en tant qu’auto-entrepreneur ou freelance dans les métiers du
+          développement ou de l’infrastructure informatique.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts JS -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifications - Foulail Oumar</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <!-- JS du thème sombre -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <!-- Menu dynamique -->
+    <script src="../JS/menu.js" defer></script>
+    <!-- Footer dynamique -->
+    <script src="../JS/footer.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bouton thème clair/sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <section>
+        <h1>MES CERTIFICATIONS</h1>
+        <p>
+          Voici les certificats que j’ai obtenus sur la plateforme
+          OpenClassrooms :
+        </p>
+
+        <div class="certifications">
+          <a
+            href="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg"
+            target="_blank"
+          >
+            <img
+              src="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg"
+              alt="Certificat HTML5 et CSS3"
+            />
+          </a>
+
+          <a
+            href="../Certification/Certificat OpenClassroom PHP et MySQL.jpg"
+            target="_blank"
+          >
+            <img
+              src="../Certification/Certificat OpenClassroom PHP et MySQL.jpg"
+              alt="Certificat PHP et MySQL"
+            />
+          </a>
+
+          <a
+            href="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg"
+            target="_blank"
+          >
+            <img
+              src="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg"
+              alt="Certificat Excel"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Animation progressive -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

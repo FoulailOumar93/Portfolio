@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Foulail Oumar</title>
+
+    <!-- Styles & icônes -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Bouton Thème -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu (chargé dynamiquement avec JS) -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper contact-container">
+      <h1>Me Contacter</h1>
+      <form
+        action="https://formspree.io/f/mrbkqaeb"
+        method="POST"
+        class="contact-form"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Votre email..."
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Votre message..."
+          required
+        ></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="confirmation-message" style="display: none">
+        ✅ Message envoyé ! Merci 🙏
+      </div>
+    </main>
+
+    <!-- Footer (chargé dynamiquement avec JS) -->
+    <div id="footer-container"></div>
+
+    <!-- JS liés -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/contact.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

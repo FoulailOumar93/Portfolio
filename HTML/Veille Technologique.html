@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veille Technologique - Foulail Oumar</title>
+
+    <!-- Google Fonts + Icones -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <!-- JS -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../IMG/Veille Technologique Icone.jpg"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <!-- Dark Mode Switch -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu dynamique -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <section id="veille-technologique">
+        <h1>Veille Technologique</h1>
+      </section>
+
+      <section id="definition-veille-technologique">
+        <h2>Définition</h2>
+        <p>
+          La veille technologique est un processus de surveillance active des
+          avancées dans un domaine précis. Elle permet de repérer les nouvelles
+          innovations, d’anticiper les transformations, de déceler les
+          opportunités, et de renforcer l’avantage concurrentiel d’une
+          organisation.
+        </p>
+        <ul>
+          <li>Identifier les nouvelles technologies</li>
+          <li>Suivre les évolutions du marché</li>
+          <li>Repérer les menaces potentielles</li>
+          <li>Adapter les stratégies en temps réel</li>
+          <li>S'inspirer pour innover</li>
+        </ul>
+      </section>
+
+      <section id="intelligence-artificielle">
+        <h2>Intelligence Artificielle</h2>
+        <p>
+          L’IA est en constante évolution : modèles génératifs, assistants
+          vocaux, traitement du langage naturel… La veille permet de suivre ces
+          technologies (ChatGPT, Gemini, Mistral AI) et de comprendre leur
+          application dans des domaines variés : santé, finance, cybersécurité,
+          éducation, etc.
+        </p>
+      </section>
+
+      <section id="ia-monde-travail">
+        <h2>L'IA dans le monde du travail</h2>
+        <p>
+          L’IA automatise des tâches, optimise les décisions, prédit les
+          besoins… Elle redéfinit les métiers. La veille technologique permet
+          aux professionnels de se former aux bons outils et de rester à jour
+          dans un monde numérique en mutation constante.
+        </p>
+      </section>
+
+      <section id="outils">
+        <h2>Outils de Veille</h2>
+        <h3>Google Alerts</h3>
+        <p>
+          Google Alerts est un service gratuit qui envoie des notifications dès
+          qu’un mot-clé est mentionné sur Internet (par exemple : "intelligence
+          artificielle", "cybersécurité", "technologie 2025", etc.). C’est
+          simple, rapide et efficace pour rester à jour.
+        </p>
+        <img
+          src="../IMG/Intelligence Artificielle.png"
+          alt="Google Alerts IA"
+          width="500"
+          height="300"
+          loading="lazy"
+        />
+      </section>
+
+      <section id="article-ia">
+        <h2>Article à lire</h2>
+        <h3>« C'est du jamais-vu » : GPT-4 atteint un niveau quasi humain</h3>
+        <a
+          href="https://www.bfmtv.com/tech/intelligence-artificielle/c-est-du-jamais-vu-avec-gpt-4-l-intelligence-artificielle-devient-aussi-performante-que-l-humain_AD-202303150133.html"
+          target="_blank"
+        >
+          <img
+            src="https://investingnews.com/media-library/image-of-hand-holding-an-ai-face-looking-at-the-words-chatgpt-openai.jpg?id=32871272&width=1200&height=800&quality=85&coordinates=0%2C0%2C0%2C0"
+            alt="GPT-4 Article"
+            width="500"
+            height="300"
+            loading="lazy"
+          />
+        </a>
+        <p style="text-align: center">Source : BFMTV</p>
+      </section>
+    </main>
+
+    <!-- Footer dynamique -->
+    <div id="footer-container"></div>
+
+    <!-- Animation douce -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

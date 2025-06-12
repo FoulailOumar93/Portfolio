@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Missions – Foulail Oumar</title>
+
+    <!-- CSS & fonts -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- JS -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bouton clair/sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu HTML chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu missions -->
+    <main class="wrapper">
+      <section id="gsb">
+        <h1>Mission GSB</h1>
+        <p>
+          Le projet <strong>Galaxy-Swiss Bourdin</strong> fournit aux visiteurs
+          médicaux une interface pour saisir leurs frais et suivre leurs visites
+          ; les responsables valident ensuite ces notes de frais. Stack :
+          <strong>PHP / HTML5 / CSS / JavaScript / C# WinForms</strong> + base
+          <strong>MySQL</strong> sur architecture <strong>MVC</strong>. Sécurité
+          des données et UX ont été nos priorités.
+        </p>
+      </section>
+
+      <section id="mission-1b">
+        <h1>Mission 1-B</h1>
+        <p>
+          Travaux solo : réalisation d’un formulaire qui affiche le cumul des
+          frais d’un visiteur après sélection du mois et de l’année. Intégré à
+          la page d’accueil, codé en <strong>MVC</strong> et stylisé en CSS, ce
+          module m’a permis de prendre en main la stack GSB et de respecter la
+          charte graphique.
+        </p>
+      </section>
+
+      <section id="mission-2b">
+        <h1>Mission 2-B</h1>
+        <p>
+          Projet d’équipe (3 étudiants, 2ᵉ année) : application Web unifiée de
+          gestion des frais pour plusieurs laboratoires. Mes rôles :
+          <strong>conception + administration de la base de données</strong> et
+          contribution à l’UI. Résultat : solution full-stack opérationnelle,
+          facilitant le suivi des frais et l’export comptable.
+        </p>
+      </section>
+
+      <section id="mission-3">
+        <h1>Mission 3 – Projet <em>Appli-CR</em></h1>
+
+        <h2>Objectif</h2>
+        <p>
+          Évolution du SI GSB : développement d’un module « Appli-CR » pour
+          gérer <strong>médicaments, familles et dons</strong>. Travail mené en
+          mode projet avec tests, déploiement et documentation complète.
+        </p>
+
+        <h2>Activités réalisées</h2>
+        <ul>
+          <li>
+            A1.1.1 & A1.1.3 : analyse du cahier des charges et des exigences
+            qualité
+          </li>
+          <li>
+            A1.3.1 & A1.3.4 : tests d’intégration / acceptation et déploiement
+          </li>
+          <li>
+            A4.1.6 → A4.1.10 : gestion env. dev/test, développement C#, tests
+            unitaires, docs technique & utilisateur
+          </li>
+          <li>A2.3.1 : qualification des anomalies et résolution</li>
+        </ul>
+
+        <h2>Cas d’utilisation principaux</h2>
+        <details>
+          <summary><strong>Gérer les médicaments</strong> (secrétaire)</summary>
+          <ol>
+            <li>Sélection d’une famille → affichage liste des médicaments</li>
+            <li>
+              Ajouter / modifier / supprimer un médicament (contrôles de
+              cohérence)
+            </li>
+            <li>Créer une nouvelle famille si inexistante</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary><strong>Voir les médicaments offerts</strong></summary>
+          <ol>
+            <li>Sélection d’une famille → liste des dons triés par quantité</li>
+            <li>Export possible au format XML</li>
+          </ol>
+        </details>
+
+        <p style="margin-top: 16px">
+          Ce module a nécessité la conception de pages sécurisées, la mise en
+          place d’un <strong>tableau de bord</strong>, la génération de rapports
+          XML et la rédaction de guides utilisateur/technique.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer HTML chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Apparition douce -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil de Foulail Oumar</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../IMG/Profil.jpg" />
+
+    <!-- Fonts et Icônes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+
+  <body>
+    <!-- Bouton switch clair/sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu injecté dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <!-- À propos de moi -->
+      <section id="a-propos-de-moi">
+        <h1>À PROPOS DE MOI</h1>
+        <p>
+          Je m’appelle Foulail Oumar, j’ai 21 ans. Je suis actuellement étudiant
+          en BTS SIO, option SLAM, à Aulnay-sous-Bois. Depuis l’enfance, je suis
+          passionné par l’univers informatique, ce qui m’a naturellement conduit
+          à choisir un BAC STMG avec spécialité Mercatique au Lycée Jacques
+          Brel. Pendant ces années, j’ai renforcé mon intérêt pour le
+          développement, la cybersécurité et l’ingénierie logicielle, ce qui m’a
+          motivé à poursuivre dans cette voie avec l’option SLAM.
+        </p>
+      </section>
+
+      <!-- Expérience professionnelle -->
+      <section id="experience-professionnelle">
+        <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
+        <p>
+          J’ai effectué plusieurs stages professionnels pour renforcer mes
+          compétences sur le terrain : un stage d'observation à la Médiathèque
+          John Lennon, un stage au service informatique de la Mairie de La
+          Courneuve, et un stage en deuxième année au Lycée Voillaume.
+        </p>
+        <p>Voici mon CV que vous pouvez télécharger ci-dessous.</p>
+        <button
+          class="glow-on-hover"
+          onclick="window.location='../Documents/PDF/CV_Oumar FOULAIL.pdf';"
+        >
+          Télécharger CV
+        </button>
+      </section>
+
+      <!-- Qualités -->
+      <section id="mes-qualites">
+        <h1>MES QUALITÉS</h1>
+        <p>
+          Je suis une personne rigoureuse dans mon travail, curieuse face aux
+          nouvelles technologies, persévérante face aux défis techniques, et
+          passionnée par tout ce qui touche au développement logiciel et à
+          l’univers informatique en général.
+        </p>
+      </section>
+    </main>
+
+    <!-- Pied de page chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

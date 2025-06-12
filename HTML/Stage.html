@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Stages - Foulail Oumar</title>
+
+    <!-- Google Fonts + FontAwesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <!-- Scripts -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bouton Dark Mode -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <section>
+        <h1>Stage - Première année</h1>
+        <center>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mairie_la_Courneuve.JPG/1200px-Mairie_la_Courneuve.JPG"
+            alt="Mairie de la Courneuve"
+            width="400"
+            height="300"
+            style="margin-bottom: 20px"
+            loading="lazy"
+          />
+        </center>
+        <p>
+          J’ai effectué mon premier stage à la
+          <strong>Mairie de la Courneuve</strong>, au sein du service
+          informatique, du 23 mai au 16 juin 2022. J’ai participé à la migration
+          de postes de travail de Windows 7 vers Windows 10/11 en utilisant
+          l’outil Rufus. J’ai également assuré le dépannage de niveau 1 et 2
+          (matériel et logiciel), et j’ai utilisé la solution
+          <strong>GLPI</strong> pour la gestion des tickets.
+        </p>
+        <p>
+          Ce stage m’a permis de mieux comprendre l’organisation d’un service
+          informatique public, la gestion d’un parc informatique, et
+          l’importance des outils de ticketing comme GLPI.
+        </p>
+      </section>
+
+      <section>
+        <h1>Stage - Deuxième année (Lycée Voillaume)</h1>
+        <p>
+          Du 16 janvier au 13 mars 2023, j’ai réalisé un stage au
+          <strong>Lycée Voillaume</strong> à Aulnay-sous-Bois. Le projet portait
+          sur la création d’un site de formation interne sous Linux. J’ai rédigé
+          un cahier des charges, réalisé un maquettage UX/UI, développé le site
+          avec <strong>Hugo</strong> (générateur de sites statiques), et mis en
+          ligne le projet sur GitLab Pages.
+        </p>
+        <p>
+          🔗
+          <a href="https://group_stage.gitlab.io/project1/" target="_blank"
+            >Voir le site Bureau 89</a
+          >
+        </p>
+      </section>
+
+      <section>
+        <h1>Stage - Deuxième année (NTIC Formation Center)</h1>
+        <p>
+          Mon dernier stage a eu lieu du 15 janvier au 15 mars 2024 chez
+          <strong>NTIC Formation Center</strong>. J’ai travaillé sur deux
+          projets principaux :
+        </p>
+        <ul>
+          <li>
+            <strong>Projet IMDB :</strong> création d’un site de critiques de
+            films avec PHP et SQL (CRUD complet)
+          </li>
+          <li>
+            <strong>Projet Symfony :</strong> création d’un blog d’articles avec
+            un tableau de bord administrateur
+          </li>
+        </ul>
+        <p>
+          Le projet Symfony m’a permis de gérer les catégories, articles, tags,
+          tout en assurant une interface claire et sécurisée pour l’utilisateur
+          administrateur.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer dynamique -->
+    <div id="footer-container"></div>
+
+    <!-- Animation d'apparition douce -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>

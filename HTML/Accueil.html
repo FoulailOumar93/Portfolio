@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+
+    <!-- ✅ Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- ✅ Ton CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+
+  <body>
+    <!-- ✅ Switch Dark/Light -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- ✅ MENU chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- ✅ CONTENU PRINCIPAL -->
+    <main class="wrapper">
+      <h1>Bienvenue dans le Portfolio de Foulail Oumar</h1>
+      <p class="subtitle">
+        Étudiant en BTS SIO - Spécialité SLAM<br />
+        Développeur Laravel, C#, PHP
+      </p>
+    </main>
+
+    <!-- ✅ FOOTER chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- ✅ SCRIPTS -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script>
+      // Chargement du menu
+      fetch("Menu.html")
+        .then((res) => res.text())
+        .then(
+          (html) => (document.getElementById("menu-container").innerHTML = html)
+        );
+
+      // Chargement du footer
+      fetch("Footer.html")
+        .then((res) => res.text())
+        .then(
+          (html) =>
+            (document.getElementById("footer-container").innerHTML = html)
+        );
+    </script>
+  </body>
+</html>
