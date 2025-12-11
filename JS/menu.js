@@ -1,23 +1,15 @@
-// Détection du bon chemin
-let basePath = "";
-
-// Si la page actuelle est dans /HTML/
-if (window.location.pathname.includes("/HTML/")) {
-  basePath = ""; // Menu dans le même dossier
-} else {
-  basePath = "HTML/"; // Menu dans le dossier HTML
-}
-
 // Chargement du menu
-fetch(basePath + "Menu.html")
+fetch("/Portfolio/HTML/Menu.html")
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("menu-container").innerHTML = html;
-  });
+  })
+  .catch((err) => console.error("Erreur menu:", err));
 
 // Chargement du footer
-fetch(basePath + "Footer.html")
+fetch("/Portfolio/HTML/Footer.html")
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("footer-container").innerHTML = html;
-  });
+  })
+  .catch((err) => console.error("Erreur footer:", err));
