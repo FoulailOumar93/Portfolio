@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation O'Clock</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+
+  <body>
+    <!-- Bouton Dark Mode -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu dynamique -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+
+      <!-- SECTION 1 -->
+      <section>
+        <h1>Formation O'Clock</h1>
+        <p>
+          J’ai intégré l’école <strong>O’Clock</strong> en 
+          <strong>avril 2025</strong> pour suivre la formation 
+          <strong>DWWM — Développeur Web & Web Mobile</strong>, une formation 
+          intensive de 6 mois, en téléprésentiel, basée sur des cours en direct.
+          O'Clock est reconnue pour son enseignement structuré et orienté vers 
+          la pratique professionnelle.
+        </p>
+        <center>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_O%27clock_%28%C3%A9cole%29.png/640px-Logo_O%27clock_%28%C3%A9cole%29.png"
+            alt="Logo O'Clock"
+            width="230"
+            style="margin-top: 10px"
+            loading="lazy"
+          />
+        </center>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section>
+        <h1>Le déroulement de la formation</h1>
+        <p>
+          La formation O’Clock est découpée en plusieurs modules :
+        </p>
+        <ul>
+          <li><strong>Socle :</strong> HTML, CSS, JavaScript, Git, méthodes de travail</li>
+          <li><strong>Back-end :</strong> Node.js, Express, API REST, PostgreSQL</li>
+          <li><strong>Front-end :</strong> React, composants, hooks, SPA</li>
+          <li><strong>Projet fil rouge :</strong> application complète front/back</li>
+          <li><strong>Apothéose :</strong> présentation du projet final devant un jury professionnel</li>
+        </ul>
+        <p>
+          Les cours étaient dispensés en direct par des formateurs spécialisés,
+          et complétés par des exercices, des rendus de projets et des sessions 
+          de révision.
+        </p>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section>
+        <h1>Compétences acquises</h1>
+        <p>Pendant cette formation, j’ai développé des compétences solides :</p>
+        <ul>
+          <li><strong>Front-end :</strong> HTML, CSS, JavaScript, React</li>
+          <li><strong>Back-end :</strong> Node.js, Express</li>
+          <li><strong>Base de données :</strong> PostgreSQL + Sequelize ORM</li>
+          <li><strong>Outils développeur :</strong> GitHub, Postman, VS Code</li>
+          <li><strong>Méthodologie :</strong> MVC, bonnes pratiques, organisation du code</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section>
+        <h1>Projet Fil Rouge : CinéDélices</h1>
+        <img
+          src="../IMG/cinedelices-logo.png"
+          alt="Logo CinéDélices"
+          width="180"
+          loading="lazy"
+          style="margin-top: 10px"
+        />
+        <p>
+          Durant la formation, j’ai réalisé le projet 
+          <strong>CinéDélices</strong>, un site de recettes inspirées de films.
+          Ce projet m’a permis de travailler comme un développeur fullstack :
+        </p>
+        <ul>
+          <li>Créer une API complète en Node.js</li>
+          <li>Gérer les recettes, médias, ingrédients (CRUD complet)</li>
+          <li>Utiliser PostgreSQL + Sequelize</li>
+          <li>Concevoir une interface moderne avec React</li>
+          <li>Mettre en place un design responsive</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section>
+        <h1>Stage O’Clock : RCAB Technologies</h1>
+        <p>
+          À la fin de ma formation, j’ai effectué un stage du 
+          <strong>22 septembre au 14 novembre 2024</strong> chez 
+          <strong>RCAB Technologies</strong>. J’y ai développé un site vitrine 
+          complet sous WordPress et Elementor.
+        </p>
+        <ul>
+          <li>Installation et configuration WordPress</li>
+          <li>Création de pages et design via Elementor</li>
+          <li>Formulaires avancés avec Forminator</li>
+          <li>Gestion du responsive design</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 6 -->
+      <section>
+        <h1>Certification RNCP Niveau 5</h1>
+        <p>
+          La formation prépare au <strong>titre professionnel RNCP “Développeur 
+          Web & Web Mobile”</strong>, reconnu par l’État. Ce diplôme valide 
+          l’ensemble des compétences liées au développement web moderne.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>
 
