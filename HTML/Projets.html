@@ -2,126 +2,211 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projets</title>
+    <title>Mes Projets</title>
 
-    <!-- CSS & fonts -->
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <!-- JS -->
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
+
+    <!-- Scripts -->
+    <script src="/Portfolio/JS/toggleTheme.js" defer></script>
+    <script src="/Portfolio/JS/menu.js" defer></script>
+    <script src="/Portfolio/JS/footer.js" defer></script>
   </head>
 
   <body>
-    <!-- Bouton clair/sombre -->
+    <!-- Dark / Light mode -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu HTML chargé dynamiquement -->
+    <!-- Menu -->
     <div id="menu-container"></div>
 
-    <!-- Contenu des projets -->
+    <!-- Main content -->
     <main class="wrapper">
-
       <h1>Mes Projets</h1>
       <p>
-        Voici une sélection de projets réalisés durant mes études, mes stages et mes formations.
-        Chaque projet m'a permis de développer mes compétences techniques et d'apprendre de nouvelles méthodes de travail.
+        Voici l’ensemble de mes projets réalisés durant mes formations en BTS SIO et
+        en Développeur Web & Web Mobile chez O’Clock, classés du plus récent au plus ancien.
       </p>
 
-      <!-- ====================== -->
-      <!-- PROJET RCAB TECHNOLOGIES -->
-      <!-- ====================== -->
+      <!-- ========================================================= -->
+      <!-- 2025 – PROJET CINEDELICES -->
+      <!-- ========================================================= -->
       <section>
-        <h2><i class="fas fa-globe"></i> RCAB Technologies — Site Vitrine (2025)</h2>
+        <h2><i class="fas fa-utensils"></i> 2025 – CinéDélices (Projet O’Clock)</h2>
+
         <p>
-          Création d’un site vitrine professionnel sous WordPress : conception, Elementor, Forminator,
-          optimisation responsive et intégration complète du contenu.
+          <strong>CinéDélices</strong> est une application web full-stack créée durant
+          ma formation chez O’Clock. Elle associe recettes de cuisine et univers du cinéma.
         </p>
+
+        <h3>Objectifs</h3>
         <ul>
-          <li>WordPress</li>
-          <li>Elementor</li>
-          <li>Forminator</li>
-          <li>UI/UX</li>
+          <li>Créer une vraie application web complète (front + back).</li>
+          <li>Gérer recettes, ingrédients, médias, utilisateurs.</li>
+          <li>Permettre CRUD complet + upload images.</li>
+          <li>Interface moderne et responsive.</li>
+        </ul>
+
+        <h3>Mon rôle</h3>
+        <ul>
+          <li>Développement complet du <strong>back-end Node.js / Express</strong>.</li>
+          <li>Création des modèles PostgreSQL + relations Sequelize.</li>
+          <li>Authentification <strong>JWT</strong>.</li>
+          <li>Développement du front React (pages, composants, routing).</li>
+          <li>Upload d’images avec FormData.</li>
+          <li>Création de la charte graphique (UI/UX).</li>
+          <li>Déploiement sur VM O’Clock.</li>
+        </ul>
+
+        <h3>Stack utilisée</h3>
+        <ul>
+          <li><strong>Front-end :</strong> React, React Router</li>
+          <li><strong>Back-end :</strong> Node.js, Express, Sequelize</li>
+          <li><strong>BDD :</strong> PostgreSQL</li>
+          <li><strong>Auth :</strong> JWT</li>
+        </ul>
+
+        <h3>Difficultés rencontrées</h3>
+        <ul>
+          <li>Relations Sequelize (1-N, N-N).</li>
+          <li>CORS entre front et back.</li>
+          <li>Gestion d’upload images + preview.</li>
+          <li>Responsive design.</li>
+        </ul>
+
+        <h3>Solutions</h3>
+        <ul>
+          <li>Middleware CORS personnalisé.</li>
+          <li>Refactor modèles Sequelize.</li>
+          <li>Gestion d’erreurs front + loaders.</li>
+          <li>Refonte de plusieurs pages pour rendre l’UX fluide.</li>
         </ul>
       </section>
 
-      <!-- ====================== -->
-      <!-- PROJET IMDB PHP -->
-      <!-- ====================== -->
+      <!-- ========================================================= -->
+      <!-- 2025 – RCAB TECHNOLOGIES -->
+      <!-- ========================================================= -->
       <section>
-        <h2><i class="fas fa-film"></i> IMDB — Application PHP/SQL (2024)</h2>
+        <h2><i class="fas fa-briefcase"></i> 2025 – RCAB Technologies (Stage O’Clock)</h2>
+
         <p>
-          Développement d’un site type IMDB avec système CRUD complet pour gérer films, acteurs et catégories.
-          Projet réalisé en BTS SIO.
+          Création complète d’un site vitrine professionnel sous
+          <strong>WordPress</strong> pour l’entreprise RCAB Technologies.
         </p>
+
+        <h3>Ce que j’ai réalisé</h3>
         <ul>
-          <li>PHP</li>
-          <li>MySQL</li>
-          <li>CRUD</li>
-          <li>MVC</li>
+          <li>Installation et configuration WordPress.</li>
+          <li>Création des pages avec Elementor.</li>
+          <li>Formulaires avancés via Forminator.</li>
+          <li>Optimisation responsive.</li>
+          <li>Organisation des contenus + choix techniques validés avec mon tuteur.</li>
         </ul>
       </section>
 
-      <!-- ====================== -->
-      <!-- PROJET BLOG SYMFONY -->
-      <!-- ====================== -->
+      <!-- ========================================================= -->
+      <!-- 2024 – NTIC FORMATION CENTER -->
+      <!-- ========================================================= -->
       <section>
-        <h2><i class="fas fa-pencil-alt"></i> Blog Symfony — Dashboard Admin</h2>
+        <h2><i class="fas fa-laptop-code"></i> 2024 – NTIC Formation Center</h2>
+
         <p>
-          Création d’un blog avec gestion des articles, catégories et utilisateurs.
-          Développement d’un tableau de bord administrateur complet.
+          Stage de deuxième année BTS SIO : développement de deux projets complets.
         </p>
+
+        <h3>Projets réalisés</h3>
         <ul>
-          <li>Symfony</li>
-          <li>Doctrine ORM</li>
-          <li>CRUD Admin</li>
-          <li>Architecture MVC</li>
+          <li><strong>IMDB en PHP/SQL :</strong> CRUD complet + gestion utilisateur.</li>
+          <li><strong>Blog Symfony :</strong> articles, catégories, tags, tableau admin.</li>
+        </ul>
+
+        <h3>Compétences acquises</h3>
+        <ul>
+          <li>Programmation orientée objet.</li>
+          <li>Framework Symfony (routes, contrôleurs, entités).</li>
+          <li>Gestion base de données.</li>
         </ul>
       </section>
 
-      <!-- ====================== -->
-      <!-- PROJET MAIRIE -->
-      <!-- ====================== -->
+      <!-- ========================================================= -->
+      <!-- 2023 – MAIRIE DE LA COURNEUVE -->
+      <!-- ========================================================= -->
       <section>
-        <h2><i class="fas fa-building"></i> Mairie de La Courneuve — Gestion informatique (2023)</h2>
-        <p>
-          Migration de postes Windows, dépannage N1/N2, gestion des tickets GLPI et maintenance du parc informatique.
-        </p>
-      </section>
+        <h2><i class="fas fa-building"></i> 2023 – Mairie de La Courneuve</h2>
 
-      <!-- ====================== -->
-      <!-- PROJET O’CLOCK -->
-      <!-- ====================== -->
-      <section>
-        <h2><i class="fas fa-laptop-code"></i> Formation O’Clock — Mini Projets (2025)</h2>
         <p>
-          Réalisation de projets front-end et back-end : API en Node.js, mini-apps React, système d’authentification, etc.
+          Stage informatique au service IT : migration de postes Windows et support utilisateur.
         </p>
+
         <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js / Express</li>
-          <li>PostgreSQL / Sequelize</li>
+          <li>Migration Windows 7 → Windows 10/11.</li>
+          <li>Dépannage matériel et logiciel (niveau 1 & 2).</li>
+          <li>Gestion des tickets via GLPI.</li>
         </ul>
       </section>
 
+      <!-- ========================================================= -->
+      <!-- MISSIONS BTS (OPTION SLAM) -->
+      <!-- ========================================================= -->
+      <section>
+        <h2><i class="fas fa-tasks"></i> Missions BTS SIO</h2>
+
+        <!-- Mission GSB -->
+        <h3>Galaxy-Swiss Bourdin (GSB)</h3>
+        <p>
+          Projet complet de gestion de notes de frais pour visiteurs médicaux.
+          Architecture MVC en PHP + MySQL. Objectif : suivre frais et validations.
+        </p>
+
+        <!-- Mission 1B -->
+        <h3>Mission 1-B</h3>
+        <p>
+          Création d’un formulaire affichant les frais cumulés d’un visiteur selon période.
+          Intégré à la page d’accueil, développé en MVC.
+        </p>
+
+        <!-- Mission 2B -->
+        <h3>Mission 2-B</h3>
+        <p>
+          Projet d’équipe : plateforme de gestion de frais pour plusieurs laboratoires.
+          Rôle : conception + administration de la base de données, UI, logique CRUD.
+        </p>
+
+        <!-- Mission 3 -->
+        <h3>Mission 3 – Appli-CR</h3>
+        <p>
+          Développement d’un module complet pour gérer médicaments, familles et dons.
+        </p>
+
+        <ul>
+          <li>Analyse du cahier des charges</li>
+          <li>Développement C# WinForms</li>
+          <li>Tests d’intégration & acceptation</li>
+          <li>Déploiement + documentation complète</li>
+        </ul>
+      </section>
     </main>
 
-    <!-- Footer HTML chargé dynamiquement -->
+    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- Apparition douce -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
+        document.querySelectorAll("section").forEach((s) => s.classList.add("reveal"));
       });
     </script>
   </body>
