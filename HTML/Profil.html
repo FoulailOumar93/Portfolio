@@ -2,135 +2,117 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil 2</title>
+    <title>Profil</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Favicon -->
+    <link rel="icon" href="/Portfolio/IMG/Profil.jpg" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
 
-    <!-- Feuille de style principale (CHEMIN FIXÉ) -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
   </head>
 
   <body>
-    <!-- Bouton Thème Sombre -->
+    <!-- Dark Mode -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu chargé dynamiquement -->
+    <!-- Menu -->
     <div id="menu-container"></div>
 
-    <!-- Contenu principal -->
+    <!-- ========================= -->
+    <!-- CONTENU -->
+    <!-- ========================= -->
     <main class="wrapper">
-      <section>
-        <h1>Qu'est-ce que le BTS SIO ?</h1>
+
+      <!-- À propos -->
+      <section id="a-propos-de-moi">
+        <h1>À PROPOS DE MOI</h1>
+
         <p>
-          Le BTS SIO (Services Informatiques aux Organisations) est un diplôme
-          d'État en deux ans menant aux métiers de l’informatique. Il propose
-          deux options : SISR pour les réseaux/systèmes et SLAM pour le
-          développement.
+          Je m’appelle <strong>Foulail Oumar</strong>, j’ai 22 ans et je suis passionné 
+          d’informatique depuis mon enfance. Cette passion m’a conduit à suivre un 
+          <strong>BTS SIO option SLAM</strong>, où j’ai découvert mon intérêt pour 
+          le développement et les nouvelles technologies.
+        </p>
+
+        <p>
+          J’ai ensuite intégré la formation 
+          <strong>Développeur Web & Web Mobile</strong> chez <strong>O’Clock</strong>
+          afin de renforcer mes compétences en front-end et back-end.
+        </p>
+
+        <p>
+          Mon objectif : devenir un développeur polyvalent capable de participer à des projets modernes et ambitieux.
         </p>
       </section>
 
-      <section>
-        <h1>BTS SIO au Lycée Voillaume</h1>
+      <!-- Expérience -->
+      <section id="experience-professionnelle">
+        <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
+
+        <h2>RCAB Technologies – 2025</h2>
         <p>
-          Le lycée Voillaume d’Aulnay-sous-Bois propose une formation complète
-          avec un suivi pédagogique solide. Voici la plaquette officielle :
+          Création d’un site vitrine WordPress : intégration, Elementor, Forminator, responsive design.
         </p>
 
-        <button
-          class="glow-on-hover"
-          onclick="window.location='/Portfolio/Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
-        >
-          Télécharger
+        <h2>NTIC Formation Center – 2024</h2>
+        <p>
+          Développement d’un site IMDB en PHP/SQL et d’un blog Symfony avec dashboard.
+        </p>
+
+        <h2>Mairie de La Courneuve – 2023</h2>
+        <p>
+          Migration Windows 7→10/11, dépannage niveau 1/2, gestion GLPI.
+        </p>
+
+        <button class="glow-on-hover" onclick="window.location='/Portfolio/Documents/PDF/CV_Oumar FOULAIL.pdf';">
+          Télécharger mon CV
         </button>
-
-        <p>
-          Le BTS est accessible après un bac STMG, pro ou général. Il prépare à
-          des postes opérationnels dans l’univers numérique.
-        </p>
-
-        <img
-          src="/Portfolio/IMG/Logo BTS-SIO.png"
-          alt="Logo BTS SIO"
-          style="max-width: 200px; margin-top: 15px"
-          loading="lazy"
-        />
       </section>
 
-      <section>
-        <h1>Services Informatiques aux Organisations</h1>
+      <!-- Compétences -->
+      <section id="competences">
+        <h1>COMPÉTENCES</h1>
+
+        <div class="skill"><span>HTML / CSS</span><div class="skill-bar" style="--value: 90%;"></div></div>
+        <div class="skill"><span>JavaScript</span><div class="skill-bar" style="--value: 80%;"></div></div>
+        <div class="skill"><span>React</span><div class="skill-bar" style="--value: 75%;"></div></div>
+        <div class="skill"><span>Node.js / Express</span><div class="skill-bar" style="--value: 70%;"></div></div>
+        <div class="skill"><span>PostgreSQL / Sequelize</span><div class="skill-bar" style="--value: 65%;"></div></div>
+      </section>
+
+      <!-- Qualités -->
+      <section id="mes-qualites">
+        <h1>MES QUALITÉS</h1>
         <p>
-          Le BTS SIO développe des compétences en développement, cybersécurité,
-          administration réseau, gestion de projet et exploitation des systèmes
-          informatiques.
+          Rigoureux, motivé, curieux, persévérant face aux défis techniques.
         </p>
       </section>
 
-      <section>
-        <h1>Option SLAM</h1>
-        <img
-          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-slam-768x512.jpg"
-          alt="Option SLAM"
-          width="200"
-          loading="lazy"
-        />
-        <p>
-          L’option SLAM forme à la conception, au développement et à la
-          maintenance d'applications web, mobiles ou de bureau.
-        </p>
-      </section>
-
-      <section>
-        <h1>Option SISR</h1>
-        <img
-          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-sisr.jpeg"
-          alt="Option SISR"
-          width="200"
-          loading="lazy"
-        />
-        <p>
-          L’option SISR forme aux métiers liés aux infrastructures : serveurs,
-          réseaux, sécurité et exploitation.
-        </p>
-      </section>
-
-      <section>
-        <h1>Après le BTS SIO</h1>
-        <p>
-          Les diplômés peuvent poursuivre en licence pro, bachelor, ou entrer
-          dans le monde du travail (ESN, entreprises, administrations) ou
-          devenir freelance.
-        </p>
-      </section>
     </main>
 
     <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- Scripts JS (CHEMINS FIXÉS) -->
-    <script src="/Portfolio/JS/toggleTheme.js" defer></script>
+    <!-- Scripts -->
     <script src="/Portfolio/JS/menu.js" defer></script>
+    <script src="/Portfolio/JS/toggleTheme.js" defer></script>
     <script src="/Portfolio/JS/footer.js" defer></script>
 
+    <!-- Skills Animation -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
+        document.querySelectorAll(".skill-bar").forEach(bar => bar.classList.add("visible"));
       });
     </script>
+
   </body>
 </html>
