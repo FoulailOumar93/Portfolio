@@ -2,101 +2,105 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil</title>
+    <title>Profil de Foulail Oumar</title>
 
+    <!-- Favicon -->
     <link rel="icon" href="../IMG/Profil.jpg" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <!-- Fonts et Icônes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
 
   <body>
+    <!-- Bouton switch clair/sombre -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
+    <!-- Menu injecté dynamiquement -->
     <div id="menu-container"></div>
 
+    <!-- Contenu principal -->
     <main class="wrapper">
-
+      <!-- À propos de moi -->
       <section id="a-propos-de-moi">
         <h1>À PROPOS DE MOI</h1>
-
         <p>
-          Je m’appelle <strong>Foulail Oumar</strong>, j’ai 22 ans et je suis passionné 
-          d’informatique depuis mon enfance. Cette passion m’a conduit à suivre un 
-          <strong>BTS SIO option SLAM</strong>, où j’ai découvert mon intérêt pour 
-          le développement et les nouvelles technologies.
-        </p>
-
-        <p>
-          J’ai ensuite intégré la formation 
-          <strong>Développeur Web & Web Mobile</strong> chez <strong>O’Clock</strong>
-          afin de renforcer mes compétences en front-end et back-end.
-        </p>
-
-        <p>
-          Mon objectif : devenir un développeur polyvalent capable de participer à des projets modernes et ambitieux.
+          Je m’appelle Foulail Oumar, j’ai 21 ans et je suis passionné par
+          l’univers informatique depuis mon enfance. Cette passion m’a
+          naturellement conduit à suivre un baccalauréat STMG, spécialité
+          Mercatique, au Lycée Jacques Brel, où j’ai découvert mon attrait pour
+          les nouvelles technologies et la logique du numérique. Souhaitant
+          approfondir mes compétences techniques, j’ai poursuivi mes études avec
+          un BTS SIO option SLAM (Solutions Logicielles et Applications
+          Métiers), une formation qui m’a permis de maîtriser la programmation,
+          la gestion de bases de données, ainsi que les enjeux de la
+          cybersécurité. À la suite de ce BTS, j’ai décidé d’intégrer la
+          formation Développeur Web et Web Mobile à distance chez O’Clock. Ce
+          choix s’inscrit dans la continuité de mon projet professionnel : me
+          spécialiser davantage dans le développement front-end et back-end,
+          tout en me préparant aux exigences du métier à travers des projets
+          concrets, en conditions réelles. Je suis déterminé à faire de ma
+          passion un métier, et à évoluer dans un domaine en constante
+          innovation, où je pourrai allier créativité, rigueur et technologie.
         </p>
       </section>
 
+      <!-- Expérience professionnelle -->
       <section id="experience-professionnelle">
         <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
-
-        <h2>RCAB Technologies – 2025</h2>
         <p>
-          Création d’un site vitrine WordPress : intégration, Elementor, Forminator, responsive design.
+          J’ai effectué plusieurs stages professionnels pour renforcer mes
+          compétences sur le terrain : un stage d'observation à la Médiathèque
+          John Lennon, un stage au service informatique de la Mairie de La
+          Courneuve, et un stage en deuxième année au Lycée Voillaume.
         </p>
-
-        <h2>NTIC Formation Center – 2024</h2>
-        <p>
-          Développement d’un site IMDB en PHP/SQL et d’un blog Symfony avec dashboard.
-        </p>
-
-        <h2>Mairie de La Courneuve – 2023</h2>
-        <p>
-          Migration Windows 7→10/11, dépannage niveau 1/2, gestion GLPI.
-        </p>
-
-        <button class="glow-on-hover" onclick="window.location='../Documents/PDF/CV_Oumar FOULAIL.pdf';">
-          Télécharger mon CV
+        <p>Voici mon CV que vous pouvez télécharger ci-dessous.</p>
+        <button
+          class="glow-on-hover"
+          onclick="window.location='../Documents/PDF/CV_Oumar FOULAIL.pdf';"
+        >
+          Télécharger CV
         </button>
       </section>
 
-      <section id="competences">
-        <h1>COMPÉTENCES</h1>
-
-        <div class="skill"><span>HTML / CSS</span><div class="skill-bar" style="--value: 90%;"></div></div>
-        <div class="skill"><span>JavaScript</span><div class="skill-bar" style="--value: 80%;"></div></div>
-        <div class="skill"><span>React</span><div class="skill-bar" style="--value: 75%;"></div></div>
-        <div class="skill"><span>Node.js / Express</span><div class="skill-bar" style="--value: 70%;"></div></div>
-        <div class="skill"><span>PostgreSQL / Sequelize</span><div class="skill-bar" style="--value: 65%;"></div></div>
-      </section>
-
+      <!-- Qualités -->
       <section id="mes-qualites">
         <h1>MES QUALITÉS</h1>
         <p>
-          Rigoureux, motivé, curieux, persévérant face aux défis techniques.
+          Je suis une personne rigoureuse dans mon travail, curieuse face aux
+          nouvelles technologies, persévérante face aux défis techniques, et
+          passionnée par tout ce qui touche au développement logiciel et à
+          l’univers informatique en général.
         </p>
       </section>
-
     </main>
 
+    <!-- Pied de page chargé dynamiquement -->
     <div id="footer-container"></div>
 
-    <script src="../JS/menu.js" defer></script>
+    <!-- Scripts -->
     <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
     <script src="../JS/footer.js" defer></script>
-
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".skill-bar").forEach(bar => bar.classList.add("visible"));
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
       });
     </script>
-
   </body>
 </html>
