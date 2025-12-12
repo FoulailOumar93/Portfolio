@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets</title>
+
+    <!-- CSS & fonts -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- JS -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bouton clair/sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Menu HTML chargé dynamiquement -->
+    <div id="menu-container"></div>
+
+    <!-- Contenu des projets -->
+    <main class="wrapper">
+
+      <h1>Mes Projets</h1>
+      <p>
+        Voici une sélection de projets réalisés durant mes études, mes stages et mes formations.
+        Chaque projet m'a permis de développer mes compétences techniques et d'apprendre de nouvelles méthodes de travail.
+      </p>
+
+      <!-- ====================== -->
+      <!-- PROJET RCAB TECHNOLOGIES -->
+      <!-- ====================== -->
+      <section>
+        <h2><i class="fas fa-globe"></i> RCAB Technologies — Site Vitrine (2025)</h2>
+        <p>
+          Création d’un site vitrine professionnel sous WordPress : conception, Elementor, Forminator,
+          optimisation responsive et intégration complète du contenu.
+        </p>
+        <ul>
+          <li>WordPress</li>
+          <li>Elementor</li>
+          <li>Forminator</li>
+          <li>UI/UX</li>
+        </ul>
+      </section>
+
+      <!-- ====================== -->
+      <!-- PROJET IMDB PHP -->
+      <!-- ====================== -->
+      <section>
+        <h2><i class="fas fa-film"></i> IMDB — Application PHP/SQL (2024)</h2>
+        <p>
+          Développement d’un site type IMDB avec système CRUD complet pour gérer films, acteurs et catégories.
+          Projet réalisé en BTS SIO.
+        </p>
+        <ul>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>CRUD</li>
+          <li>MVC</li>
+        </ul>
+      </section>
+
+      <!-- ====================== -->
+      <!-- PROJET BLOG SYMFONY -->
+      <!-- ====================== -->
+      <section>
+        <h2><i class="fas fa-pencil-alt"></i> Blog Symfony — Dashboard Admin</h2>
+        <p>
+          Création d’un blog avec gestion des articles, catégories et utilisateurs.
+          Développement d’un tableau de bord administrateur complet.
+        </p>
+        <ul>
+          <li>Symfony</li>
+          <li>Doctrine ORM</li>
+          <li>CRUD Admin</li>
+          <li>Architecture MVC</li>
+        </ul>
+      </section>
+
+      <!-- ====================== -->
+      <!-- PROJET MAIRIE -->
+      <!-- ====================== -->
+      <section>
+        <h2><i class="fas fa-building"></i> Mairie de La Courneuve — Gestion informatique (2023)</h2>
+        <p>
+          Migration de postes Windows, dépannage N1/N2, gestion des tickets GLPI et maintenance du parc informatique.
+        </p>
+      </section>
+
+      <!-- ====================== -->
+      <!-- PROJET O’CLOCK -->
+      <!-- ====================== -->
+      <section>
+        <h2><i class="fas fa-laptop-code"></i> Formation O’Clock — Mini Projets (2025)</h2>
+        <p>
+          Réalisation de projets front-end et back-end : API en Node.js, mini-apps React, système d’authentification, etc.
+        </p>
+        <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js / Express</li>
+          <li>PostgreSQL / Sequelize</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Footer HTML chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Apparition douce -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>
