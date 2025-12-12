@@ -41,9 +41,21 @@ body.dark {
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--bg);
+  
+  /* === CORRECTION FOND D'ECRAN === */
+  /* Couleur de secours (évite l'écran blanc si l'image plante) */
+  background-color: var(--bg); 
+  
+  /* Image de fond : le "../" permet de remonter du dossier CSS vers IMG */
+  /* VERIFIE LE NOM DE TON IMAGE ICI (ex: background.jpg) */
+  background-image: url('../IMG/background.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
   color: var(--fg);
   min-height: 100vh;
   display: flex;
@@ -198,6 +210,38 @@ ul {
   line-height: 1.8;
 }
 
+/* ---------- COMPÉTENCES (SKILLS) - AJOUTÉ ---------- */
+.skill {
+  margin-bottom: 20px;
+}
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.skill-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Animé via JS */
+  background: var(--accent);
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+.skill-bar.visible::after {
+  width: var(--value); /* Utilise la variable HTML */
+}
+
 /* ---------- FOOTER ---------- */
 footer {
   background: var(--card-bg);
@@ -266,23 +310,8 @@ footer p {
 body.dark .theme-switch i {
   transform: rotate(180deg);
 }
-/* === FIX FOOTER STICKY === */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main.wrapper {
-  flex: 1;
-}
+/* === UTILS & BUTTONS === */
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -294,6 +323,10 @@ main.wrapper {
   position: relative;
   z-index: 0;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px auto;
+  display: block;
 }
 
 .glow-on-hover:before {
@@ -349,16 +382,11 @@ main.wrapper {
 }
 
 @keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
+
 .certifications {
   display: flex;
   flex-wrap: wrap;
@@ -379,6 +407,7 @@ main.wrapper {
   transform: scale(1.05);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
+
 .contact-container {
   max-width: 600px;
   margin: 50px auto;
@@ -399,6 +428,7 @@ main.wrapper {
   border-radius: 8px;
   font-size: 1rem;
   background-color: #f9f9f9;
+  font-family: inherit;
 }
 
 .contact-form button {
