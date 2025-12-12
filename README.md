@@ -1,47 +1,54 @@
-
 ---
 
-## 📌 Fonctionnalités
+## 📌 Fonctionnalités du Portfolio
 
-- ✅ Menu responsive dynamique (via `menu.js`)
-- 🌙 Thème clair / sombre toggle (via `toggleTheme.js`)
-- 📨 Formulaire de contact fonctionnel avec confirmation (via `Formspree`)
-- 📜 Animations douces à l’apparition (`.reveal`)
-- 🦾 Footer et menu chargés dynamiquement
+- ✅ Menu responsive dynamique (chargé via `menu.js`)
+- 🌙 Mode clair / sombre avec `toggleTheme.js`
+- 📨 Formulaire de contact fonctionnel (Formspree)
+- 📜 Animations douces des sections (`.reveal`)
+- 🦾 Footer et menu chargés automatiquement sur chaque page
+- 🗂 Organisation claire des projets, formations et stages
 
 ---
 
 ## 🗂 Pages disponibles
 
-- `Accueil.html` — Page d’introduction
-- `Profil.html` — Présentation personnelle
-- `BTS SIO.html` — Informations sur la formation
-- `Stage.html` — Détails de mes stages
-- `Certification.html` — Diplômes obtenus
-- `Missions.html` — Mes projets réalisés
-- `Veille Technologique.html` — Sujets technologiques
-- `Contact.html` — Formulaire pour me contacter
+- `Accueil.html` — Présentation générale
+- `Profil.html` — À propos de moi + parcours
+- `BTS SIO.html` — Formation BTS SIO (SLAM & SISR)
+- `OClock.html` — Parcours Développeur Web & Web Mobile
+- `Projets.html` — Tous mes projets (CinéDélices, RCAB, GSB…)
+- `Stage.html` — Historique de mes stages
+- `Veille Technologique.html` — Sujets technologiques et IA
+- `Certification.html` — Diplômes et certifications
+- `Contact.html` — Formulaire de contact
 
 ---
 
-## 🧪 À venir
+## 🧪 Évolutions prévues
 
-- [ ] Version mobile optimisée 📱  
-- [ ] Portfolio multilingue 🇫🇷🇬🇧  
-- [ ] Ajout d’un blog technique 🧠  
+- [ ] Optimisation mobile complète 📱  
+- [ ] Version anglaise du portfolio 🇬🇧  
+- [ ] Ajout d’études de cas détaillées pour chaque projet 💼  
+- [ ] Page dédiée pour CinéDélices avec schémas et captures 🍽️🎬  
 
 ---
 
 ## 🙌 Remerciements
 
-Un grand merci à l’équipe pédagogique du **Lycée Voillaume**, ainsi qu’aux formateurs de **OpenClassrooms**.
+Merci aux équipes pédagogiques du **Lycée Voillaume**  
+et à l’école **O’Clock** pour la formation Développeur Web & Web Mobile.
 
 ---
 
 ## 🧑‍💻 Auteur
 
 **Foulail Oumar**  
-[GitHub](https://github.com/FoulailOumar93) | [LinkedIn](https://www.linkedin.com/in/oumar-foulail-9b0232178/) | [Instagram](https://www.instagram.com/oumar_foulail_realmadrid/)
+Passionné d’informatique, futur développeur full-stack.
+
+🔗 **GitHub :** https://github.com/FoulailOumar93  
+🔗 **LinkedIn :** https://www.linkedin.com/in/oumar-foulail-9b0232178/  
+🔗 **Instagram :** https://www.instagram.com/oumar_foulail_realmadrid/
 
 ---
 
