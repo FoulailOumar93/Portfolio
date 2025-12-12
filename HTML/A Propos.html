@@ -5,34 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="/Portfolio/IMG/Profil.jpg" />
+    <link rel="icon" href="../IMG/Profil.jpg" />
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
 
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
 
   <body>
-    <!-- Dark Mode -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu -->
     <div id="menu-container"></div>
 
-    <!-- ========================= -->
-    <!-- CONTENU -->
-    <!-- ========================= -->
     <main class="wrapper">
 
-      <!-- À propos -->
       <section id="a-propos-de-moi">
         <h1>À PROPOS DE MOI</h1>
 
@@ -54,7 +44,6 @@
         </p>
       </section>
 
-      <!-- Expérience -->
       <section id="experience-professionnelle">
         <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
 
@@ -73,12 +62,11 @@
           Migration Windows 7→10/11, dépannage niveau 1/2, gestion GLPI.
         </p>
 
-        <button class="glow-on-hover" onclick="window.location='/Portfolio/Documents/PDF/CV_Oumar FOULAIL.pdf';">
+        <button class="glow-on-hover" onclick="window.location='../Documents/PDF/CV_Oumar FOULAIL.pdf';">
           Télécharger mon CV
         </button>
       </section>
 
-      <!-- Compétences -->
       <section id="competences">
         <h1>COMPÉTENCES</h1>
 
@@ -89,7 +77,6 @@
         <div class="skill"><span>PostgreSQL / Sequelize</span><div class="skill-bar" style="--value: 65%;"></div></div>
       </section>
 
-      <!-- Qualités -->
       <section id="mes-qualites">
         <h1>MES QUALITÉS</h1>
         <p>
@@ -99,15 +86,12 @@
 
     </main>
 
-    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- Scripts -->
-    <script src="/Portfolio/JS/menu.js" defer></script>
-    <script src="/Portfolio/JS/toggleTheme.js" defer></script>
-    <script src="/Portfolio/JS/footer.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
 
-    <!-- Skills Animation -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".skill-bar").forEach(bar => bar.classList.add("visible"));
