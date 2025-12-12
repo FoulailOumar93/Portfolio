@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Feuille de style principale (CHEMIN FIXÉ) -->
+    <!-- Feuille de style principale -->
     <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
   </head>
 
@@ -33,6 +33,8 @@
 
     <!-- Contenu principal -->
     <main class="wrapper">
+      
+      <!-- INTRO -->
       <section>
         <h1>Qu'est-ce que le BTS SIO ?</h1>
         <p>
@@ -43,6 +45,7 @@
         </p>
       </section>
 
+      <!-- LYCÉE VOILLAUME -->
       <section>
         <h1>BTS SIO au Lycée Voillaume</h1>
         <p>
@@ -70,6 +73,7 @@
         />
       </section>
 
+      <!-- PRESENTATION SIO -->
       <section>
         <h1>Services Informatiques aux Organisations</h1>
         <p>
@@ -79,6 +83,7 @@
         </p>
       </section>
 
+      <!-- SLAM -->
       <section>
         <h1>Option SLAM</h1>
         <img
@@ -93,6 +98,7 @@
         </p>
       </section>
 
+      <!-- SISR -->
       <section>
         <h1>Option SISR</h1>
         <img
@@ -107,6 +113,7 @@
         </p>
       </section>
 
+      <!-- APRES BTS -->
       <section>
         <h1>Après le BTS SIO</h1>
         <p>
@@ -115,21 +122,64 @@
           devenir freelance.
         </p>
       </section>
+
+      <!-- ===================================================== -->
+      <!-- 🔥 MISSIONS RÉALISÉES (Fusion du fichier Missions.html) -->
+      <!-- ===================================================== -->
+      <section id="missions-bts-sio">
+        <h1>Missions réalisées (SLAM)</h1>
+        <p>
+          Voici les projets et missions que j'ai réalisés durant ma formation
+          BTS SIO, en individuel ou en équipe.
+        </p>
+
+        <!-- MISSION GSB -->
+        <h2>Mission GSB</h2>
+        <p>
+          Le projet <strong>Galaxy-Swiss Bourdin</strong> permet aux visiteurs
+          médicaux de saisir leurs notes de frais, suivies par les responsables.
+          Stack : <strong>PHP, C#, MySQL, MVC</strong>.
+        </p>
+
+        <!-- MISSION 1B -->
+        <h2>Mission 1-B</h2>
+        <p>
+          Développement d’un formulaire affichant le cumul des frais d’un visiteur,
+          selon le mois et l’année, en respectant la charte graphique du projet.
+        </p>
+
+        <!-- MISSION 2B -->
+        <h2>Mission 2-B (projet d'équipe)</h2>
+        <p>
+          Réalisation d'une application Web complète de gestion des frais pour
+          plusieurs laboratoires. Rôle : <strong>Bases de données + Interface</strong>.
+        </p>
+
+        <!-- MISSION 3 -->
+        <h2>Mission 3 – Projet Appli-CR</h2>
+        <p>
+          Développement d’un module de gestion des médicaments, familles et dons,
+          avec tableau de bord, pages sécurisées et export XML.
+        </p>
+      </section>
+
+      <!-- ===================================================== -->
+
     </main>
 
     <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- Scripts JS (CHEMINS FIXÉS) -->
+    <!-- Scripts JS -->
     <script src="/Portfolio/JS/toggleTheme.js" defer></script>
     <script src="/Portfolio/JS/menu.js" defer></script>
     <script src="/Portfolio/JS/footer.js" defer></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
+        document
+          .querySelectorAll("section")
+          .forEach((section) => section.classList.add("reveal"));
       });
     </script>
   </body>
