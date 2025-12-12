@@ -21,6 +21,13 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="../CSS/styles.css" />
 
+    <!-- Correction pour espacer Définition -->
+    <style>
+      #definition-veille-technologique {
+        margin-top: 30px;
+      }
+    </style>
+
     <!-- JS -->
     <script src="../JS/toggleTheme.js" defer></script>
     <script src="../JS/menu.js" defer></script>
@@ -162,15 +169,13 @@
       </section>
     </main>
 
-    <!-- Footer dynamique -->
+    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- Animation d’apparition -->
+    <!-- Animation sections -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
+        document.querySelectorAll("section").forEach((s) => s.classList.add("reveal"));
       });
     </script>
   </body>
