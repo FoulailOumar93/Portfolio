@@ -15,21 +15,24 @@
   "accueil_title": "Welcome to the Portfolio of Foulail Oumar",
   "accueil_subtitle": "O'Clock Student — Web & Mobile Developer",
 
-  "profil_title": "ABOUT ME",
-  "profil_exp_title": "PROFESSIONAL EXPERIENCE",
-  "profil_qualities_title": "MY QUALITIES",
+{
+  "profile_about_title": "ABOUT ME",
+  "profile_about_p1": "My name is Foulail Oumar, I am 22 years old and passionate about IT.",
+  "profile_about_p2": "I first studied STMG at Lycée Jacques Brel.",
+  "profile_about_p3": "Then I completed a BTS SIO (SLAM).",
+  "profile_about_p4": "Later, I studied Web & Mobile Development at O'Clock.",
+  "profile_about_p5": "I want to become a full-stack developer capable of working on modern projects.",
 
-  "profil_p1": "My name is Foulail Oumar, I am 22 years old and passionate about IT.",
-  "profil_p2": "I first studied STMG at Lycée Jacques Brel.",
-  "profil_p3": "Then I completed a BTS SIO (SLAM).",
-  "profil_p4": "Later, I studied Web & Mobile Development at O'Clock.",
-  "profil_p5": "I want to become a full-stack developer capable of working on modern projects.",
+  "profile_exp_title": "PROFESSIONAL EXPERIENCE",
+  "profile_exp_p1": "I completed several internships: city hall IT service, development at Lycée Voillaume, and observation at the John Lennon media library.",
+  "profile_exp_p2": "These experiences helped me develop technical skills and confirm my professional goals.",
+  "profile_exp_p3": "Here is my CV available for download.",
+  "profile_exp_btn": "Download CV",
 
-  "profil_exp_p1": "I completed several internships: city hall IT service, development at Lycée Voillaume, and observation at the John Lennon media library.",
-  "profil_exp_p2": "These experiences helped me develop technical skills and confirm my professional goals.",
-  "profil_exp_cv": "Download CV",
+  "profile_skills_title": "MY QUALITIES",
+  "profile_skills_p1": "I am rigorous, motivated, curious, persistent and passionate about learning."
+}
 
-  "profil_q_p": "I am rigorous, motivated, curious, persistent and passionate about learning.",
 
   "bts_intro_title": "What is BTS SIO?",
   "bts_intro_text": "The BTS SIO trains students for IT careers with two specialisations: SLAM (development) and SISR (networking).",
@@ -79,3 +82,4 @@
 
   "stage_title": "My Internships"
 }
+
