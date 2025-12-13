@@ -1,74 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="cert_title">MES CERTIFICATIONS</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="certif_title">Certifications</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
-    <script src="../JS/i18n.js" defer></script>
-  </head>
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
 
-  <body>
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
-    </div>
+<body>
 
-    <div id="menu-container"></div>
+  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
 
-    <main class="wrapper">
-      <section>
-        <h1 data-i18n="cert_title">MES CERTIFICATIONS</h1>
+  <div id="menu-container"></div>
 
-        <p data-i18n="cert_intro">
-          Voici les certificats que j’ai obtenus sur la plateforme OpenClassrooms :
-        </p>
+  <main class="wrapper">
+    <section>
+      <h1 data-i18n="certif_heading">Mes Certifications</h1>
+      <p data-i18n="certif_intro">Certificats obtenus sur OpenClassrooms :</p>
 
-        <div class="certifications">
+      <div class="certifications">
+        <a href="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg" target="_blank">
+          <img src="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg" alt="HTML CSS" />
+        </a>
 
-          <a href="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg" target="_blank">
-            <img 
-              src="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg"
-              alt="" 
-              data-i18n="cert_html_title"
-            />
-          </a>
+        <a href="../Certification/Certificat OpenClassroom PHP et MySQL.jpg" target="_blank">
+          <img src="../Certification/Certificat OpenClassroom PHP et MySQL.jpg" alt="PHP SQL" />
+        </a>
 
-          <a href="../Certification/Certificat OpenClassroom PHP et MySQL.jpg" target="_blank">
-            <img 
-              src="../Certification/Certificat OpenClassroom PHP et MySQL.jpg"
-              alt="" 
-              data-i18n="cert_php_title"
-            />
-          </a>
+        <a href="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg" target="_blank">
+          <img src="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg" alt="Excel" />
+        </a>
+      </div>
+    </section>
+  </main>
 
-          <a href="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg" target="_blank">
-            <img 
-              src="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg"
-              alt="" 
-              data-i18n="cert_excel_title"
-            />
-          </a>
+  <div id="footer-container"></div>
 
-        </div>
-      </section>
-    </main>
-
-    <div id="footer-container"></div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach(section => {
-          section.classList.add("reveal");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
