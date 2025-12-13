@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
+    <title data-i18n="accueil_page_title">Accueil</title>
 
     <!-- Google Fonts -->
     <link
@@ -23,30 +23,38 @@
   </head>
 
   <body>
-    <!-- Switch Dark/Light -->
+    <!-- Bouton Dark/Light -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- MENU injecté dynamiquement -->
+    <!-- Menu dynamique -->
     <div id="menu-container"></div>
 
-    <!-- CONTENU PRINCIPAL -->
+    <!-- Contenu principal -->
     <main class="wrapper">
-      <h1 data-i18n="home_title">Bienvenue dans le Portfolio de Foulail Oumar</h1>
-      <p class="subtitle" data-i18n="home_subtitle">
+      <h1 data-i18n="accueil_title">Bienvenue dans le Portfolio de Foulail Oumar</h1>
+
+      <p class="subtitle" data-i18n="accueil_subtitle">
         Étudiant Chez O'Clock<br />
         Développeur Web Et Web Mobile
       </p>
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer dynamique -->
     <div id="footer-container"></div>
 
-    <!-- SCRIPTS -->
+    <!-- Scripts -->
     <script src="../JS/toggleTheme.js" defer></script>
     <script src="../JS/menu.js" defer></script>
     <script src="../JS/footer.js" defer></script>
     <script src="../JS/lang.js" defer></script>
+
+    <script>
+      // Animation apparition
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((s) => s.classList.add("reveal"));
+      });
+    </script>
   </body>
 </html>
