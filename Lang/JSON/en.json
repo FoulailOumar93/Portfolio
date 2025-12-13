@@ -15,20 +15,22 @@
   "accueil_title": "Welcome to the Portfolio of Foulail Oumar",
   "accueil_subtitle": "O'Clock Student — Web & Mobile Developer",
 
-  "profile_about_title": "About Me",
-  "profile_about_p1": "My name is Foulail Oumar. I am 22 years old and passionate about IT.",
-  "profile_about_p2": "I first studied STMG at Lycée Jacques Brel.",
-  "profile_about_p3": "Then I completed a BTS SIO (SLAM).",
-  "profile_about_p4": "After that, I joined O'Clock to study Web & Mobile Development.",
+ "profil_title": "About Me",
 
-  "profile_exp_title": "Professional Experience",
-  "profile_exp_p1": "I completed several internships in public and private organizations.",
-  "profile_exp_p2": "These experiences helped me improve my technical and professional skills.",
-  "profile_exp_p3": "You can download my CV below.",
-  "profile_exp_btn": "Download CV",
+"profil_p1": "My name is Foulail Oumar. I am 22 years old and passionate about IT.",
+"profil_p2": "I first studied STMG at Lycée Jacques Brel.",
+"profil_p3": "Then I completed a BTS SIO (SLAM).",
+"profil_p4": "After that, I joined O'Clock to study Web & Mobile Development.",
+"profil_p5": "",
 
-  "profile_skills_title": "My Qualities",
-  "profile_skills_p1": "I am rigorous, motivated, curious and passionate about learning.",
+"profil_exp_title": "Professional Experience",
+"profil_exp_p1": "I completed several internships in public and private organizations.",
+"profil_exp_p2": "These experiences helped me improve my technical and professional skills.",
+"profil_exp_cv": "Download CV",
+
+"profil_qualities_title": "My Qualities",
+"profil_q_p": "I am rigorous, motivated, curious and passionate about learning."
+
 
   "bts_intro_title": "What is BTS SIO?",
   "bts_intro_text": "BTS SIO is an IT program with two paths: SLAM (development) and SISR (networks).",
@@ -159,3 +161,4 @@
   "contact_button": "Send",
   "contact_success": "Message sent! Thank you 🙏"
 }
+
