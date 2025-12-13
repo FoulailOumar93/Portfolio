@@ -1,18 +1,26 @@
-// Récupère automatiquement le bon dossier HTML
-const base = "/Portfolio/HTML/";
+// ✅ Menu généré entièrement en JavaScript
+document.getElementById("menu-container").innerHTML = `
+  <header>
+    <input type="checkbox" id="burger-toggle" />
+    <label for="burger-toggle" class="burger">
+      <span></span><span></span><span></span>
+    </label>
 
-// Chargement du menu
-fetch(base + "Menu.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("menu-container").innerHTML = html;
-  })
-  .catch(err => console.error("Erreur menu :", err));
+    <nav>
+      <ul>
+        <li><a href="/Portfolio/HTML/Accueil.html" data-i18n="menu_home">Accueil</a></li>
+        <li><a href="/Portfolio/HTML/Profil.html" data-i18n="menu_profile">Profil</a></li>
+        <li><a href="/Portfolio/HTML/BTS SIO.html" data-i18n="menu_bts">BTS SIO</a></li>
+        <li><a href="/Portfolio/HTML/OClock.html" data-i18n="menu_oclock">O'Clock</a></li>
+        <li><a href="/Portfolio/HTML/Projets.html" data-i18n="menu_projects">Projets</a></li>
+        <li><a href="/Portfolio/HTML/Stage.html" data-i18n="menu_stage">Stage</a></li>
+        <li><a href="/Portfolio/HTML/Veille Technologique.html" data-i18n="menu_veille">Veille Technologique</a></li>
+        <li><a href="/Portfolio/HTML/Certification.html" data-i18n="menu_certif">Certification</a></li>
+        <li><a href="/Portfolio/HTML/Contact.html" data-i18n="menu_contact">Contact</a></li>
+      </ul>
+    </nav>
 
-// Chargement du footer
-fetch(base + "Footer.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("footer-container").innerHTML = html;
-  })
-  .catch(err => console.error("Erreur footer :", err));
+    <!-- 🔥 Bouton multi-langue -->
+    <button id="lang-switch" class="lang-btn">FR</button>
+  </header>
+`;
