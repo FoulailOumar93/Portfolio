@@ -1,5 +1,9 @@
 document.getElementById("menu-container").innerHTML = `
   <header>
+
+    <!-- 🔥 Bouton multi-langue doit être AVANT le nav -->
+    <button id="lang-switch" class="lang-btn">FR</button>
+
     <input type="checkbox" id="burger-toggle" />
     <label for="burger-toggle" class="burger">
       <span></span><span></span><span></span>
@@ -18,9 +22,6 @@ document.getElementById("menu-container").innerHTML = `
         <li><a href="/Portfolio/HTML/Contact.html" data-i18n="menu_contact">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- 🔥 Bouton multi-langue (FR / EN / TA) -->
-    <button id="lang-switch" class="lang-btn">FR</button>
 
   </header>
 `;
