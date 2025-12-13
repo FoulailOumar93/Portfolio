@@ -459,3 +459,21 @@ body.dark .theme-switch i {
   color: #fff;
   border-color: #444;
 }
+.lang-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: var(--accent);
+  color: var(--fg);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 2000;
+  border: none;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  transform: scale(1.1);
+}
