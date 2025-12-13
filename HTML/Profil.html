@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="profil_title">Profil</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="profile_title">Profil</title>
 
-  <link rel="stylesheet" href="../CSS/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-</head>
+    <!-- Favicon -->
+    <link rel="icon" href="../IMG/Profil.jpg" />
 
-<body>
-  <div id="theme-switch" class="theme-switch">
-    <i class="fas fa-moon"></i>
-  </div>
+    <!-- Fonts et Icônes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <div id="menu-container"></div>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
 
-  <main class="wrapper">
+  <body>
+    <!-- Bouton switch clair/sombre -->
+    <div id="theme-switch" class="theme-switch">
+      <i class="fas fa-moon"></i>
+    </div>
 
-    <!-- À propos -->
-    <section id="a-propos-de-moi">
-      <h1 data-i18n="profil_about_title">À PROPOS DE MOI</h1>
+    <!-- Menu injecté dynamiquement -->
+    <div id="menu-container"></div>
 
-      <p data-i18n="profil_about_p1">
-        Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par l’informatique depuis mon enfance.
-      </p>
+    <!-- Contenu principal -->
+    <main class="wrapper">
+      <!-- À propos de moi -->
+      <section id="a-propos-de-moi">
+        <h1 data-i18n="profile_about_title">À PROPOS DE MOI</h1>
 
-      <p data-i18n="profil_about_p2">
-        J’ai obtenu un BTS SIO option SLAM puis j’ai intégré la formation O’Clock pour devenir développeur web.
-      </p>
+        <p data-i18n="profile_about_p1">
+          Je m’appelle <strong>Foulail Oumar</strong>, j’ai 22 ans et je suis passionné 
+          par l’univers informatique depuis mon enfance...
+        </p>
 
-      <p data-i18n="profil_about_p3">
-        Mon objectif est de devenir un développeur polyvalent, capable de travailler sur le front-end et le back-end.
-      </p>
-    </section>
+        <p data-i18n="profile_about_p2">
+          Souhaitant aller plus loin, j’ai poursuivi mes études avec un 
+          <strong>BTS SIO option SLAM</strong>...
+        </p>
 
-    <!-- Expérience -->
-    <section id="experience-professionnelle">
-      <h1 data-i18n="profil_xp_title">EXPÉRIENCE PROFESSIONNELLE</h1>
+        <p data-i18n="profile_about_p3">
+          Après mon BTS, j’ai décidé d’intégrer la formation 
+          <strong>Développeur Web et Web Mobile</strong> chez O’Clock...
+        </p>
 
-      <p data-i18n="profil_xp_p1">
-        J’ai effectué plusieurs stages : Mairie de La Courneuve, Lycée Voillaume, Médiathèque John Lennon.
-      </p>
+        <p data-i18n="profile_about_p4">
+          Je suis déterminé à faire de ma passion un véritable métier...
+        </p>
+      </section>
 
-      <p data-i18n="profil_xp_p2">
-        Ces expériences m'ont permis de découvrir différents environnements professionnels.
-      </p>
+      <!-- Expérience professionnelle -->
+      <section id="experience-professionnelle">
+        <h1 data-i18n="profile_exp_title">EXPÉRIENCE PROFESSIONNELLE</h1>
 
-      <button
-        class="glow-on-hover"
-        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
-        data-i18n="profil_download_cv"
-      >
-        Télécharger CV
-      </button>
-    </section>
+        <p data-i18n="profile_exp_p1">
+          J’ai effectué plusieurs stages professionnels qui m’ont permis...
+        </p>
 
-    <!-- Qualités -->
-    <section id="mes-qualites">
-      <h1 data-i18n="profil_qualities_title">MES QUALITÉS</h1>
+        <p data-i18n="profile_exp_p2">
+          Chacune de ces expériences m’a permis d’apprendre, de progresser...
+        </p>
 
-      <p data-i18n="profil_qualities_p">
-        Rigoureux, curieux, motivé et persévérant. J’aime apprendre et relever des défis techniques.
-      </p>
-    </section>
+        <p data-i18n="profile_exp_p3">Voici mon CV que vous pouvez télécharger ci-dessous.</p>
 
-  </main>
+        <button
+          class="glow-on-hover"
+          onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
+          data-i18n="profile_exp_btn"
+        >
+          Télécharger CV
+        </button>
+      </section>
 
-  <div id="footer-container"></div>
+      <!-- Qualités -->
+      <section id="mes-qualites">
+        <h1 data-i18n="profile_skills_title">MES QUALITÉS</h1>
 
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
-</body>
+        <p data-i18n="profile_skills_p1">
+          Je suis une personne rigoureuse, curieuse, motivée et persévérante...
+        </p>
+      </section>
+    </main>
+
+    <!-- Pied de page chargé dynamiquement -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../JS/toggleTheme.js" defer></script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/lang.js" defer></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
 </html>
