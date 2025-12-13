@@ -1,138 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mes Stages</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="stage_title">Mes Stages</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- Styles -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
 
-    <!-- Feuille de style -->
-    <link rel="stylesheet" href="../CSS/styles.css" />
-  </head>
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
 
-  <body>
-    <!-- Bouton Dark Mode -->
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
-    </div>
+<body>
+  <!-- Dark/Light -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
-    <!-- Menu dynamique -->
-    <div id="menu-container"></div>
+  <div id="menu-container"></div>
 
-    <!-- Contenu principal -->
-    <main class="wrapper">
+  <main class="wrapper">
 
-      <!-- ⭐ STAGE 1 : RCAB (2025) -->
-      <section>
-        <h1>Stage - O'Clock (RCAB Technologies) — 2025</h1>
-        <p>
-          Dans le cadre de ma formation Développeur Web à <strong>O’Clock</strong>,
-          j’ai réalisé mon stage professionnel chez <strong>RCAB Technologies</strong>
-          du <strong>22 septembre au 14 novembre 2025</strong>. 
-          J’ai été chargé de créer entièrement un site vitrine professionnel 
-          sous <strong>WordPress</strong>.
-        </p>
+    <!-- ⭐ RCAB -->
+    <section>
+      <h1 data-i18n="stage_rcab_title">Stage O'Clock — RCAB Technologies (2025)</h1>
+      <p data-i18n="stage_rcab_desc">
+        Stage effectué du 22 septembre au 14 novembre 2025 dans l’entreprise RCAB Technologies.
+        Création complète d’un site vitrine professionnel sous WordPress.
+      </p>
 
-        <p><strong>Mes missions principales :</strong></p>
-        <ul>
-          <li>Installation et configuration complète du site WordPress</li>
-          <li>Création et design des pages avec <strong>Elementor</strong></li>
-          <li>Création de formulaires personnalisés via <strong>Forminator</strong></li>
-          <li>Organisation des contenus (textes, images, structure du site)</li>
-          <li>Optimisation du responsive design (PC, mobile, tablette)</li>
-          <li>Validation des choix techniques avec mon tuteur</li>
-        </ul>
+      <ul>
+        <li data-i18n="stage_rcab_1">Installation et configuration WordPress</li>
+        <li data-i18n="stage_rcab_2">Création et design des pages avec Elementor</li>
+        <li data-i18n="stage_rcab_3">Formulaires avancés via Forminator</li>
+        <li data-i18n="stage_rcab_4">Optimisation responsive</li>
+      </ul>
+    </section>
 
-        <p>
-          Ce stage m’a permis de mener un projet web de A à Z, de développer mes
-          compétences en intégration WordPress et en design d’interface.
-        </p>
-      </section>
+    <div style="margin-top:60px;"></div>
 
-      <!-- ⭐ STAGE 2 : NTIC (2024) -->
-      <section>
-        <h1>Stage - Deuxième année (NTIC Formation Center) — 2024</h1>
-        <p>
-          Mon deuxième stage s’est déroulé du 
-          <strong>15 janvier au 15 mars 2024</strong> chez 
-          <strong>NTIC Formation Center</strong>. J’ai travaillé sur deux projets
-          différents :
-        </p>
+    <!-- ⭐ NTIC -->
+    <section>
+      <h1 data-i18n="stage_ntic_title">NTIC Formation Center — Stage BTS (2024)</h1>
+      <p data-i18n="stage_ntic_desc">
+        Stage de 2 mois : développement de deux projets complets.
+      </p>
 
-        <ul>
-          <li>
-            <strong>Projet IMDB :</strong> développement d’un site de critiques 
-            de films en PHP/SQL (CRUD complet)
-          </li>
-          <li>
-            <strong>Projet Symfony :</strong> blog avec gestion d’articles, 
-            catégories, tags et tableau de bord administrateur
-          </li>
-        </ul>
+      <ul>
+        <li data-i18n="stage_ntic_1">Projet IMDB en PHP/SQL (CRUD complet)</li>
+        <li data-i18n="stage_ntic_2">Blog Symfony avec tableau admin</li>
+      </ul>
+    </section>
 
-        <p>
-          Ce stage m’a permis de renforcer mes compétences en PHP, SQL, logique 
-          back-end et utilisation de frameworks modernes comme Symfony.
-        </p>
-      </section>
+    <div style="margin-top:60px;"></div>
 
-      <!-- ⭐ STAGE 3 : MAIRIE (2023) -->
-      <section>
-        <h1>Stage - Première année (Mairie de La Courneuve) — 2023</h1>
+    <!-- ⭐ MAIRIE -->
+    <section>
+      <h1 data-i18n="stage_mairie_title">Mairie de La Courneuve — Stage 2023</h1>
 
-        <center>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mairie_la_Courneuve.JPG/1200px-Mairie_la_Courneuve.JPG"
-            alt="Mairie de la Courneuve"
-            width="350"
-            style="margin-bottom: 20px"
-            loading="lazy"
-          />
-        </center>
+      <p data-i18n="stage_mairie_desc">
+        Stage au sein du service informatique : migration de postes Windows et dépannage N1/N2.
+      </p>
 
-        <p>
-          J’ai effectué mon premier stage à la 
-          <strong>Mairie de la Courneuve</strong>, au sein du service informatique,
-          du <strong>23 mai au 16 juin 2023</strong>. J’ai participé à la 
-          migration de postes de Windows 7 vers Windows 10/11 grâce à 
-          <strong>Rufus</strong>, ainsi qu’au dépannage de niveau 1 et 2.
-        </p>
+      <ul>
+        <li data-i18n="stage_mairie_1">Migration Windows 7 → Windows 10/11</li>
+        <li data-i18n="stage_mairie_2">Dépannage matériel et logiciel</li>
+        <li data-i18n="stage_mairie_3">Gestion tickets GLPI</li>
+      </ul>
+    </section>
 
-        <p>
-          J’ai également utilisé <strong>GLPI</strong> pour la gestion des tickets,
-          ce qui m’a permis d’apprendre l’organisation d’un service informatique 
-          public et la gestion d’un parc informatique.
-        </p>
-      </section>
+  </main>
 
-    </main>
+  <div id="footer-container"></div>
 
-    <!-- Footer -->
-    <div id="footer-container"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+    });
+  </script>
 
-    <!-- Scripts -->
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
