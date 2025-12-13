@@ -1,33 +1,29 @@
-let currentLang = localStorage.getItem("lang") || "fr";
+let currentLang = "fr";
 
-function loadLang(lang) {
-    fetch(`/Portfolio/lang/${lang}.json`)
-        .then(res => res.json())
-        .then(data => {
-            document.querySelectorAll("[data-i18n]").forEach(el => {
-                const key = el.getAttribute("data-i18n");
-                if (data[key]) el.textContent = data[key];
-            });
-        });
-
-    localStorage.setItem("lang", lang);
-    currentLang = lang;
+function loadLanguage(lang) {
+  fetch(`/Portfolio/Lang/JSON/${lang}.json`)
+    .then(res => res.json())
+    .then(data => {
+      document.querySelectorAll("[data-i18n]").forEach(elem => {
+        const key = elem.getAttribute("data-i18n");
+        if (data[key]) {
+          elem.textContent = data[key];
+        }
+      });
+    })
+    .catch(() => console.error("Erreur chargement langue :", lang));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadLang(currentLang);
+  loadLanguage(currentLang);
 
-    document.getElementById("lang-switch").addEventListener("click", () => {
-        const sequence = ["fr", "en", "ta"];
-        let nextLang = sequence[(sequence.indexOf(currentLang) + 1) % 3];
-        loadLang(nextLang);
+  const langBtn = document.getElementById("lang-switch");
+  langBtn.addEventListener("click", () => {
+    if (currentLang === "fr") currentLang = "en";
+    else if (currentLang === "en") currentLang = "ta";
+    else currentLang = "fr";
 
-        // bouton affiche la langue suivante
-        document.getElementById("lang-switch").textContent =
-            nextLang === "fr" ? "FR" : nextLang === "en" ? "EN" : "TA";
-    });
-
-    // initial keypad text
-    document.getElementById("lang-switch").textContent =
-        currentLang === "fr" ? "FR" : currentLang === "en" ? "EN" : "TA";
+    langBtn.textContent = currentLang.toUpperCase();
+    loadLanguage(currentLang);
+  });
 });
