@@ -1,29 +1,60 @@
-let currentLang = "fr";
+// ===============================
+// 🌍 MULTI-LANGUE – Foulail Oumar
+// ===============================
 
-function loadLanguage(lang) {
-  fetch(`/Portfolio/Lang/JSON/${lang}.json`)
-    .then(res => res.json())
-    .then(data => {
-      document.querySelectorAll("[data-i18n]").forEach(elem => {
-        const key = elem.getAttribute("data-i18n");
-        if (data[key]) {
-          elem.textContent = data[key];
-        }
-      });
-    })
-    .catch(() => console.error("Erreur chargement langue :", lang));
+// Langue par défaut
+let currentLang = localStorage.getItem("lang") || "fr";
+
+// Chargement de la langue choisie
+loadLanguage(currentLang);
+
+// Bouton dans le menu
+document.addEventListener("click", (e) => {
+  if (e.target.id === "lang-switch") {
+    switchLanguage();
+  }
+});
+
+// ===============================
+// 🔁 Changement de langue
+// ===============================
+function switchLanguage() {
+  currentLang = currentLang === "fr" ? "en" : currentLang === "en" ? "ta" : "fr";
+  localStorage.setItem("lang", currentLang);
+  loadLanguage(currentLang);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadLanguage(currentLang);
+// ===============================
+// 📥 Charge le fichier JSON
+// ===============================
+function loadLanguage(lang) {
+  fetch(`/Portfolio/Lang/JSON/${lang}.json`)
+    .then((res) => res.json())
+    .then((data) => applyTranslations(data))
+    .catch((err) => console.error("❌ Erreur chargement langue :", err));
+}
 
-  const langBtn = document.getElementById("lang-switch");
-  langBtn.addEventListener("click", () => {
-    if (currentLang === "fr") currentLang = "en";
-    else if (currentLang === "en") currentLang = "ta";
-    else currentLang = "fr";
+// ===============================
+// 🔄 Applique les traductions HTML
+// ===============================
+function applyTranslations(data) {
+  // Mets à jour le bouton
+  const btn = document.getElementById("lang-switch");
+  if (btn) btn.textContent = currentLang.toUpperCase();
 
-    langBtn.textContent = currentLang.toUpperCase();
-    loadLanguage(currentLang);
+  // Remplace tout ce qui a un data-i18n
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+
+    if (data[key]) {
+      // Si c'est un input → placeholder
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.placeholder = data[key];
+      } else {
+        el.innerHTML = data[key];
+      }
+    } else {
+      console.warn("⚠️ Clé manquante dans JSON :", key);
+    }
   });
-});
+}
