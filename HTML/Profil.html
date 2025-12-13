@@ -2,14 +2,15 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="profile_title">Profil</title>
+
+    <!-- Title (mis à jour via JS) -->
+    <title>Profil</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../IMG/Profil.jpg" />
 
-    <!-- Fonts et Icônes -->
+    <!-- Fonts & Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -19,92 +20,102 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Styles CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
 
   <body>
-    <!-- Bouton switch clair/sombre -->
+    <!-- Theme switch -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu injecté dynamiquement -->
+    <!-- Menu injecté -->
     <div id="menu-container"></div>
 
-    <!-- Contenu principal -->
+    <!-- Main -->
     <main class="wrapper">
-      <!-- À propos de moi -->
-      <section id="a-propos-de-moi">
-        <h1 data-i18n="profile_about_title">À PROPOS DE MOI</h1>
+
+      <!-- ABOUT -->
+      <section>
+        <h1 data-i18n="profile_about_title">À propos de moi</h1>
 
         <p data-i18n="profile_about_p1">
-          Je m’appelle <strong>Foulail Oumar</strong>, j’ai 22 ans et je suis passionné 
-          par l’univers informatique depuis mon enfance...
+          Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par
+          l’informatique depuis mon plus jeune âge.
         </p>
 
         <p data-i18n="profile_about_p2">
-          Souhaitant aller plus loin, j’ai poursuivi mes études avec un 
-          <strong>BTS SIO option SLAM</strong>...
+          Après un baccalauréat STMG, j’ai poursuivi mes études avec un
+          BTS SIO option SLAM, orienté développement.
         </p>
 
         <p data-i18n="profile_about_p3">
-          Après mon BTS, j’ai décidé d’intégrer la formation 
-          <strong>Développeur Web et Web Mobile</strong> chez O’Clock...
+          J’ai ensuite intégré la formation Développeur Web & Web Mobile
+          chez O’Clock afin de renforcer mes compétences techniques.
         </p>
 
         <p data-i18n="profile_about_p4">
-          Je suis déterminé à faire de ma passion un véritable métier...
+          Aujourd’hui, je souhaite évoluer vers un profil développeur
+          full-stack, polyvalent et orienté solutions.
         </p>
       </section>
 
-      <!-- Expérience professionnelle -->
-      <section id="experience-professionnelle">
-        <h1 data-i18n="profile_exp_title">EXPÉRIENCE PROFESSIONNELLE</h1>
+      <!-- EXPERIENCE -->
+      <section>
+        <h1 data-i18n="profile_exp_title">Expérience professionnelle</h1>
 
         <p data-i18n="profile_exp_p1">
-          J’ai effectué plusieurs stages professionnels qui m’ont permis...
+          J’ai effectué plusieurs stages en milieu professionnel
+          (mairie, centre de formation, entreprise).
         </p>
 
         <p data-i18n="profile_exp_p2">
-          Chacune de ces expériences m’a permis d’apprendre, de progresser...
+          Ces expériences m’ont permis de développer mon autonomie,
+          ma rigueur et ma capacité d’adaptation.
         </p>
 
-        <p data-i18n="profile_exp_p3">Voici mon CV que vous pouvez télécharger ci-dessous.</p>
+        <p data-i18n="profile_exp_p3">
+          Vous pouvez consulter mon CV en cliquant ci-dessous.
+        </p>
 
         <button
           class="glow-on-hover"
           onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
           data-i18n="profile_exp_btn"
         >
-          Télécharger CV
+          Télécharger le CV
         </button>
       </section>
 
-      <!-- Qualités -->
-      <section id="mes-qualites">
-        <h1 data-i18n="profile_skills_title">MES QUALITÉS</h1>
+      <!-- SKILLS -->
+      <section>
+        <h1 data-i18n="profile_skills_title">Mes qualités</h1>
 
         <p data-i18n="profile_skills_p1">
-          Je suis une personne rigoureuse, curieuse, motivée et persévérante...
+          Rigoureux, curieux, motivé et persévérant, j’aime apprendre
+          et relever de nouveaux défis techniques.
         </p>
       </section>
+
     </main>
 
-    <!-- Pied de page chargé dynamiquement -->
+    <!-- Footer injecté -->
     <div id="footer-container"></div>
 
-    <!-- Scripts -->
+    <!-- JS -->
     <script src="../JS/toggleTheme.js" defer></script>
     <script src="../JS/menu.js" defer></script>
     <script src="../JS/footer.js" defer></script>
     <script src="../JS/lang.js" defer></script>
 
+    <!-- Animation safe -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
+        const lang = localStorage.getItem("lang") || "fr";
+        if (typeof loadLanguage === "function") {
+          loadLanguage(lang);
+        }
       });
     </script>
   </body>
