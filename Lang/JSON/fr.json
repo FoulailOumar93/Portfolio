@@ -13,31 +13,98 @@
   "footer_rights": "© 2025 Tous droits réservés — Foulail Oumar",
 
   "accueil_title": "Bienvenue dans le Portfolio de Foulail Oumar",
-  "accueil_subtitle": "Étudiant chez O’Clock — Développeur Web & Web Mobile",
+  "accueil_subtitle": "Étudiant chez O'Clock — Développeur Web & Web Mobile",
 
   "profil_title": "À propos de moi",
   "profil_desc1": "Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par l’informatique.",
-  "profil_desc2": "Après un bac STMG, j’ai poursuivi un BTS SIO option SLAM.",
-  "profil_desc3": "J’ai ensuite intégré la formation Développeur Web & Mobile chez O’Clock.",
-  "profil_desc4": "Mon objectif est de devenir développeur full-stack, polyvalent et créatif.",
+  "profil_desc2": "Après un bac STMG, j’ai poursuivi en BTS SIO option SLAM.",
+  "profil_desc3": "J’ai ensuite intégré la formation Développeur Web & Web Mobile chez O’Clock.",
+  "profil_desc4": "Je souhaite devenir développeur full-stack, polyvalent et créatif.",
   "profil_exp_title": "Expérience professionnelle",
   "profil_exp_desc": "Stages en mairie, lycée, médiathèque et entreprises.",
   "profil_cv_btn": "Télécharger CV",
   "profil_qualities_title": "Mes qualités",
-  "profil_qualities_desc": "Rigoureux, motivé, curieux, persévérant et passionné.",
+  "profil_qualities_desc": "Rigoureux, motivé, curieux, persévérant et passionné",
 
   "bts_title": "BTS SIO",
-  "bts_intro_title": "Qu’est-ce que le BTS SIO ?",
+  "bts_intro_title": "Qu'est-ce que le BTS SIO ?",
   "bts_intro_text": "Le BTS SIO forme aux métiers de l’informatique avec deux options : SLAM (développement) et SISR (réseaux).",
+
   "bts_voillaume_title": "BTS SIO au Lycée Voillaume",
   "bts_voillaume_text": "Formation complète avec un encadrement solide.",
   "bts_download": "Télécharger la plaquette",
+
   "bts_sio_title": "Services Informatiques aux Organisations",
-  "bts_sio_text": "Développement, réseaux, cybersécurité & gestion du SI.",
+  "bts_sio_text": "Le BTS développe des compétences en développement, réseaux, cybersécurité & gestion du système d’information.",
+
   "bts_slam_title": "Option SLAM",
   "bts_slam_text": "Développement web, logiciel, mobile et maintenance applicative.",
+
   "bts_sisr_title": "Option SISR",
   "bts_sisr_text": "Réseaux, serveurs, sécurité et infrastructures informatiques.",
+
   "bts_after_title": "Après le BTS",
-  "bts_after_text": "Licence pro, bachelor, alternance ou emploi."
+  "bts_after_text": "Licence pro, bachelor, alternance ou insertion professionnelle.",
+
+  "missions_title": "Missions réalisées (SLAM)",
+  "mission_gsb": "Mission GSB — Gestion des notes de frais.",
+  "mission_1b": "Mission 1B — Formulaire cumul des frais.",
+  "mission_2b": "Mission 2B — Projet d'équipe gestion frais.",
+  "mission_3": "Mission 3 — Application CR (C#, WinForms).",
+
+  "oclock_title": "Formation O'Clock",
+  "oclock_modules": "Le déroulement de la formation",
+  "oclock_skills": "Compétences acquises",
+  "oclock_project_title": "Projet Fil Rouge : CinéDélices",
+  "oclock_stage_title": "Stage O'Clock : RCAB Technologies",
+  "oclock_certif": "Certification RNCP Niveau 5",
+
+  "projects_title": "Mes Projets",
+  "project_cinedelices_title": "2025 — CinéDélices (Projet O'Clock)",
+  "project_rcab_title": "2025 — RCAB Technologies (Stage)",
+  "project_ntic_title": "2024 — NTIC Formation Center",
+  "project_mairie_title": "2023 — Mairie de La Courneuve",
+  "project_missions_title": "Missions BTS SIO",
+
+  "stage_title": "Mes Stages",
+  "stage_rcab_title": "Stage O'Clock — RCAB Technologies (2025)",
+  "stage_rcab_desc": "Création d’un site vitrine professionnel sous WordPress.",
+  "stage_rcab_1": "Installation WordPress",
+  "stage_rcab_2": "Création des pages Elementor",
+  "stage_rcab_3": "Formulaires Forminator",
+  "stage_rcab_4": "Responsive design",
+
+  "stage_ntic_title": "NTIC Formation Center — Stage BTS (2024)",
+  "stage_ntic_desc": "Développement de deux projets complets.",
+  "stage_ntic_1": "IMDB en PHP/SQL",
+  "stage_ntic_2": "Blog Symfony",
+
+  "stage_mairie_title": "Mairie de La Courneuve — Stage (2023)",
+  "stage_mairie_desc": "Migration et support technique informatique.",
+  "stage_mairie_1": "Migration Windows 7 → Windows 10/11",
+  "stage_mairie_2": "Dépannage matériel/logiciel",
+  "stage_mairie_3": "Gestion des tickets GLPI",
+
+  "veille_title": "Veille Technologique",
+  "veille_heading": "Veille Technologique",
+  "veille_intro": "Analyse des évolutions technologiques dans le numérique et l’IA.",
+  "veille_def_title": "Définition",
+  "veille_def_desc": "Surveillance des innovations pour anticiper les évolutions.",
+  "veille_def_1": "Identifier les nouvelles technologies",
+  "veille_def_2": "Suivre les tendances du marché",
+  "veille_def_3": "Repérer les menaces/opportunités",
+  "veille_ia_desc": "L'IA évolue rapidement (ChatGPT, Gemini, Mistral).",
+  "veille_google_desc": "Google Alerts permet un suivi automatique des nouveautés.",
+  "veille_analyse_desc": "L’IA est un outil puissant si elle est utilisée intelligemment.",
+
+  "certif_title": "Certifications",
+  "certif_heading": "Mes Certifications",
+  "certif_intro": "Certificats obtenus sur OpenClassrooms :",
+
+  "contact_title": "Contact",
+  "contact_heading": "Me Contacter",
+  "contact_email": "Votre email...",
+  "contact_message": "Votre message...",
+  "contact_send": "Envoyer",
+  "contact_confirm": "Message envoyé ! Merci 🙏"
 }
