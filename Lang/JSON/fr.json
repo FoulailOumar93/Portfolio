@@ -25,14 +25,29 @@
   "profil_cv_btn": "Télécharger CV",
   "profil_qualities_title": "Mes qualités",
   "profil_qualities_desc": "Rigoureux, motivé, curieux, persévérant et passionné.",
+{
+  "bts_title": "BTS SIO",
 
-  "bts_title": "Qu’est-ce que le BTS SIO ?",
-  "bts_desc": "Le BTS SIO propose deux options : SLAM (développement) et SISR (réseaux).",
-  "bts_lycee": "BTS SIO au Lycée Voillaume",
-  "bts_services": "Services Informatiques aux Organisations",
-  "bts_option_slam": "Option SLAM",
-  "bts_option_sisr": "Option SISR",
-  "bts_after": "Après le BTS SIO",
+  "bts_intro_title": "Qu'est-ce que le BTS SIO ?",
+  "bts_intro_text": "Le BTS SIO forme aux métiers de l’informatique avec deux options : SLAM (développement) et SISR (réseaux).",
+
+  "bts_voillaume_title": "BTS SIO au Lycée Voillaume",
+  "bts_voillaume_text": "Formation complète avec un encadrement solide.",
+  "bts_download": "Télécharger la plaquette",
+
+  "bts_sio_title": "Services Informatiques aux Organisations",
+  "bts_sio_text": "Le BTS développe des compétences en développement, réseaux, cybersécurité & gestion du système d’information.",
+
+  "bts_slam_title": "Option SLAM",
+  "bts_slam_text": "Développement web, logiciel, mobile et maintenance applicative.",
+
+  "bts_sisr_title": "Option SISR",
+  "bts_sisr_text": "Réseaux, serveurs, sécurité et infrastructures informatiques.",
+
+  "bts_after_title": "Après le BTS",
+  "bts_after_text": "Licence pro, bachelor, alternance ou insertion professionnelle."
+}
+
 
   "missions_title": "Missions réalisées (SLAM)",
   "mission_gsb": "Mission GSB — Gestion des notes de frais.",
