@@ -26,13 +26,29 @@
   "profil_qualities_title": "என்னுடைய திறன்கள்",
   "profil_qualities_desc": "ஒழுங்கு, உந்துதல், ஆர்வம், பொறுமை மற்றும் அர்ப்பணிப்பு.",
 
-  "bts_title": "BTS SIO என்றால் என்ன?",
-  "bts_desc": "BTS SIOஇல் இரண்டு பாதைகள்: SLAM (டெவ்) மற்றும் SISR (நெட்வொர்க்).",
-  "bts_lycee": "Lycee Voillaumeல் BTS SIO",
-  "bts_services": "தகவல் தொழில்நுட்ப சேவைகள்",
-  "bts_option_slam": "SLAM விருப்பம்",
-  "bts_option_sisr": "SISR விருப்பம்",
-  "bts_after": "BTSக்குப் பிறகு வாய்ப்புகள்",
+{
+  "bts_title": "BTS SIO",
+
+  "bts_intro_title": "What is the BTS SIO?",
+  "bts_intro_text": "The BTS SIO trains students for IT careers with two specialties: SLAM (development) and SISR (network administration).",
+
+  "bts_voillaume_title": "BTS SIO at Voillaume High School",
+  "bts_voillaume_text": "A complete training program with solid academic supervision.",
+  "bts_download": "Download brochure",
+
+  "bts_sio_title": "IT Services for Organizations",
+  "bts_sio_text": "The BTS develops skills in development, networking, cybersecurity, and information system management.",
+
+  "bts_slam_title": "SLAM Option",
+  "bts_slam_text": "Web, software, and mobile development, plus application maintenance.",
+
+  "bts_sisr_title": "SISR Option",
+  "bts_sisr_text": "Networks, servers, security, and IT infrastructures.",
+
+  "bts_after_title": "After the BTS",
+  "bts_after_text": "Professional license, bachelor’s degree, apprenticeship or entering the workforce."
+}
+
 
   "missions_title": "செய்த பணி (SLAM)",
   "mission_gsb": "GSB — செலவுகள் மேலாண்மை.",
