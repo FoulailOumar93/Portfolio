@@ -1,223 +1,194 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mes Projets</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="projects_title">Mes Projets</title>
 
-    <!-- Fonts & Icons -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
 
-    <!-- Scripts -->
-    <script src="/Portfolio/JS/toggleTheme.js" defer></script>
-    <script src="/Portfolio/JS/menu.js" defer></script>
-    <script src="/Portfolio/JS/footer.js" defer></script>
-  </head>
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
 
-  <body>
-    <!-- Dark / Light mode -->
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
-    </div>
+<body>
 
-    <!-- Menu -->
-    <div id="menu-container"></div>
+  <!-- Dark/Light -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
-    <!-- Main content -->
-    <main class="wrapper">
+  <!-- Navigation -->
+  <div id="menu-container"></div>
 
-      <h1>Mes Projets</h1>
+  <!-- MAIN CONTENT -->
+  <main class="wrapper">
 
-      <p style="margin-top: 20px;">
-        Voici l’ensemble de mes projets réalisés durant mes formations en BTS SIO et
-        en Développeur Web & Web Mobile chez O’Clock, classés du plus récent au plus ancien.
+    <h1 data-i18n="projects_heading">Mes Projets</h1>
+
+    <p style="margin-top: 20px;" data-i18n="projects_intro">
+      Voici l’ensemble de mes projets réalisés durant mes formations en BTS SIO et en DWWM chez O’Clock,
+      classés du plus récent au plus ancien.
+    </p>
+
+    <!-- ESPACE -->
+    <div style="margin-top: 45px;"></div>
+
+    <!-- ========================================================= -->
+    <!-- 🔥 2025 — CINÉDÉLICES -->
+    <!-- ========================================================= -->
+    <section>
+      <h2><i class="fas fa-utensils"></i> <span data-i18n="project_cinedelices_title">2025 — CinéDélices (Projet O’Clock)</span></h2>
+
+      <p style="margin-top: 15px;" data-i18n="project_cinedelices_desc">
+        CinéDélices est une application web full-stack qui mélange cuisine et cinéma.
       </p>
 
-      <!-- ESPACE PRO ENTRE L'INTRO ET LE PREMIER PROJET -->
-      <div style="margin-top: 45px;"></div>
+      <h3 style="margin-top: 25px;" data-i18n="project_objectives">Objectifs</h3>
+      <ul>
+        <li data-i18n="project_cinedelices_obj1">Créer une application complète front + back</li>
+        <li data-i18n="project_cinedelices_obj2">Gérer recettes, médias, ingrédients, utilisateurs</li>
+        <li data-i18n="project_cinedelices_obj3">CRUD + upload d’images</li>
+        <li data-i18n="project_cinedelices_obj4">Interface moderne et responsive</li>
+      </ul>
 
-      <!-- ========================================================= -->
-      <!-- 2025 – PROJET CINEDELICES -->
-      <!-- ========================================================= -->
-      <section>
-        <h2><i class="fas fa-utensils"></i> 2025 – CinéDélices (Projet O’Clock)</h2>
+      <h3 style="margin-top: 25px;" data-i18n="project_role">Mon rôle</h3>
+      <ul>
+        <li data-i18n="project_cinedelices_role1">Développement complet du back-end Node.js</li>
+        <li data-i18n="project_cinedelices_role2">Création des modèles PostgreSQL / Sequelize</li>
+        <li data-i18n="project_cinedelices_role3">Authentification JWT</li>
+        <li data-i18n="project_cinedelices_role4">Développement du front React</li>
+        <li data-i18n="project_cinedelices_role5">Gestion upload images (FormData)</li>
+        <li data-i18n="project_cinedelices_role6">Création de la charte graphique</li>
+      </ul>
 
-        <p style="margin-top: 15px;">
-          <strong>CinéDélices</strong> est une application web full-stack créée durant
-          ma formation chez O’Clock. Elle associe recettes de cuisine et univers du cinéma.
-        </p>
+      <h3 style="margin-top: 25px;" data-i18n="project_stack">Stack utilisée</h3>
+      <ul>
+        <li><strong>Front-end :</strong> React</li>
+        <li><strong>Back-end :</strong> Node.js, Express</li>
+        <li><strong>BDD :</strong> PostgreSQL</li>
+        <li><strong>Auth :</strong> JWT</li>
+      </ul>
 
-        <h3 style="margin-top: 25px;">Objectifs</h3>
-        <ul>
-          <li>Créer une vraie application web complète (front + back).</li>
-          <li>Gérer recettes, ingrédients, médias, utilisateurs.</li>
-          <li>Permettre CRUD complet + upload images.</li>
-          <li>Interface moderne et responsive.</li>
-        </ul>
+      <h3 style="margin-top: 25px;" data-i18n="project_difficulties">Difficultés rencontrées</h3>
+      <ul>
+        <li data-i18n="project_cinedelices_diff1">Relations Sequelize (N–N, 1–N)</li>
+        <li data-i18n="project_cinedelices_diff2">CORS front/back</li>
+        <li data-i18n="project_cinedelices_diff3">Upload + preview d’images</li>
+        <li data-i18n="project_cinedelices_diff4">Responsive design complet</li>
+      </ul>
 
-        <h3 style="margin-top: 25px;">Mon rôle</h3>
-        <ul>
-          <li>Développement complet du <strong>back-end Node.js / Express</strong>.</li>
-          <li>Création des modèles PostgreSQL + relations Sequelize.</li>
-          <li>Authentification <strong>JWT</strong>.</li>
-          <li>Développement du front React (pages, composants, routing).</li>
-          <li>Upload d’images avec FormData.</li>
-          <li>Création de la charte graphique (UI/UX).</li>
-          <li>Déploiement sur VM O’Clock.</li>
-        </ul>
+      <h3 style="margin-top: 25px;" data-i18n="project_solutions">Solutions</h3>
+      <ul>
+        <li data-i18n="project_cinedelices_sol1">Middleware CORS personnalisé</li>
+        <li data-i18n="project_cinedelices_sol2">Refactor des modèles Sequelize</li>
+        <li data-i18n="project_cinedelices_sol3">Gestion d’erreurs + loaders</li>
+        <li data-i18n="project_cinedelices_sol4">Optimisation UX</li>
+      </ul>
+    </section>
 
-        <h3 style="margin-top: 25px;">Stack utilisée</h3>
-        <ul>
-          <li><strong>Front-end :</strong> React, React Router</li>
-          <li><strong>Back-end :</strong> Node.js, Express, Sequelize</li>
-          <li><strong>BDD :</strong> PostgreSQL</li>
-          <li><strong>Auth :</strong> JWT</li>
-        </ul>
+    <!-- ESPACE -->
+    <div style="margin-top: 60px;"></div>
 
-        <h3 style="margin-top: 25px;">Difficultés rencontrées</h3>
-        <ul>
-          <li>Relations Sequelize (1-N, N-N).</li>
-          <li>CORS entre front et back.</li>
-          <li>Gestion d’upload images + preview.</li>
-          <li>Responsive design.</li>
-        </ul>
+    <!-- ========================================================= -->
+    <!-- 2025 — RCAB TECHNOLOGIES -->
+    <!-- ========================================================= -->
+    <section>
+      <h2><i class="fas fa-briefcase"></i> <span data-i18n="project_rcab_title">2025 — RCAB Technologies</span></h2>
 
-        <h3 style="margin-top: 25px;">Solutions</h3>
-        <ul>
-          <li>Middleware CORS personnalisé.</li>
-          <li>Refactor modèles Sequelize.</li>
-          <li>Gestion d’erreurs front + loaders.</li>
-          <li>Refonte de plusieurs pages pour rendre l’UX fluide.</li>
-        </ul>
-      </section>
+      <p style="margin-top: 15px;" data-i18n="project_rcab_desc">
+        Développement d’un site vitrine complet sous WordPress pour une entreprise tech.
+      </p>
 
-      <!-- ESPACE ENTRE PROJETS -->
-      <div style="margin-top: 60px;"></div>
+      <h3 style="margin-top: 25px;" data-i18n="project_tasks">Ce que j’ai réalisé</h3>
+      <ul>
+        <li data-i18n="project_rcab_task1">Installation + configuration WordPress</li>
+        <li data-i18n="project_rcab_task2">Design avec Elementor</li>
+        <li data-i18n="project_rcab_task3">Formulaires avec Forminator</li>
+        <li data-i18n="project_rcab_task4">Optimisation responsive</li>
+      </ul>
+    </section>
 
-      <!-- ========================================================= -->
-      <!-- 2025 – RCAB TECHNOLOGIES -->
-      <!-- ========================================================= -->
-      <section>
-        <h2><i class="fas fa-briefcase"></i> 2025 – RCAB Technologies (Stage O’Clock)</h2>
+    <!-- ESPACE -->
+    <div style="margin-top: 60px;"></div>
 
-        <p style="margin-top: 15px;">
-          Création complète d’un site vitrine professionnel sous
-          <strong>WordPress</strong> pour l’entreprise RCAB Technologies.
-        </p>
+    <!-- ========================================================= -->
+    <!-- 2024 — NTIC FORMATION CENTER -->
+    <!-- ========================================================= -->
+    <section>
+      <h2><i class="fas fa-laptop-code"></i> <span data-i18n="project_ntic_title">2024 — NTIC Formation Center</span></h2>
 
-        <h3 style="margin-top: 25px;">Ce que j’ai réalisé</h3>
-        <ul>
-          <li>Installation et configuration WordPress.</li>
-          <li>Création des pages avec Elementor.</li>
-          <li>Formulaires avancés via Forminator.</li>
-          <li>Optimisation responsive.</li>
-          <li>Organisation des contenus + choix techniques validés avec mon tuteur.</li>
-        </ul>
-      </section>
+      <p style="margin-top: 15px;" data-i18n="project_ntic_desc">
+        Stage de 2ᵉ année BTS : deux projets complets.
+      </p>
 
-      <div style="margin-top: 60px;"></div>
+      <h3 style="margin-top: 25px;">IMDB PHP/SQL</h3>
+      <p data-i18n="project_ntic_imdb">CRUD complet + gestion utilisateur</p>
 
-      <!-- ========================================================= -->
-      <!-- 2024 – NTIC FORMATION CENTER -->
-      <!-- ========================================================= -->
-      <section>
-        <h2><i class="fas fa-laptop-code"></i> 2024 – NTIC Formation Center</h2>
+      <h3 style="margin-top: 25px;">Blog Symfony</h3>
+      <p data-i18n="project_ntic_symfony">Gestion articles, tags, catégories, admin</p>
+    </section>
 
-        <p style="margin-top: 15px;">
-          Stage de deuxième année BTS SIO : développement de deux projets complets.
-        </p>
+    <!-- ESPACE -->
+    <div style="margin-top: 60px;"></div>
 
-        <h3 style="margin-top: 25px;">Projets réalisés</h3>
-        <ul>
-          <li><strong>IMDB en PHP/SQL :</strong> CRUD complet + gestion utilisateur.</li>
-          <li><strong>Blog Symfony :</strong> articles, catégories, tags, tableau admin.</li>
-        </ul>
+    <!-- ========================================================= -->
+    <!-- 2023 — MAIRIE DE LA COURNEUVE -->
+    <!-- ========================================================= -->
+    <section>
+      <h2><i class="fas fa-building"></i> <span data-i18n="project_mairie_title">2023 — Mairie de La Courneuve</span></h2>
 
-        <h3 style="margin-top: 25px;">Compétences acquises</h3>
-        <ul>
-          <li>Programmation orientée objet.</li>
-          <li>Framework Symfony (routes, contrôleurs, entités).</li>
-          <li>Gestion base de données.</li>
-        </ul>
-      </section>
+      <p style="margin-top: 15px;" data-i18n="project_mairie_desc">
+        Support informatique + migration de postes Windows.
+      </p>
 
-      <div style="margin-top: 60px;"></div>
+      <ul>
+        <li data-i18n="project_mairie_task1">Migration Windows 7 → Windows 10/11</li>
+        <li data-i18n="project_mairie_task2">Dépannage matériel/logiciel</li>
+        <li data-i18n="project_mairie_task3">Gestion tickets GLPI</li>
+      </ul>
+    </section>
 
-      <!-- ========================================================= -->
-      <!-- 2023 – MAIRIE DE LA COURNEUVE -->
-      <!-- ========================================================= -->
-      <section>
-        <h2><i class="fas fa-building"></i> 2023 – Mairie de La Courneuve</h2>
+    <!-- ESPACE -->
+    <div style="margin-top: 60px;"></div>
 
-        <p style="margin-top: 15px;">
-          Stage informatique au service IT : migration de postes Windows et support utilisateur.
-        </p>
+    <!-- ========================================================= -->
+    <!-- 🔧 MISSIONS BTS (SLAM) -->
+    <!-- ========================================================= -->
+    <section>
+      <h2><i class="fas fa-tasks"></i> <span data-i18n="project_missions_title">Missions BTS SIO</span></h2>
 
-        <ul style="margin-top: 15px;">
-          <li>Migration Windows 7 → Windows 10/11.</li>
-          <li>Dépannage matériel et logiciel (niveau 1 & 2).</li>
-          <li>Gestion des tickets via GLPI.</li>
-        </ul>
-      </section>
+      <h3 style="margin-top: 20px;">GSB</h3>
+      <p data-i18n="project_missions_gsb">Application de gestion des notes de frais — MVC PHP</p>
 
-      <div style="margin-top: 60px;"></div>
+      <h3 style="margin-top: 25px;">Mission 1-B</h3>
+      <p data-i18n="project_missions_1b">Cumul des frais selon période</p>
 
-      <!-- ========================================================= -->
-      <!-- MISSIONS BTS (OPTION SLAM) -->
-      <!-- ========================================================= -->
-      <section>
-        <h2><i class="fas fa-tasks"></i> Missions BTS SIO</h2>
+      <h3 style="margin-top: 25px;">Mission 2-B</h3>
+      <p data-i18n="project_missions_2b">Application web complète (CRUD + BDD)</p>
 
-        <h3 style="margin-top: 20px;">Galaxy-Swiss Bourdin (GSB)</h3>
-        <p>
-          Projet complet de gestion de notes de frais pour visiteurs médicaux.
-          Architecture MVC en PHP + MySQL. Objectif : suivre frais et validations.
-        </p>
+      <h3 style="margin-top: 25px;">Mission 3 — Appli-CR</h3>
+      <p data-i18n="project_missions_3">Gestion médicaments, familles, dons + export XML</p>
+    </section>
 
-        <h3 style="margin-top: 25px;">Mission 1-B</h3>
-        <p>
-          Création d’un formulaire affichant les frais cumulés d’un visiteur selon période.
-          Intégré à la page d’accueil, développé en MVC.
-        </p>
+  </main>
 
-        <h3 style="margin-top: 25px;">Mission 2-B</h3>
-        <p>
-          Projet d’équipe : plateforme de gestion de frais pour plusieurs laboratoires.
-          Rôle : conception + administration de la base de données, UI, logique CRUD.
-        </p>
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
 
-        <h3 style="margin-top: 25px;">Mission 3 – Appli-CR</h3>
-        <p>
-          Développement d’un module complet pour gérer médicaments, familles et dons.
-        </p>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+    });
+  </script>
 
-        <ul style="margin-top: 15px;">
-          <li>Analyse du cahier des charges</li>
-          <li>Développement C# WinForms</li>
-          <li>Tests d’intégration & acceptation</li>
-          <li>Déploiement + documentation complète</li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <div id="footer-container"></div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((s) => s.classList.add("reveal"));
-      });
-    </script>
-  </body>
+</body>
 </html>
