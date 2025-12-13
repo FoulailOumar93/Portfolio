@@ -5,76 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="bts_title">BTS SIO</title>
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/styles.css">
-
-  <!-- Scripts -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
-  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
   <div id="menu-container"></div>
 
   <main class="wrapper">
 
     <section>
-      <h1 data-i18n="bts_heading">Qu'est-ce que le BTS SIO ?</h1>
-      <p data-i18n="bts_p1">
-        Le BTS SIO est une formation de deux ans orientée informatique.  
-        Deux options : SLAM (développement) et SISR (réseaux & systèmes).
+      <h1 data-i18n="bts_intro_title">Qu'est-ce que le BTS SIO ?</h1>
+      <p data-i18n="bts_intro_text">
+        Le BTS SIO forme aux métiers de l’informatique avec deux options : SLAM (dev) et SISR (réseaux).
       </p>
     </section>
 
     <section>
-      <h1 data-i18n="bts_school_title">BTS SIO au Lycée Voillaume</h1>
-      <p data-i18n="bts_school_p">
-        Le lycée Voillaume propose une formation solide et professionnalisante.
+      <h1 data-i18n="bts_voillaume_title">BTS SIO au Lycée Voillaume</h1>
+      <p data-i18n="bts_voillaume_text">
+        Formation complète avec un encadrement solide.
       </p>
 
       <button class="glow-on-hover"
         onclick="window.location='../Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
-        data-i18n="bts_button">
-        Télécharger
+        data-i18n="bts_download"
+      >
+        Télécharger la plaquette
       </button>
-
-      <img src="../IMG/Logo BTS-SIO.png" width="200" loading="lazy">
     </section>
 
     <section>
-      <h1 data-i18n="bts_services_title">Services Informatiques aux Organisations</h1>
-      <p data-i18n="bts_services_p">
-        Le BTS forme aux compétences clés : cybersécurité, développement,
-        gestion projet, systèmes/réseaux.
+      <h1 data-i18n="bts_sio_title">Services Informatiques aux Organisations</h1>
+      <p data-i18n="bts_sio_text">
+        Le BTS développe des compétences en dev, réseaux, cybersécurité & gestion du SI.
       </p>
     </section>
 
     <section>
       <h1 data-i18n="bts_slam_title">Option SLAM</h1>
-      <p data-i18n="bts_slam_p">
-        Centrée sur la création d’applications web, mobiles et logiciels.
+      <p data-i18n="bts_slam_text">
+        Développement web, logiciel, mobile, maintenance applicative.
       </p>
     </section>
 
     <section>
       <h1 data-i18n="bts_sisr_title">Option SISR</h1>
-      <p data-i18n="bts_sisr_p">
-        Orientée infrastructures : serveurs, réseaux, sécurité, maintenance.
+      <p data-i18n="bts_sisr_text">
+        Réseaux, serveurs, sécurité & infrastructure informatique.
       </p>
     </section>
 
     <section>
-      <h1 data-i18n="bts_after_title">Après le BTS SIO</h1>
-      <p data-i18n="bts_after_p">
-        Débouchés : licences pro, bachelors, alternance, ESN, freelancing.
+      <h1 data-i18n="bts_after_title">Après le BTS</h1>
+      <p data-i18n="bts_after_text">
+        Licence pro, bachelor, alternance ou insertion professionnelle.
       </p>
     </section>
 
@@ -82,11 +71,9 @@
 
   <div id="footer-container"></div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
-    });
-  </script>
-
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 </body>
 </html>
