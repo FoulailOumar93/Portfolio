@@ -1,60 +1,68 @@
 // ===============================
-// 🌍 MULTI-LANGUE – Foulail Oumar
+// 🌍 MULTI-LANGUE – Foulail Oumar (FINAL)
 // ===============================
 
-// Langue par défaut
-let currentLang = localStorage.getItem("lang") || "fr";
+// langue par défaut
+const defaultLang = localStorage.getItem("lang") || "fr";
+loadLanguage(defaultLang);
 
-// Chargement de la langue choisie
-loadLanguage(currentLang);
-
-// Bouton dans le menu
+// écoute les clics sur les boutons emoji (menu injecté)
 document.addEventListener("click", (e) => {
-  if (e.target.id === "lang-switch") {
-    switchLanguage();
+  if (e.target.classList.contains("lang-btn")) {
+    const lang = e.target.dataset.lang;
+
+    localStorage.setItem("lang", lang);
+    loadLanguage(lang);
   }
 });
 
 // ===============================
-// 🔁 Changement de langue
-// ===============================
-function switchLanguage() {
-  currentLang = currentLang === "fr" ? "en" : currentLang === "en" ? "ta" : "fr";
-  localStorage.setItem("lang", currentLang);
-  loadLanguage(currentLang);
-}
-
-// ===============================
-// 📥 Charge le fichier JSON
+// 📥 Chargement JSON langue
 // ===============================
 function loadLanguage(lang) {
   fetch(`/Portfolio/Lang/JSON/${lang}.json`)
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) throw new Error("Lang file not found");
+      return res.json();
+    })
     .then((data) => applyTranslations(data))
-    .catch((err) => console.error("❌ Erreur chargement langue :", err));
+    .catch((err) =>
+      console.error("❌ Erreur chargement langue :", err)
+    );
 }
 
 // ===============================
-// 🔄 Applique les traductions HTML
+// 🔄 Appliquer les traductions
 // ===============================
 function applyTranslations(data) {
-  // Mets à jour le bouton
-  const btn = document.getElementById("lang-switch");
-  if (btn) btn.textContent = currentLang.toUpperCase();
-
-  // Remplace tout ce qui a un data-i18n
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
+    const key = el.dataset.i18n;
 
-    if (data[key]) {
-      // Si c'est un input → placeholder
-      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-        el.placeholder = data[key];
-      } else {
-        el.innerHTML = data[key];
-      }
-    } else {
-      console.warn("⚠️ Clé manquante dans JSON :", key);
+    if (!data[key]) {
+      console.warn("⚠️ Clé manquante :", key);
+      return;
     }
+
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = data[key];
+    } else {
+      el.innerHTML = data[key];
+    }
+  });
+
+  highlightActiveLang();
+}
+
+// ===============================
+// ⭐ Langue active (UX)
+// ===============================
+function highlightActiveLang() {
+  const currentLang = localStorage.getItem("lang");
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle(
+      "active-lang",
+      btn.dataset.lang === currentLang
+    );
   });
 }
