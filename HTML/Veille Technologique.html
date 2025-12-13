@@ -1,182 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veille Technologique</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="veille_title">Veille Technologique</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- Styles -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="../CSS/styles.css" />
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
 
-    <!-- Correction pour espacer Définition -->
-    <style>
-      #definition-veille-technologique {
-        margin-top: 30px;
-      }
-    </style>
+<body>
 
-    <!-- JS -->
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
+  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="../IMG/Veille Technologique Icone.jpg"
-      type="image/png"
-    />
-  </head>
+  <div id="menu-container"></div>
 
-  <body>
-    <!-- Switch Dark Mode -->
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
-    </div>
+  <main class="wrapper">
 
-    <!-- Menu dynamique -->
-    <div id="menu-container"></div>
+    <h1 data-i18n="veille_heading">Veille Technologique</h1>
+    <p data-i18n="veille_intro">
+      Analyse et suivi des évolutions technologiques dans le domaine du numérique et de l’intelligence artificielle.
+    </p>
 
-    <!-- Contenu principal -->
-    <main class="wrapper">
-      <!-- Titre simple (sans bloc bleu) -->
-      <h1>Veille Technologique</h1>
-      <p>
-        Analyse et suivi des évolutions technologiques dans le domaine du
-        numérique et de l’intelligence artificielle.
+    <!-- Définition -->
+    <section>
+      <h2 data-i18n="veille_def_title"><i class="fas fa-search"></i> Définition</h2>
+      <p data-i18n="veille_def_desc">
+        La veille technologique consiste à surveiller les innovations afin d’anticiper les évolutions et d'adapter ses compétences.
       </p>
 
-      <!-- Définition -->
-      <section id="definition-veille-technologique">
-        <h2><i class="fas fa-search"></i> Définition</h2>
-        <p>
-          La veille technologique est un processus de surveillance active des
-          évolutions techniques dans un domaine précis. Elle permet d’anticiper
-          les transformations, d’identifier les innovations émergentes et de
-          renforcer la capacité d’adaptation d’une organisation ou d’un
-          professionnel.
-        </p>
-        <ul>
-          <li>Identifier les nouvelles technologies</li>
-          <li>Suivre les évolutions du marché</li>
-          <li>Repérer les menaces potentielles</li>
-          <li>Adapter les stratégies en temps réel</li>
-          <li>S’inspirer pour innover</li>
-        </ul>
-      </section>
+      <ul>
+        <li data-i18n="veille_def_1">Identifier les nouvelles technologies</li>
+        <li data-i18n="veille_def_2">Suivre les tendances du marché</li>
+        <li data-i18n="veille_def_3">Repérer les opportunités et menaces</li>
+      </ul>
+    </section>
 
-      <!-- Intelligence Artificielle -->
-      <section id="intelligence-artificielle">
-        <h2><i class="fas fa-brain"></i> Intelligence Artificielle</h2>
-        <p>
-          L’intelligence artificielle connaît une évolution rapide, notamment
-          avec les modèles génératifs, les assistants intelligents et le
-          traitement du langage naturel.
-        </p>
-        <p>
-          La veille technologique permet de suivre ces avancées à travers
-          différents acteurs du secteur tels que
-          <strong>ChatGPT</strong>, <strong>Gemini</strong> et
-          <strong>Mistral AI</strong>, et de comprendre leurs applications dans
-          des domaines variés : santé, finance, cybersécurité, éducation et
-          développement informatique.
-        </p>
-      </section>
+    <section>
+      <h2><i class="fas fa-brain"></i> IA</h2>
+      <p data-i18n="veille_ia_desc">
+        L'intelligence artificielle évolue rapidement, notamment avec les modèles génératifs : ChatGPT, Gemini, Mistral AI.
+      </p>
+    </section>
 
-      <!-- IA et monde du travail -->
-      <section id="ia-monde-travail">
-        <h2><i class="fas fa-briefcase"></i> L’IA dans le monde du travail</h2>
-        <p>
-          L’intelligence artificielle transforme progressivement le monde du
-          travail en automatisant certaines tâches, en optimisant la prise de
-          décision et en anticipant les besoins.
-        </p>
-        <p>
-          Dans les métiers du numérique, elle agit comme un outil d’assistance
-          et nécessite une compréhension technique ainsi qu’un esprit critique
-          pour être utilisée efficacement.
-        </p>
-      </section>
+    <section>
+      <h2><i class="fas fa-tools"></i> Google Alerts</h2>
+      <p data-i18n="veille_google_desc">
+        Google Alerts permet de recevoir automatiquement des articles sur un sujet donné (IA, cybersécurité...).
+      </p>
+    </section>
 
-      <!-- Outils de veille -->
-      <section id="outils">
-        <h2><i class="fas fa-tools"></i> Outils de veille</h2>
+    <section>
+      <h2><i class="fas fa-user-check"></i> Analyse personnelle</h2>
+      <p data-i18n="veille_analyse_desc">
+        L’IA est un outil puissant pour améliorer la productivité, mais elle nécessite compréhension et esprit critique.
+      </p>
+    </section>
 
-        <h3>Google Alerts</h3>
-        <p>
-          Google Alerts est un service gratuit qui permet de recevoir des
-          notifications lorsqu’un mot-clé est mentionné sur Internet (par
-          exemple : <em>intelligence artificielle</em>,
-          <em>cybersécurité</em>, <em>technologie 2025</em>).  
-          C’est un outil simple et efficace pour assurer une veille régulière.
-        </p>
+  </main>
 
-        <img
-          src="../IMG/Intelligence Artificielle.png"
-          alt="Illustration Intelligence Artificielle"
-          width="500"
-          height="300"
-          loading="lazy"
-        />
-      </section>
+  <div id="footer-container"></div>
 
-      <!-- Article de veille -->
-      <section id="article-ia">
-        <h2><i class="fas fa-newspaper"></i> Article de veille</h2>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+    });
+  </script>
 
-        <h3>« C’est du jamais-vu » : GPT-4 atteint un niveau quasi humain</h3>
-
-        <a
-          href="https://www.bfmtv.com/tech/intelligence-artificielle/c-est-du-jamais-vu-avec-gpt-4-l-intelligence-artificielle-devient-aussi-performante-que-l-humain_AD-202303150133.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://investingnews.com/media-library/image-of-hand-holding-an-ai-face-looking-at-the-words-chatgpt-openai.jpg?id=32871272&width=1200&height=800&quality=85"
-            alt="Article GPT-4 BFMTV"
-            width="500"
-            height="300"
-            loading="lazy"
-          />
-        </a>
-
-        <p class="source">Source : BFMTV</p>
-      </section>
-
-      <!-- Analyse personnelle -->
-      <section id="analyse-personnelle">
-        <h2><i class="fas fa-user-check"></i> Analyse personnelle</h2>
-        <p>
-          En tant que futur développeur web, je considère l’intelligence
-          artificielle comme un outil d’assistance à la productivité et à
-          l’apprentissage. Elle permet de gagner du temps sur certaines tâches,
-          tout en nécessitant une compréhension solide du code et un esprit
-          critique afin de produire des solutions fiables.
-        </p>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <div id="footer-container"></div>
-
-    <!-- Animation sections -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((s) => s.classList.add("reveal"));
-      });
-    </script>
-  </body>
+</body>
 </html>
