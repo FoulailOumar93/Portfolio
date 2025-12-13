@@ -3,88 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="profile_title">Profil</title>
+  <title data-i18n="profil_title">Profil</title>
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="../CSS/styles.css" />
-
-  <!-- Scripts -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
-  <!-- Theme -->
-  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
-
-  <!-- Menu -->
   <div id="menu-container"></div>
 
-  <!-- Contenu -->
   <main class="wrapper">
 
-    <section>
-      <h1 data-i18n="profile_heading">À propos de moi</h1>
+    <!-- À propos -->
+    <section id="a-propos-de-moi">
+      <h1 data-i18n="profil_about_title">À PROPOS DE MOI</h1>
 
-      <p data-i18n="profile_p1">
-        Je m’appelle <strong>Foulail Oumar</strong>, j’ai 22 ans et je suis passionné
-        d’informatique depuis mon enfance.
+      <p data-i18n="profil_about_p1">
+        Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par l’informatique depuis mon enfance.
       </p>
 
-      <p data-i18n="profile_p2">
-        Après un bac STMG, j’ai poursuivi en <strong>BTS SIO option SLAM</strong>
-        où j’ai appris la programmation, les bases de données et la cybersécurité.
+      <p data-i18n="profil_about_p2">
+        J’ai obtenu un BTS SIO option SLAM puis j’ai intégré la formation O’Clock pour devenir développeur web.
       </p>
 
-      <p data-i18n="profile_p3">
-        Aujourd’hui, j’ai intégré la formation <strong>DWWM</strong> chez
-        <strong>O’Clock</strong> pour devenir développeur full-stack.
-      </p>
-
-      <p data-i18n="profile_p4">
-        Je suis motivé, rigoureux et déterminé à évoluer dans le domaine du
-        développement web.
+      <p data-i18n="profil_about_p3">
+        Mon objectif est de devenir un développeur polyvalent, capable de travailler sur le front-end et le back-end.
       </p>
     </section>
 
-    <section>
-      <h1 data-i18n="profile_experience">Expérience professionnelle</h1>
+    <!-- Expérience -->
+    <section id="experience-professionnelle">
+      <h1 data-i18n="profil_xp_title">EXPÉRIENCE PROFESSIONNELLE</h1>
 
-      <p data-i18n="profile_experience_p">
-        J’ai effectué des stages à la Mairie de La Courneuve, au Lycée Voillaume,
-        ainsi que dans une médiathèque.
+      <p data-i18n="profil_xp_p1">
+        J’ai effectué plusieurs stages : Mairie de La Courneuve, Lycée Voillaume, Médiathèque John Lennon.
       </p>
 
-      <button class="glow-on-hover" onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';" data-i18n="profile_cv">
+      <p data-i18n="profil_xp_p2">
+        Ces expériences m'ont permis de découvrir différents environnements professionnels.
+      </p>
+
+      <button
+        class="glow-on-hover"
+        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
+        data-i18n="profil_download_cv"
+      >
         Télécharger CV
       </button>
     </section>
 
-    <section>
-      <h1 data-i18n="profile_qualities_heading">Mes qualités</h1>
+    <!-- Qualités -->
+    <section id="mes-qualites">
+      <h1 data-i18n="profil_qualities_title">MES QUALITÉS</h1>
 
-      <p data-i18n="profile_qualities">
-        Curieux, motivé, persévérant et passionné par la résolution de problèmes.
+      <p data-i18n="profil_qualities_p">
+        Rigoureux, curieux, motivé et persévérant. J’aime apprendre et relever des défis techniques.
       </p>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <div id="footer-container"></div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
-    });
-  </script>
-
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 </body>
 </html>
