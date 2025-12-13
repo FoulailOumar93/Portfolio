@@ -1,0 +1,16 @@
+{
+  "menu_home": "Accueil",
+  "menu_profile": "Profil",
+  "menu_bts": "BTS SIO",
+  "menu_oclock": "O'Clock",
+  "menu_projects": "Projets",
+  "menu_stage": "Stage",
+  "menu_veille": "Veille Technologique",
+  "menu_certif": "Certification",
+  "menu_contact": "Contact",
+
+  "home_title": "Bienvenue dans le portfolio de Foulail Oumar",
+  "home_subtitle": "Étudiant O'Clock • Développeur Web",
+
+  "profile_title": "À propos de moi"
+}
