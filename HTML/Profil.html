@@ -1,122 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="profil_title">Profil</title>
 
-    <!-- Title (mis à jour via JS) -->
-    <title>Profil</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="../IMG/Profil.jpg" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
+</head>
 
-    <!-- Fonts & Icons -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<body>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/styles.css" />
-  </head>
+  <!-- Theme switch -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
-  <body>
-    <!-- Theme switch -->
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
-    </div>
+  <!-- Menu -->
+  <div id="menu-container"></div>
 
-    <!-- Menu injecté -->
-    <div id="menu-container"></div>
+  <!-- MAIN -->
+  <main class="wrapper">
 
-    <!-- Main -->
-    <main class="wrapper">
+    <!-- ================= ABOUT ================= -->
+    <section>
+      <h1 data-i18n="profil_title"></h1>
 
-      <!-- ABOUT -->
-      <section>
-        <h1 data-i18n="profile_about_title">À propos de moi</h1>
+      <p data-i18n="profil_p1"></p>
+      <p data-i18n="profil_p2"></p>
+      <p data-i18n="profil_p3"></p>
+      <p data-i18n="profil_p4"></p>
+      <p data-i18n="profil_p5"></p>
+    </section>
 
-        <p data-i18n="profile_about_p1">
-          Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par
-          l’informatique depuis mon plus jeune âge.
-        </p>
+    <!-- ================= EXPERIENCE ================= -->
+    <section>
+      <h1 data-i18n="profil_exp_title"></h1>
 
-        <p data-i18n="profile_about_p2">
-          Après un baccalauréat STMG, j’ai poursuivi mes études avec un
-          BTS SIO option SLAM, orienté développement.
-        </p>
+      <p data-i18n="profil_exp_p1"></p>
+      <p data-i18n="profil_exp_p2"></p>
 
-        <p data-i18n="profile_about_p3">
-          J’ai ensuite intégré la formation Développeur Web & Web Mobile
-          chez O’Clock afin de renforcer mes compétences techniques.
-        </p>
+      <button
+        class="glow-on-hover"
+        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
+        data-i18n="profil_exp_cv">
+      </button>
+    </section>
 
-        <p data-i18n="profile_about_p4">
-          Aujourd’hui, je souhaite évoluer vers un profil développeur
-          full-stack, polyvalent et orienté solutions.
-        </p>
-      </section>
+    <!-- ================= QUALITIES ================= -->
+    <section>
+      <h1 data-i18n="profil_qualities_title"></h1>
+      <p data-i18n="profil_q_p"></p>
+    </section>
 
-      <!-- EXPERIENCE -->
-      <section>
-        <h1 data-i18n="profile_exp_title">Expérience professionnelle</h1>
+  </main>
 
-        <p data-i18n="profile_exp_p1">
-          J’ai effectué plusieurs stages en milieu professionnel
-          (mairie, centre de formation, entreprise).
-        </p>
+  <!-- Footer -->
+  <div id="footer-container"></div>
 
-        <p data-i18n="profile_exp_p2">
-          Ces expériences m’ont permis de développer mon autonomie,
-          ma rigueur et ma capacité d’adaptation.
-        </p>
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 
-        <p data-i18n="profile_exp_p3">
-          Vous pouvez consulter mon CV en cliquant ci-dessous.
-        </p>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+    });
+  </script>
 
-        <button
-          class="glow-on-hover"
-          onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
-          data-i18n="profile_exp_btn"
-        >
-          Télécharger le CV
-        </button>
-      </section>
-
-      <!-- SKILLS -->
-      <section>
-        <h1 data-i18n="profile_skills_title">Mes qualités</h1>
-
-        <p data-i18n="profile_skills_p1">
-          Rigoureux, curieux, motivé et persévérant, j’aime apprendre
-          et relever de nouveaux défis techniques.
-        </p>
-      </section>
-
-    </main>
-
-    <!-- Footer injecté -->
-    <div id="footer-container"></div>
-
-    <!-- JS -->
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
-    <script src="../JS/lang.js" defer></script>
-
-    <!-- Animation safe -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const lang = localStorage.getItem("lang") || "fr";
-        if (typeof loadLanguage === "function") {
-          loadLanguage(lang);
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
