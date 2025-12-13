@@ -3,18 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title data-i18n="contact_title">Contact</title>
 
-    <!-- Styles & icônes -->
     <link rel="stylesheet" href="../CSS/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   </head>
 
   <body>
@@ -23,43 +16,47 @@
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu (chargé dynamiquement avec JS) -->
+    <!-- Menu -->
     <div id="menu-container"></div>
 
     <!-- Contenu principal -->
     <main class="wrapper contact-container">
-      <h1>Me Contacter</h1>
-      <form
-        action="https://formspree.io/f/mrbkqaeb"
-        method="POST"
-        class="contact-form"
-      >
-        <input
+      <h1 data-i18n="contact_title">Me Contacter</h1>
+
+      <form action="https://formspree.io/f/mrbkqaeb" method="POST" class="contact-form">
+        <input 
           type="email"
           name="email"
-          placeholder="Votre email..."
+          placeholder=""
+          data-i18n-placeholder="contact_email_placeholder"
           required
         />
+
         <textarea
           name="message"
-          placeholder="Votre message..."
+          placeholder=""
+          data-i18n-placeholder="contact_message_placeholder"
           required
         ></textarea>
-        <button type="submit">Envoyer</button>
+
+        <button type="submit" data-i18n="contact_button">Envoyer</button>
       </form>
-      <div class="confirmation-message" style="display: none">
+
+      <div class="confirmation-message" data-i18n="contact_success" style="display: none">
         ✅ Message envoyé ! Merci 🙏
       </div>
     </main>
 
-    <!-- Footer (chargé dynamiquement avec JS) -->
+    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- JS liés -->
+    <!-- Scripts -->
     <script src="../JS/toggleTheme.js" defer></script>
     <script src="../JS/menu.js" defer></script>
     <script src="../JS/footer.js" defer></script>
+    <script src="../JS/i18n.js" defer></script>
     <script src="../JS/contact.js" defer></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("section").forEach((section) => {
