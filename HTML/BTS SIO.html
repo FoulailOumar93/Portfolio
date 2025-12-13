@@ -4,182 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BTS SIO</title>
+    <title data-i18n="bts_title">BTS SIO</title>
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
 
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-    <!-- Feuille de style principale -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/Portfolio/CSS/styles.css" />
   </head>
 
   <body>
-    <!-- Bouton Thème Sombre -->
+    <!-- Bouton Dark Mode -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- Menu chargé dynamiquement -->
+    <!-- MENU -->
     <div id="menu-container"></div>
 
-    <!-- Contenu principal -->
+    <!-- CONTENU -->
     <main class="wrapper">
-      
+
       <!-- INTRO -->
       <section>
-        <h1>Qu'est-ce que le BTS SIO ?</h1>
-        <p>
-          Le BTS SIO (Services Informatiques aux Organisations) est un diplôme
-          d'État en deux ans menant aux métiers de l’informatique. Il propose
-          deux options : SISR pour les réseaux/systèmes et SLAM pour le
-          développement.
+        <h1 data-i18n="bts_intro_title">Qu'est-ce que le BTS SIO ?</h1>
+        <p data-i18n="bts_intro_text">
+          Le BTS SIO (Services Informatiques aux Organisations) est un diplôme d'État en deux ans...
         </p>
       </section>
 
       <!-- LYCÉE VOILLAUME -->
       <section>
-        <h1>BTS SIO au Lycée Voillaume</h1>
-        <p>
-          Le lycée Voillaume d’Aulnay-sous-Bois propose une formation complète
-          avec un suivi pédagogique solide. Voici la plaquette officielle :
+        <h1 data-i18n="bts_lycee_title">BTS SIO au Lycée Voillaume</h1>
+        <p data-i18n="bts_lycee_text1">
+          Le lycée Voillaume d’Aulnay-sous-Bois propose une formation complète...
         </p>
 
-        <button
-          class="glow-on-hover"
+        <button 
+          class="glow-on-hover" 
           onclick="window.location='/Portfolio/Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
+          data-i18n="bts_lycee_download"
         >
           Télécharger
         </button>
 
-        <p>
-          Le BTS est accessible après un bac STMG, pro ou général. Il prépare à
-          des postes opérationnels dans l’univers numérique.
+        <p data-i18n="bts_lycee_text2">
+          Le BTS est accessible après un bac STMG, pro ou général...
         </p>
 
-        <img
-          src="/Portfolio/IMG/Logo BTS-SIO.png"
-          alt="Logo BTS SIO"
-          style="max-width: 200px; margin-top: 15px"
-          loading="lazy"
-        />
+        <img src="/Portfolio/IMG/Logo BTS-SIO.png" alt="BTS SIO" style="max-width:200px;margin-top:15px" loading="lazy"/>
       </section>
 
       <!-- PRESENTATION SIO -->
       <section>
-        <h1>Services Informatiques aux Organisations</h1>
-        <p>
-          Le BTS SIO développe des compétences en développement, cybersécurité,
-          administration réseau, gestion de projet et exploitation des systèmes
-          informatiques.
+        <h1 data-i18n="bts_sio_title">Services Informatiques aux Organisations</h1>
+        <p data-i18n="bts_sio_text">
+          Le BTS SIO développe des compétences en développement, cybersécurité...
         </p>
       </section>
 
       <!-- SLAM -->
       <section>
-        <h1>Option SLAM</h1>
-        <img
-          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-slam-768x512.jpg"
-          alt="Option SLAM"
-          width="200"
-          loading="lazy"
-        />
-        <p>
-          L’option SLAM forme à la conception, au développement et à la
-          maintenance d'applications web, mobiles ou de bureau.
+        <h1 data-i18n="bts_slam_title">Option SLAM</h1>
+        <img src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-slam-768x512.jpg" width="200" loading="lazy"/>
+        <p data-i18n="bts_slam_text">
+          L’option SLAM forme à la conception, au développement...
         </p>
       </section>
 
       <!-- SISR -->
       <section>
-        <h1>Option SISR</h1>
-        <img
-          src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-sisr.jpeg"
-          alt="Option SISR"
-          width="200"
-          loading="lazy"
-        />
-        <p>
-          L’option SISR forme aux métiers liés aux infrastructures : serveurs,
-          réseaux, sécurité et exploitation.
+        <h1 data-i18n="bts_sisr_title">Option SISR</h1>
+        <img src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-sisr.jpeg" width="200" loading="lazy"/>
+        <p data-i18n="bts_sisr_text">
+          L’option SISR forme aux métiers liés aux infrastructures...
         </p>
       </section>
 
       <!-- APRES BTS -->
       <section>
-        <h1>Après le BTS SIO</h1>
-        <p>
-          Les diplômés peuvent poursuivre en licence pro, bachelor, ou entrer
-          dans le monde du travail (ESN, entreprises, administrations) ou
-          devenir freelance.
+        <h1 data-i18n="bts_after_title">Après le BTS SIO</h1>
+        <p data-i18n="bts_after_text">
+          Les diplômés peuvent poursuivre en licence pro, bachelor...
         </p>
       </section>
 
-      <!-- ===================================================== -->
-      <!-- 🔥 MISSIONS RÉALISÉES (Fusion du fichier Missions.html) -->
-      <!-- ===================================================== -->
+      <!-- MISSIONS BTS -->
       <section id="missions-bts-sio">
-        <h1>Missions réalisées (SLAM)</h1>
-        <p>
-          Voici les projets et missions que j'ai réalisés durant ma formation
-          BTS SIO, en individuel ou en équipe.
+        <h1 data-i18n="bts_missions_title">Missions réalisées (SLAM)</h1>
+        <p data-i18n="bts_missions_intro">
+          Voici les projets et missions réalisés durant ma formation BTS SIO...
         </p>
 
-        <!-- MISSION GSB -->
-        <h2>Mission GSB</h2>
-        <p>
-          Le projet <strong>Galaxy-Swiss Bourdin</strong> permet aux visiteurs
-          médicaux de saisir leurs notes de frais, suivies par les responsables.
-          Stack : <strong>PHP, C#, MySQL, MVC</strong>.
+        <h2 data-i18n="bts_gsb_title">Mission GSB</h2>
+        <p data-i18n="bts_gsb_text">
+          Le projet Galaxy-Swiss Bourdin permet aux visiteurs médicaux...
         </p>
 
-        <!-- MISSION 1B -->
-        <h2>Mission 1-B</h2>
-        <p>
-          Développement d’un formulaire affichant le cumul des frais d’un visiteur,
-          selon le mois et l’année, en respectant la charte graphique du projet.
+        <h2 data-i18n="bts_1b_title">Mission 1-B</h2>
+        <p data-i18n="bts_1b_text">
+          Développement d’un formulaire affichant le cumul des frais...
         </p>
 
-        <!-- MISSION 2B -->
-        <h2>Mission 2-B (projet d'équipe)</h2>
-        <p>
-          Réalisation d'une application Web complète de gestion des frais pour
-          plusieurs laboratoires. Rôle : <strong>Bases de données + Interface</strong>.
+        <h2 data-i18n="bts_2b_title">Mission 2-B (projet d'équipe)</h2>
+        <p data-i18n="bts_2b_text">
+          Application Web de gestion de frais pour plusieurs laboratoires...
         </p>
 
-        <!-- MISSION 3 -->
-        <h2>Mission 3 – Projet Appli-CR</h2>
-        <p>
-          Développement d’un module de gestion des médicaments, familles et dons,
-          avec tableau de bord, pages sécurisées et export XML.
+        <h2 data-i18n="bts_3_title">Mission 3 – Appli-CR</h2>
+        <p data-i18n="bts_3_text">
+          Développement d’un module complet de gestion des médicaments...
         </p>
       </section>
-
-      <!-- ===================================================== -->
 
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div id="footer-container"></div>
 
-    <!-- Scripts JS -->
+    <!-- SCRIPTS -->
     <script src="/Portfolio/JS/toggleTheme.js" defer></script>
     <script src="/Portfolio/JS/menu.js" defer></script>
     <script src="/Portfolio/JS/footer.js" defer></script>
+    <script src="/Portfolio/JS/lang.js" defer></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document
-          .querySelectorAll("section")
-          .forEach((section) => section.classList.add("reveal"));
+        document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
       });
     </script>
   </body>
