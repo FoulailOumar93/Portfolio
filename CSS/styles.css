@@ -1,6 +1,6 @@
 /* =====================================================
-   PORTFOLIO FOULAIL OUMAR • STABLE VERSION
-   No blank pages • GitHub Pages safe • 2025
+   PORTFOLIO FOULAIL OUMAR • FINAL CLEAN VERSION
+   GitHub Pages Safe • No Blank Pages • No CSS Conflicts
 ===================================================== */
 
 /* ---------- PALETTE LIGHT ---------- */
@@ -28,7 +28,9 @@ body.dark {
 }
 
 /* ---------- RESET ---------- */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,7 +42,7 @@ html {
 
 /* ---------- BODY ---------- */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   background-color: var(--bg);
   background-image: url("../IMG/background.jpg");
   background-size: cover;
@@ -48,12 +50,15 @@ body {
   background-attachment: fixed;
   color: var(--fg);
   min-height: 100vh;
-  line-height: 1.7;
   display: flex;
   flex-direction: column;
+  line-height: 1.7;
 }
 
-/* ---------- HEADER & NAV ---------- */
+/* =====================================================
+   HEADER / NAVBAR
+===================================================== */
+
 header {
   background: var(--header-grad);
   position: sticky;
@@ -62,26 +67,35 @@ header {
   box-shadow: var(--shadow);
 }
 
+/* NAV LAYOUT */
 nav {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 16px 24px;
+
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* MENU LIST */
 nav ul {
   display: flex;
-  gap: 26px;
+  align-items: center;
+  gap: 28px;
   list-style: none;
-  padding: 18px;
+  white-space: nowrap;
 }
 
+/* MENU LINKS */
 nav a {
   color: var(--fg);
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 16px;
+  font-size: 15px;
+  padding: 8px 12px;
   border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover,
@@ -90,7 +104,36 @@ nav a.active {
   color: #fff;
 }
 
-/* ---------- BURGER MENU ---------- */
+/* =====================================================
+   LANGUAGE SWITCH
+===================================================== */
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lang-btn:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* =====================================================
+   BURGER MENU
+===================================================== */
+
 #burger-toggle {
   display: none;
 }
@@ -101,9 +144,6 @@ nav a.active {
   gap: 6px;
   width: 30px;
   cursor: pointer;
-  position: absolute;
-  right: 22px;
-  top: 18px;
 }
 
 .burger span {
@@ -112,58 +152,18 @@ nav a.active {
   border-radius: 2px;
 }
 
-@media (max-width: 960px) {
-  .burger {
-    display: flex;
-  }
+/* =====================================================
+   WRAPPER / CONTENT
+===================================================== */
 
-  nav {
-    display: none;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    background: var(--card-bg);
-    width: 230px;
-    border-radius: 0 0 0 12px;
-  }
-
-  #burger-toggle:checked ~ nav {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
-/* ---------- WRAPPER ---------- */
 .wrapper {
   max-width: 900px;
   margin: 90px auto 70px;
   padding: 0 24px;
 }
 
-/* ---------- SECTIONS (SAFE) ---------- */
 section {
   margin-bottom: 70px;
-  opacity: 1;              /* 🔥 PLUS JAMAIS CACHÉ */
-  transform: none;
-}
-
-section.animate {
-  animation: fadeUp 0.6s ease forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 section h1 {
@@ -179,7 +179,10 @@ section p {
   margin-bottom: 20px;
 }
 
-/* ---------- BUTTON ---------- */
+/* =====================================================
+   BUTTON
+===================================================== */
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -194,21 +197,54 @@ section p {
   display: block;
 }
 
-/* ---------- FOOTER ---------- */
-footer {
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
   background: var(--card-bg);
-  margin-top: auto;
-  padding: 30px 16px;
   text-align: center;
+  padding: 30px 16px;
+  margin-top: auto;
   box-shadow: 0 -3px 10px var(--shadow);
 }
 
-footer p {
-  font-size: 13px;
-  opacity: 0.7;
+.footer h4 {
+  color: var(--accent);
+  margin-bottom: 16px;
+  font-size: 18px;
 }
 
-/* ---------- THEME SWITCH ---------- */
+.footer p {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* SOCIAL ICONS */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 15px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+}
+
+/* =====================================================
+   THEME SWITCH
+===================================================== */
+
 .theme-switch {
   position: fixed;
   bottom: 20px;
@@ -227,93 +263,29 @@ footer p {
 .theme-switch i {
   font-size: 22px;
 }
-/* ---------- FOOTER SOCIAL ICONS (SAFE) ---------- */
-.footer {
-  background: var(--card-bg);
-  backdrop-filter: blur(5px);
-  text-align: center;
-  padding: 30px 16px 20px;
-  margin-top: auto;
-  box-shadow: 0 -3px 10px var(--shadow);
-}
 
-.footer h4 {
-  color: var(--accent);
-  margin-bottom: 16px;
-  font-size: 18px;
-}
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 22px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
 
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.social-links img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain; /* 🔥 empêche les logos géants */
-  filter: drop-shadow(0 0 4px var(--accent));
-  transition: transform 0.3s ease;
-}
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
 
-.social-links img:hover {
-  transform: scale(1.15);
+  .lang-switch {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
 }
-
-.footer p {
-  font-size: 13px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-/* ---------- FOOTER SOCIAL ICONS (FINAL FIX) ---------- */
-.footer {
-  background: var(--card-bg);
-  margin-top: auto;
-  padding: 30px 16px;
-  text-align: center;
-  box-shadow: 0 -3px 10px var(--shadow);
-}
-
-.footer h4 {
-  color: var(--accent);
-  margin-bottom: 16px;
-  font-size: 18px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 22px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-links img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-  transform: scale(1.15);
-}
-
-
