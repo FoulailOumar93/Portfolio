@@ -6,60 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil</title>
 
-    <!-- ✅ Google Fonts -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- ✅ Font Awesome -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
-    <!-- ✅ Ton CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
 
   <body>
-    <!-- ✅ Switch Dark/Light -->
+    <!-- Switch Dark/Light -->
     <div id="theme-switch" class="theme-switch">
       <i class="fas fa-moon"></i>
     </div>
 
-    <!-- ✅ MENU chargé dynamiquement -->
+    <!-- MENU injecté dynamiquement -->
     <div id="menu-container"></div>
 
-    <!-- ✅ CONTENU PRINCIPAL -->
+    <!-- CONTENU PRINCIPAL -->
     <main class="wrapper">
-      <h1>Bienvenue dans le Portfolio de Foulail Oumar</h1>
-      <p class="subtitle">
+      <h1 data-i18n="home_title">Bienvenue dans le Portfolio de Foulail Oumar</h1>
+      <p class="subtitle" data-i18n="home_subtitle">
         Étudiant Chez O'Clock<br />
         Développeur Web Et Web Mobile
       </p>
     </main>
 
-    <!-- ✅ FOOTER chargé dynamiquement -->
+    <!-- FOOTER -->
     <div id="footer-container"></div>
 
-    <!-- ✅ SCRIPTS -->
+    <!-- SCRIPTS -->
     <script src="../JS/toggleTheme.js" defer></script>
-    <script>
-      // Chargement du menu
-      fetch("Menu.html")
-        .then((res) => res.text())
-        .then(
-          (html) => (document.getElementById("menu-container").innerHTML = html)
-        );
-
-      // Chargement du footer
-      fetch("Footer.html")
-        .then((res) => res.text())
-        .then(
-          (html) =>
-            (document.getElementById("footer-container").innerHTML = html)
-        );
-    </script>
+    <script src="../JS/menu.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/lang.js" defer></script>
   </body>
 </html>
