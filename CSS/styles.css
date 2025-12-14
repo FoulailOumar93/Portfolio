@@ -293,3 +293,31 @@ section p {
     margin-top: 10px;
   }
 }
+/* ===== CERTIFICATIONS PAGE FIX ===== */
+
+.certifications {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.certifications a {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.certifications a:hover {
+  transform: scale(1.05);
+}
+
+.certifications img {
+  max-width: 260px;   /* 🔥 LIMITE CLAIRE */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
