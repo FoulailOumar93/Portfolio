@@ -5,31 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="profil_title">Profil</title>
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="../CSS/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Theme switch -->
-  <div id="theme-switch" class="theme-switch">
-    <i class="fas fa-moon"></i>
-  </div>
-
-  <!-- Menu -->
+  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
   <div id="menu-container"></div>
 
-  <!-- MAIN -->
   <main class="wrapper">
 
-    <!-- ================= ABOUT ================= -->
     <section>
-      <h1 data-i18n="profil_title"></h1>
-
+      <h1 data-i18n="profil_title">À propos de moi</h1>
       <p data-i18n="profil_p1"></p>
       <p data-i18n="profil_p2"></p>
       <p data-i18n="profil_p3"></p>
@@ -37,21 +31,16 @@
       <p data-i18n="profil_p5"></p>
     </section>
 
-    <!-- ================= EXPERIENCE ================= -->
     <section>
       <h1 data-i18n="profil_exp_title"></h1>
-
       <p data-i18n="profil_exp_p1"></p>
       <p data-i18n="profil_exp_p2"></p>
 
-      <button
-        class="glow-on-hover"
-        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';"
-        data-i18n="profil_exp_cv">
+      <button class="glow-on-hover" data-i18n="profil_exp_cv"
+        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';">
       </button>
     </section>
 
-    <!-- ================= QUALITIES ================= -->
     <section>
       <h1 data-i18n="profil_qualities_title"></h1>
       <p data-i18n="profil_q_p"></p>
@@ -59,20 +48,7 @@
 
   </main>
 
-  <!-- Footer -->
   <div id="footer-container"></div>
-
-  <!-- Scripts -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
-    });
-  </script>
 
 </body>
 </html>
