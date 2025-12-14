@@ -1,9 +1,9 @@
 /* =====================================================
    PORTFOLIO – FOULAIL OUMAR
-   CSS FINAL PROPRE & RESPONSIVE
+   CSS FINAL STABLE – TEL / TABLETTE / DESKTOP
 ===================================================== */
 
-/* ============ VARIABLES ============ */
+/* ===================== VARIABLES ===================== */
 :root {
   --bg: #edf4ff;
   --fg: #081021;
@@ -11,23 +11,30 @@
   --accent-soft: #79f1ff;
   --header-grad: linear-gradient(135deg, #00e7ff, #01b1ff);
   --card-bg: rgba(255,255,255,0.95);
-  --shadow: 0 8px 25px rgba(0,0,0,0.12);
+  --shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
+/* DARK MODE */
 body.dark {
   --bg: #050a19;
   --fg: #e7f1ff;
   --accent-soft: #004c66;
   --header-grad: linear-gradient(135deg, #004e6f, #003b56);
   --card-bg: rgba(21,32,59,0.95);
-  --shadow: 0 10px 30px rgba(0,0,0,0.55);
+  --shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
-/* ============ RESET ============ */
-* {
+/* ===================== RESET ===================== */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,29 +46,38 @@ body {
   flex-direction: column;
 }
 
-/* ============ HEADER / NAV ============ */
+/* =====================================================
+   HEADER / NAVBAR
+===================================================== */
 header {
   background: var(--header-grad);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: var(--shadow);
 }
 
 nav {
   max-width: 1200px;
+  height: 64px;
   margin: auto;
-  padding: 14px 24px;
+  padding: 0 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* ============ MENU (DESKTOP) ============ */
+/* ===================== MENU DESKTOP ===================== */
 #nav-links {
   list-style: none;
   display: flex;
-  gap: 22px;
   align-items: center;
+  gap: 22px;
+  white-space: nowrap;
+}
+
+#nav-links li {
+  white-space: nowrap;
 }
 
 #nav-links a {
@@ -71,15 +87,16 @@ nav {
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 6px;
-  white-space: nowrap;
+  transition: background 0.25s ease;
 }
 
-#nav-links a:hover {
+#nav-links a:hover,
+#nav-links a.active {
   background: var(--accent-soft);
   color: #fff;
 }
 
-/* ============ LANG SWITCH ============ */
+/* ===================== LANG SWITCH ===================== */
 .lang-switch {
   display: flex;
   gap: 8px;
@@ -87,14 +104,18 @@ nav {
 
 .lang-btn {
   border: none;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.35);
   padding: 6px 8px;
   border-radius: 6px;
   font-size: 18px;
   cursor: pointer;
 }
 
-/* ============ BURGER ============ */
+.lang-btn:hover {
+  background: rgba(255,255,255,0.6);
+}
+
+/* ===================== BURGER ===================== */
 .burger {
   display: none;
   flex-direction: column;
@@ -109,23 +130,89 @@ nav {
   border-radius: 3px;
 }
 
-/* ============ MOBILE ============ */
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+.wrapper {
+  max-width: 1000px;
+  margin: 90px auto 70px;
+  padding: 0 24px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer {
+  background: var(--card-bg);
+  padding: 30px;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 -3px 10px var(--shadow);
+}
+
+/* =====================================================
+   THEME SWITCH (LUNE)
+===================================================== */
+.theme-switch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999; /* 🔥 au-dessus de tout */
+}
+
+.theme-switch i {
+  font-size: 22px;
+  color: #081021;
+}
+
+/* =====================================================
+   RESPONSIVE – MOBILE & TABLETTE
+===================================================== */
 @media (max-width: 900px) {
 
   .burger {
     display: flex;
-    z-index: 3000;
+    z-index: 2001;
   }
 
   #nav-links {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background: var(--header-grad);
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 24px;
     transform: translateX(-100%);
     transition: transform 0.35s ease;
+    z-index: 2000;
   }
 
   #nav-links.open {
@@ -140,28 +227,4 @@ nav {
   .lang-switch {
     margin-top: 20px;
   }
-}
-
-/* ============ CONTENT ============ */
-.wrapper {
-  max-width: 1000px;
-  margin: 90px auto 70px;
-  padding: 0 24px;
-}
-
-section {
-  margin-bottom: 70px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-/* ============ FOOTER ============ */
-.footer {
-  background: var(--card-bg);
-  padding: 30px;
-  text-align: center;
-  margin-top: auto;
 }
