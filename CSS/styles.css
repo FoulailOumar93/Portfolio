@@ -1,6 +1,6 @@
 /* =====================================================
-   PORTFOLIO FOULAIL OUMAR • FINAL STABLE VERSION
-   GitHub Pages Safe • Clean • No Conflicts
+   PORTFOLIO FOULAIL OUMAR — CSS FINAL STABLE
+   GitHub Pages SAFE — Multi-lang OK — 2025
 ===================================================== */
 
 /* ===================== PALETTE ===================== */
@@ -42,7 +42,7 @@ html {
 
 /* ===================== BODY ===================== */
 body {
-  font-family: "Poppins", system-ui, sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
   color: var(--fg);
   min-height: 100vh;
@@ -51,7 +51,9 @@ body {
   line-height: 1.7;
 }
 
-/* ===================== HEADER / NAV ===================== */
+/* =====================================================
+   HEADER / NAVBAR — FINAL MULTI-LANG FIX
+===================================================== */
 header {
   background: var(--header-grad);
   position: sticky;
@@ -63,26 +65,44 @@ header {
 nav {
   max-width: 1200px;
   margin: auto;
-  padding: 16px 24px;
+  padding: 14px 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* MENU */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 28px;
   align-items: center;
+  gap: 20px;
+
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
+/* ITEM */
+nav li {
+  white-space: nowrap;
+}
+
+/* LINKS */
 nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   text-decoration: none;
   color: var(--fg);
   font-weight: 600;
-  padding: 8px 14px;
+  font-size: 14px;
+  padding: 8px 10px;
   border-radius: 6px;
-  transition: 0.3s;
+
+  white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover,
@@ -91,7 +111,7 @@ nav a.active {
   color: #fff;
 }
 
-/* ===================== LANG SWITCH ===================== */
+/* LANGUES */
 .lang-switch {
   display: flex;
   gap: 10px;
@@ -100,7 +120,7 @@ nav a.active {
 .lang-btn {
   font-size: 18px;
   border: none;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 6px 8px;
   border-radius: 6px;
   cursor: pointer;
@@ -109,30 +129,18 @@ nav a.active {
 
 .lang-btn:hover,
 .lang-btn.active-lang {
-  background: rgba(255,255,255,0.55);
+  background: rgba(255, 255, 255, 0.55);
   transform: scale(1.15);
 }
 
-/* ===================== BURGER ===================== */
-#burger-toggle {
-  display: none;
+/* Tamil : texte plus compact */
+html[lang="ta"] nav a {
+  font-size: 13px;
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.burger span {
-  width: 30px;
-  height: 4px;
-  background: #fff;
-  border-radius: 3px;
-}
-
-/* ===================== WRAPPER ===================== */
+/* =====================================================
+   WRAPPER / CONTENT
+===================================================== */
 .wrapper {
   max-width: 1000px;
   margin: 90px auto 70px;
@@ -171,6 +179,35 @@ p {
   border: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+/* ===================== CERTIFICATIONS ===================== */
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.certifications a {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certifications a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
+
+.certifications img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
 }
 
 /* ===================== FOOTER ===================== */
@@ -229,100 +266,14 @@ p {
   font-size: 22px;
 }
 
-/* ===================== CERTIFICATIONS ===================== */
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  justify-items: center;
-}
-
-.certifications a {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certifications a:hover {
-  transform: scale(1.06);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.2);
-}
-
-.certifications img {
-  width: 100%;
-  max-width: 500px;   /* 🔥 LISIBLE */
-  height: auto;
-  border-radius: 12px;
-}
-
 /* ===================== RESPONSIVE ===================== */
-@media (max-width: 900px) {
-  .burger {
-    display: flex;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .lang-switch {
-    align-self: flex-end;
-    margin-top: 10px;
-  }
-
-  .wrapper {
-    margin-top: 60px;
-  }
-}
-/* ================================
-   NAVBAR FIX – MULTI LANG
-================================ */
-
-/* Empêche les retours à la ligne */
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  list-style: none;
-  white-space: nowrap;   /* 🔥 clé du fix */
-  flex-wrap: nowrap;     /* 🔥 */
-}
-
-/* Chaque item du menu */
-nav li {
-  white-space: nowrap;   /* 🔥 */
-}
-
-/* Liens */
-nav a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;   /* 🔥 */
-  text-align: center;
-  font-size: 14px;       /* 🔥 un poil plus petit */
-  padding: 8px 10px;
-}
-
-/* Cas des langues longues (Tamil) */
-html[lang="ta"] nav a {
-  font-size: 13px;       /* 🔥 Tamil un peu plus compact */
-}
-
-/* Responsive – on réduit encore */
 @media (max-width: 1100px) {
   nav a {
     font-size: 13px;
     padding: 6px 8px;
+  }
+
+  .wrapper {
+    margin-top: 60px;
   }
 }
