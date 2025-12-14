@@ -1,33 +1,9 @@
 /* =====================================================
-   PORTFOLIO FOULAIL OUMAR — CSS FINAL STABLE
-   GitHub Pages SAFE — Multi-lang OK — 2025
+   PORTFOLIO FOULAIL OUMAR — FINAL STABLE CSS
+   GitHub Pages SAFE • Multi-lang FR / EN / TA
 ===================================================== */
 
-/* ===================== PALETTE ===================== */
-:root {
-  --bg: #edf4ff;
-  --fg: #081021;
-  --accent: #00e7ff;
-  --accent-soft: #79f1ff;
-  --header-grad: linear-gradient(135deg, #00e7ff 0%, #01b1ff 100%);
-  --card-bg: rgba(255, 255, 255, 0.95);
-  --border: #d1e2ff;
-  --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* ===================== DARK MODE ===================== */
-body.dark {
-  --bg: #050a19;
-  --fg: #e7f1ff;
-  --accent: #00e7ff;
-  --accent-soft: #004c66;
-  --header-grad: linear-gradient(135deg, #004e6f 0%, #003b56 100%);
-  --card-bg: rgba(21, 32, 59, 0.95);
-  --border: #263452;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
-}
-
-/* ===================== RESET ===================== */
+/* ========== RESET GLOBAL ========== */
 *,
 *::before,
 *::after {
@@ -36,14 +12,42 @@ body.dark {
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* 🔥 empêche le blanc sur les côtés */
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* ===================== BODY ===================== */
+/* ========== VARIABLES ========== */
+:root {
+  --bg: #edf4ff;
+  --fg: #081021;
+  --accent: #00e7ff;
+  --accent-soft: #79f1ff;
+  --header-grad: linear-gradient(135deg, #00e7ff 0%, #01b1ff 100%);
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ========== DARK MODE ========== */
+body.dark {
+  --bg: #050a19;
+  --fg: #e7f1ff;
+  --accent: #00e7ff;
+  --accent-soft: #004c66;
+  --header-grad: linear-gradient(135deg, #004e6f 0%, #003b56 100%);
+  --card-bg: rgba(21, 32, 59, 0.95);
+}
+
+/* ========== BODY ========== */
 body {
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
+  font-family: "Poppins", system-ui, sans-serif;
+  background-color: var(--bg); /* 🔥 fond partout */
   color: var(--fg);
   min-height: 100vh;
   display: flex;
@@ -51,22 +55,20 @@ body {
   line-height: 1.7;
 }
 
-/* =====================================================
-   HEADER / NAVBAR — FINAL MULTI-LANG FIX
-===================================================== */
+/* ========== HEADER / NAVBAR ========== */
 header {
   background: var(--header-grad);
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: var(--shadow);
+  width: 100%;
 }
 
 nav {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 14px 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,10 +79,9 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
-
-  white-space: nowrap;
-  flex-wrap: nowrap;
+  gap: 22px;
+  white-space: nowrap;     /* 🔥 */
+  flex-wrap: nowrap;       /* 🔥 */
 }
 
 /* ITEM */
@@ -88,21 +89,18 @@ nav li {
   white-space: nowrap;
 }
 
-/* LINKS */
+/* LINK */
 nav a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
   color: var(--fg);
   font-weight: 600;
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 6px;
-
-  white-space: nowrap;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 nav a:hover,
@@ -111,42 +109,42 @@ nav a.active {
   color: #fff;
 }
 
-/* LANGUES */
+/* ========== LANG SWITCH ========== */
 .lang-switch {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .lang-btn {
   font-size: 18px;
+  background: rgba(255,255,255,0.3);
   border: none;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 6px 8px;
   border-radius: 6px;
+  padding: 5px 7px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .lang-btn:hover,
 .lang-btn.active-lang {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255,255,255,0.55);
   transform: scale(1.15);
 }
 
-/* Tamil : texte plus compact */
+/* ========== TAMIL COMPACT ========== */
 html[lang="ta"] nav a {
-  font-size: 13px;
+  font-size: 13px; /* 🔥 évite le dépassement */
 }
 
-/* =====================================================
-   WRAPPER / CONTENT
-===================================================== */
+/* ========== WRAPPER ========== */
 .wrapper {
   max-width: 1000px;
-  margin: 90px auto 70px;
+  width: 100%;
+  margin: 80px auto 70px;
   padding: 0 24px;
 }
 
+/* ========== CONTENT ========== */
 section {
   margin-bottom: 70px;
 }
@@ -167,7 +165,7 @@ p {
   margin-bottom: 15px;
 }
 
-/* ===================== BUTTON ===================== */
+/* ========== BUTTON ========== */
 .glow-on-hover {
   display: block;
   margin: 30px auto;
@@ -181,47 +179,39 @@ p {
   font-weight: 600;
 }
 
-/* ===================== CERTIFICATIONS ===================== */
+/* ========== CERTIFICATIONS ========== */
 .certifications {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 40px;
   margin-top: 50px;
-  justify-items: center;
 }
 
 .certifications a {
   background: var(--card-bg);
-  padding: 25px;
-  border-radius: 18px;
+  padding: 20px;
+  border-radius: 16px;
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .certifications a:hover {
-  transform: scale(1.06);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 .certifications img {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px; /* 🔥 lisible */
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
-/* ===================== FOOTER ===================== */
+/* ========== FOOTER ========== */
 .footer {
   background: var(--card-bg);
   padding: 30px 16px;
   text-align: center;
   margin-top: auto;
-  box-shadow: 0 -3px 10px var(--shadow);
-}
-
-.footer h4 {
-  color: var(--accent);
-  margin-bottom: 16px;
 }
 
 .footer p {
@@ -229,24 +219,7 @@ p {
   opacity: 0.7;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  margin: 15px 0;
-}
-
-.social-links img {
-  width: 42px;
-  height: 42px;
-  transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-  transform: scale(1.15);
-}
-
-/* ===================== THEME SWITCH ===================== */
+/* ========== THEME SWITCH ========== */
 .theme-switch {
   position: fixed;
   bottom: 20px;
@@ -262,15 +235,16 @@ p {
   z-index: 2000;
 }
 
-.theme-switch i {
-  font-size: 22px;
-}
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  nav {
+    flex-wrap: wrap;
+  }
 
-/* ===================== RESPONSIVE ===================== */
-@media (max-width: 1100px) {
-  nav a {
-    font-size: 13px;
-    padding: 6px 8px;
+  nav ul {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .wrapper {
