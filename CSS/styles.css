@@ -228,3 +228,66 @@ p {
     margin-top: 20px;
   }
 }
+/* ===============================
+   FOOTER – FIX FINAL
+================================ */
+
+#footer-container {
+  margin-top: 120px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #00e7ff, #01b1ff);
+  color: #081021;
+  padding: 50px 20px 35px;
+  text-align: center;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+}
+
+/* Titre */
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Réseaux */
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-bottom: 25px;
+}
+
+.footer .social-links a {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: rgba(255,255,255,0.45);
+}
+
+.footer .social-links img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Copyright */
+.footer p {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* Dark mode */
+body.dark .footer {
+  background: linear-gradient(135deg, #004e6f, #003b56);
+  color: #e7f1ff;
+}
