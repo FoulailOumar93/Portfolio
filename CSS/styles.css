@@ -1,6 +1,7 @@
 /* =====================================================
    PORTFOLIO FOULAIL OUMAR
-   VERSION FINALE – STABLE – MULTI LANG
+   FINAL RESPONSIVE CSS — 2025
+   TEL / TABLETTE / ORDI
    GitHub Pages SAFE
 ===================================================== */
 
@@ -10,20 +11,19 @@
   --fg: #081021;
   --accent: #00e7ff;
   --accent-soft: #79f1ff;
-  --header-grad: linear-gradient(135deg, #00e7ff 0%, #01b1ff 100%);
-  --card-bg: rgba(255, 255, 255, 0.95);
-  --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  --header-grad: linear-gradient(135deg, #00e7ff, #01b1ff);
+  --card-bg: rgba(255,255,255,0.95);
+  --shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
 /* ===================== DARK MODE ===================== */
 body.dark {
   --bg: #050a19;
   --fg: #e7f1ff;
-  --accent: #00e7ff;
   --accent-soft: #004c66;
-  --header-grad: linear-gradient(135deg, #004e6f 0%, #003b56 100%);
-  --card-bg: rgba(21, 32, 59, 0.95);
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --header-grad: linear-gradient(135deg, #004e6f, #003b56);
+  --card-bg: rgba(21,32,59,0.95);
+  --shadow: 0 10px 30px rgba(0,0,0,0.55);
 }
 
 /* ===================== RESET ===================== */
@@ -35,11 +35,7 @@ body.dark {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
+/* ===================== BODY ===================== */
 body {
   font-family: "Poppins", system-ui, sans-serif;
   background: var(--bg);
@@ -48,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.7;
-  overflow-x: hidden;
 }
 
 /* ===================== HEADER / NAV ===================== */
@@ -69,20 +64,16 @@ nav {
   justify-content: space-between;
 }
 
-/* MENU */
+/* MENU LIST */
 nav ul {
   list-style: none;
   display: flex;
-  align-items: center;
   gap: 22px;
-  white-space: nowrap;
-  flex-wrap: nowrap;
-}
-
-nav li {
+  align-items: center;
   white-space: nowrap;
 }
 
+/* MENU LINKS */
 nav a {
   text-decoration: none;
   color: var(--fg);
@@ -90,11 +81,8 @@ nav a {
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 6px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   white-space: nowrap;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover,
@@ -103,36 +91,9 @@ nav a.active {
   color: #fff;
 }
 
-/* ===================== LANG SWITCH ===================== */
-.lang-switch {
-  display: flex;
-  gap: 10px;
-}
-
-.lang-btn {
-  font-size: 18px;
-  border: none;
-  background: rgba(255,255,255,0.35);
-  padding: 6px 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.lang-btn:hover,
-.lang-btn.active-lang {
-  background: rgba(255,255,255,0.6);
-  transform: scale(1.15);
-}
-
 /* ===================== BURGER ===================== */
-/* Checkbox TOUJOURS caché */
-#burger-toggle,
-nav input[type="checkbox"] {
-  display: none !important;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+#burger-toggle {
+  display: none;
 }
 
 .burger {
@@ -143,7 +104,7 @@ nav input[type="checkbox"] {
 }
 
 .burger span {
-  width: 30px;
+  width: 28px;
   height: 4px;
   background: #fff;
   border-radius: 3px;
@@ -156,26 +117,25 @@ nav input[type="checkbox"] {
   padding: 0 24px;
 }
 
+/* ===================== CONTENT ===================== */
 section {
   margin-bottom: 70px;
 }
 
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 15px;
-  text-align: center;
 }
 
 /* ===================== BUTTON ===================== */
@@ -190,34 +150,6 @@ p {
   border: none;
   cursor: pointer;
   font-weight: 600;
-}
-
-/* ===================== CERTIFICATIONS ===================== */
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  justify-items: center;
-}
-
-.certifications a {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certifications a:hover {
-  transform: scale(1.06);
-}
-
-.certifications img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
 }
 
 /* ===================== FOOTER ===================== */
@@ -247,9 +179,9 @@ p {
 }
 
 .social-links img {
-  width: 42px;
-  height: 42px;
-  transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
 }
 
 .social-links img:hover {
@@ -276,20 +208,37 @@ p {
   font-size: 22px;
 }
 
-/* ===================== MULTI LANG FIX ===================== */
-html[lang="ta"] nav a {
-  font-size: 13px;
+/* ===================== CERTIFICATIONS ===================== */
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
 }
 
-@media (max-width: 1100px) {
-  nav a {
-    font-size: 13px;
-    padding: 6px 8px;
-  }
+.certifications a {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media (max-width: 900px) {
+.certifications a:hover {
+  transform: scale(1.05);
+}
+
+.certifications img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   RESPONSIVE — MOBILE
+===================================================== */
+@media (max-width: 899px) {
+
   .burger {
     display: flex;
   }
@@ -302,15 +251,44 @@ html[lang="ta"] nav a {
   nav ul {
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
+    gap: 14px;
+    margin-top: 16px;
   }
 
-  .lang-switch {
-    align-self: flex-end;
-    margin-top: 10px;
+  nav a {
+    width: 100%;
+    text-align: left;
   }
 
   .wrapper {
     margin-top: 60px;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — TABLETTE
+===================================================== */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+  nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .certifications {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
