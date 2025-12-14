@@ -15,22 +15,20 @@
   "accueil_title": "Welcome to the Portfolio of Foulail Oumar",
   "accueil_subtitle": "O'Clock Student — Web & Mobile Developer",
 
- "profil_title": "About Me",
+  "profil_title": "About Me",
+  "profil_p1": "My name is Foulail Oumar. I am 22 years old and passionate about IT.",
+  "profil_p2": "I first studied STMG at Lycée Jacques Brel.",
+  "profil_p3": "Then I completed a BTS SIO (SLAM).",
+  "profil_p4": "After that, I joined O'Clock to study Web & Mobile Development.",
+  "profil_p5": "",
 
-"profil_p1": "My name is Foulail Oumar. I am 22 years old and passionate about IT.",
-"profil_p2": "I first studied STMG at Lycée Jacques Brel.",
-"profil_p3": "Then I completed a BTS SIO (SLAM).",
-"profil_p4": "After that, I joined O'Clock to study Web & Mobile Development.",
-"profil_p5": "",
+  "profil_exp_title": "Professional Experience",
+  "profil_exp_p1": "I completed several internships in public and private organizations.",
+  "profil_exp_p2": "These experiences helped me improve my technical and professional skills.",
+  "profil_exp_cv": "Download CV",
 
-"profil_exp_title": "Professional Experience",
-"profil_exp_p1": "I completed several internships in public and private organizations.",
-"profil_exp_p2": "These experiences helped me improve my technical and professional skills.",
-"profil_exp_cv": "Download CV",
-
-"profil_qualities_title": "My Qualities",
-"profil_q_p": "I am rigorous, motivated, curious and passionate about learning."
-
+  "profil_qualities_title": "My Qualities",
+  "profil_q_p": "I am rigorous, motivated, curious and passionate about learning.",
 
   "bts_intro_title": "What is BTS SIO?",
   "bts_intro_text": "BTS SIO is an IT program with two paths: SLAM (development) and SISR (networks).",
@@ -75,55 +73,6 @@
   "project_difficulties": "Challenges",
   "project_solutions": "Solutions",
 
-  "project_cinedelices_title": "2025 — CineDelices (O'Clock Project)",
-  "project_cinedelices_desc": "A full-stack web application mixing cooking and cinema.",
-  "project_cinedelices_obj1": "Build a complete front-end and back-end application",
-  "project_cinedelices_obj2": "Manage recipes, media, ingredients and users",
-  "project_cinedelices_obj3": "CRUD and image upload",
-  "project_cinedelices_obj4": "Modern and responsive interface",
-
-  "project_cinedelices_role1": "Back-end development with Node.js",
-  "project_cinedelices_role2": "PostgreSQL / Sequelize models",
-  "project_cinedelices_role3": "JWT authentication",
-  "project_cinedelices_role4": "React front-end development",
-  "project_cinedelices_role5": "Image upload management",
-  "project_cinedelices_role6": "Graphic identity design",
-
-  "project_cinedelices_diff1": "Complex Sequelize relations",
-  "project_cinedelices_diff2": "CORS configuration",
-  "project_cinedelices_diff3": "Image upload and preview",
-  "project_cinedelices_diff4": "Full responsive design",
-
-  "project_cinedelices_sol1": "Custom CORS middleware",
-  "project_cinedelices_sol2": "Sequelize model refactoring",
-  "project_cinedelices_sol3": "Error handling and loaders",
-  "project_cinedelices_sol4": "UX optimization",
-
-  "project_rcab_title": "2025 — RCAB Technologies",
-  "project_rcab_desc": "Development of a professional WordPress showcase website.",
-  "project_tasks": "Tasks completed",
-  "project_rcab_task1": "WordPress installation and setup",
-  "project_rcab_task2": "Design with Elementor",
-  "project_rcab_task3": "Forms with Forminator",
-  "project_rcab_task4": "Responsive optimization",
-
-  "project_ntic_title": "2024 — NTIC Formation Center",
-  "project_ntic_desc": "Second-year BTS internship with two complete projects.",
-  "project_ntic_imdb": "IMDB project with full CRUD",
-  "project_ntic_symfony": "Symfony blog with admin panel",
-
-  "project_mairie_title": "2023 — City Hall of La Courneuve",
-  "project_mairie_desc": "IT support and workstation migration.",
-  "project_mairie_task1": "Windows 7 to Windows 10/11 migration",
-  "project_mairie_task2": "Hardware and software troubleshooting",
-  "project_mairie_task3": "GLPI ticket management",
-
-  "project_missions_title": "BTS Missions",
-  "project_missions_gsb": "Expense management application — MVC PHP",
-  "project_missions_1b": "Expense aggregation by period",
-  "project_missions_2b": "Complete web application with database",
-  "project_missions_3": "Medical management app with XML export",
-
   "veille_title": "Technology Watch",
   "veille_heading": "Technology Watch",
   "veille_intro": "Monitoring technological developments and artificial intelligence.",
@@ -161,4 +110,3 @@
   "contact_button": "Send",
   "contact_success": "Message sent! Thank you 🙏"
 }
-
