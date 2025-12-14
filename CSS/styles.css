@@ -1,41 +1,33 @@
 /* =====================================================
    PORTFOLIO – FOULAIL OUMAR
-   CSS FINAL – RESPONSIVE TEL / TAB / DESKTOP
-   Stable • Clean • GitHub Pages Safe
+   CSS FINAL PROPRE & RESPONSIVE
 ===================================================== */
 
-/* ===================== VARIABLES ===================== */
+/* ============ VARIABLES ============ */
 :root {
   --bg: #edf4ff;
   --fg: #081021;
   --accent: #00e7ff;
   --accent-soft: #79f1ff;
-  --header-grad: linear-gradient(135deg, #00e7ff 0%, #01b1ff 100%);
+  --header-grad: linear-gradient(135deg, #00e7ff, #01b1ff);
   --card-bg: rgba(255,255,255,0.95);
   --shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-/* ===================== DARK MODE ===================== */
 body.dark {
   --bg: #050a19;
   --fg: #e7f1ff;
   --accent-soft: #004c66;
-  --header-grad: linear-gradient(135deg, #004e6f 0%, #003b56 100%);
+  --header-grad: linear-gradient(135deg, #004e6f, #003b56);
   --card-bg: rgba(21,32,59,0.95);
-  --shadow: 0 10px 30px rgba(0,0,0,0.5);
+  --shadow: 0 10px 30px rgba(0,0,0,0.55);
 }
 
-/* ===================== RESET ===================== */
-*,
-*::before,
-*::after {
+/* ============ RESET ============ */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -45,18 +37,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  line-height: 1.7;
 }
 
-/* =====================================================
-   HEADER / NAVBAR
-===================================================== */
+/* ============ HEADER / NAV ============ */
 header {
   background: var(--header-grad);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--shadow);
 }
 
 nav {
@@ -64,42 +52,34 @@ nav {
   margin: auto;
   padding: 14px 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-/* MENU */
-nav ul {
+/* ============ MENU (DESKTOP) ============ */
+#nav-links {
   list-style: none;
   display: flex;
   gap: 22px;
   align-items: center;
-  white-space: nowrap;
 }
 
-nav li {
-  white-space: nowrap;
-}
-
-nav a {
+#nav-links a {
   text-decoration: none;
   color: var(--fg);
   font-weight: 600;
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 6px;
-  transition: 0.25s;
+  white-space: nowrap;
 }
 
-nav a:hover,
-nav a.active {
+#nav-links a:hover {
   background: var(--accent-soft);
   color: #fff;
 }
 
-/* =====================================================
-   LANG SWITCH
-===================================================== */
+/* ============ LANG SWITCH ============ */
 .lang-switch {
   display: flex;
   gap: 8px;
@@ -107,23 +87,14 @@ nav a.active {
 
 .lang-btn {
   border: none;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.4);
   padding: 6px 8px;
   border-radius: 6px;
   font-size: 18px;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.lang-btn:hover,
-.lang-btn.active-lang {
-  background: rgba(255,255,255,0.6);
-  transform: scale(1.1);
-}
-
-/* =====================================================
-   BURGER ICON
-===================================================== */
+/* ============ BURGER ============ */
 .burger {
   display: none;
   flex-direction: column;
@@ -138,9 +109,40 @@ nav a.active {
   border-radius: 3px;
 }
 
-/* =====================================================
-   MAIN CONTENT
-===================================================== */
+/* ============ MOBILE ============ */
+@media (max-width: 900px) {
+
+  .burger {
+    display: flex;
+    z-index: 3000;
+  }
+
+  #nav-links {
+    position: fixed;
+    inset: 0;
+    background: var(--header-grad);
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+  }
+
+  #nav-links.open {
+    transform: translateX(0);
+  }
+
+  #nav-links a {
+    font-size: 20px;
+    color: #081021;
+  }
+
+  .lang-switch {
+    margin-top: 20px;
+  }
+}
+
+/* ============ CONTENT ============ */
 .wrapper {
   max-width: 1000px;
   margin: 90px auto 70px;
@@ -153,176 +155,13 @@ section {
 
 h1 {
   text-align: center;
-  font-size: 32px;
   margin-bottom: 25px;
-  text-transform: uppercase;
 }
 
-h2 {
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 17px;
-  margin-bottom: 15px;
-}
-
-/* =====================================================
-   BUTTON
-===================================================== */
-.glow-on-hover {
-  display: block;
-  margin: 30px auto;
-  width: 220px;
-  height: 50px;
-  background: #111;
-  color: #fff;
-  border-radius: 10px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* =====================================================
-   FOOTER
-===================================================== */
+/* ============ FOOTER ============ */
 .footer {
   background: var(--card-bg);
-  padding: 30px 16px;
+  padding: 30px;
   text-align: center;
   margin-top: auto;
-  box-shadow: 0 -3px 10px var(--shadow);
-}
-
-.footer h4 {
-  color: var(--accent);
-  margin-bottom: 16px;
-}
-
-.footer p {
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  margin: 15px 0;
-}
-
-.social-links img {
-  width: 42px;
-  height: 42px;
-  transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-  transform: scale(1.15);
-}
-
-/* =====================================================
-   THEME SWITCH
-===================================================== */
-.theme-switch {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 52px;
-  height: 52px;
-  background: var(--accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 2000;
-}
-
-.theme-switch i {
-  font-size: 22px;
-}
-
-/* =====================================================
-   CERTIFICATIONS
-===================================================== */
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  justify-items: center;
-}
-
-.certifications a {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  transition: 0.3s;
-}
-
-.certifications a:hover {
-  transform: scale(1.06);
-}
-
-.certifications img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-}
-
-/* =====================================================
-   RESPONSIVE – MOBILE ONLY
-===================================================== */
-@media (max-width: 768px) {
-
-  .burger {
-    display: flex;
-  }
-
-  nav ul {
-    position: fixed;
-    inset: 0;
-    background: var(--header-grad);
-    flex-direction: column;
-    justify-content: center;
-    gap: 22px;
-    transform: translateX(-100%);
-    transition: transform 0.35s ease;
-    z-index: 1500;
-  }
-
-  nav ul.open {
-    transform: translateX(0);
-  }
-
-  nav a {
-    font-size: 18px;
-  }
-
-  .lang-switch {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* =====================================================
-   RESPONSIVE – TABLET & DESKTOP
-===================================================== */
-@media (min-width: 769px) {
-
-  nav ul {
-    position: static;
-    transform: none !important;
-    flex-direction: row;
-    background: none;
-  }
-
-  .lang-switch {
-    position: static;
-    transform: none;
-  }
 }
