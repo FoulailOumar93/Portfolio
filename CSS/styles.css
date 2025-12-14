@@ -1,29 +1,10 @@
 /* =====================================================
-   PORTFOLIO FOULAIL OUMAR — FINAL STABLE CSS
-   GitHub Pages SAFE • Multi-lang FR / EN / TA
+   PORTFOLIO FOULAIL OUMAR
+   VERSION FINALE – STABLE – MULTI LANG
+   GitHub Pages SAFE
 ===================================================== */
 
-/* ========== RESET GLOBAL ========== */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden; /* 🔥 empêche le blanc sur les côtés */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* ========== VARIABLES ========== */
+/* ===================== VARIABLES ===================== */
 :root {
   --bg: #edf4ff;
   --fg: #081021;
@@ -34,7 +15,7 @@ html {
   --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ========== DARK MODE ========== */
+/* ===================== DARK MODE ===================== */
 body.dark {
   --bg: #050a19;
   --fg: #e7f1ff;
@@ -42,33 +23,47 @@ body.dark {
   --accent-soft: #004c66;
   --header-grad: linear-gradient(135deg, #004e6f 0%, #003b56 100%);
   --card-bg: rgba(21, 32, 59, 0.95);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-/* ========== BODY ========== */
+/* ===================== RESET ===================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", system-ui, sans-serif;
-  background-color: var(--bg); /* 🔥 fond partout */
+  background: var(--bg);
   color: var(--fg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
-/* ========== HEADER / NAVBAR ========== */
+/* ===================== HEADER / NAV ===================== */
 header {
   background: var(--header-grad);
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: var(--shadow);
-  width: 100%;
 }
 
 nav {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 14px 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,27 +75,26 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 22px;
-  white-space: nowrap;     /* 🔥 */
-  flex-wrap: nowrap;       /* 🔥 */
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
-/* ITEM */
 nav li {
   white-space: nowrap;
 }
 
-/* LINK */
 nav a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   color: var(--fg);
   font-weight: 600;
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 6px;
-  transition: background 0.25s ease, color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover,
@@ -109,42 +103,59 @@ nav a.active {
   color: #fff;
 }
 
-/* ========== LANG SWITCH ========== */
+/* ===================== LANG SWITCH ===================== */
 .lang-switch {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
 .lang-btn {
   font-size: 18px;
-  background: rgba(255,255,255,0.3);
   border: none;
+  background: rgba(255,255,255,0.35);
+  padding: 6px 8px;
   border-radius: 6px;
-  padding: 5px 7px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: 0.2s;
 }
 
 .lang-btn:hover,
 .lang-btn.active-lang {
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.6);
   transform: scale(1.15);
 }
 
-/* ========== TAMIL COMPACT ========== */
-html[lang="ta"] nav a {
-  font-size: 13px; /* 🔥 évite le dépassement */
+/* ===================== BURGER ===================== */
+/* Checkbox TOUJOURS caché */
+#burger-toggle,
+nav input[type="checkbox"] {
+  display: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-/* ========== WRAPPER ========== */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* ===================== WRAPPER ===================== */
 .wrapper {
   max-width: 1000px;
-  width: 100%;
-  margin: 80px auto 70px;
+  margin: 90px auto 70px;
   padding: 0 24px;
 }
 
-/* ========== CONTENT ========== */
 section {
   margin-bottom: 70px;
 }
@@ -157,15 +168,17 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 17px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-/* ========== BUTTON ========== */
+/* ===================== BUTTON ===================== */
 .glow-on-hover {
   display: block;
   margin: 30px auto;
@@ -179,39 +192,46 @@ p {
   font-weight: 600;
 }
 
-/* ========== CERTIFICATIONS ========== */
+/* ===================== CERTIFICATIONS ===================== */
 .certifications {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 40px;
   margin-top: 50px;
+  justify-items: center;
 }
 
 .certifications a {
   background: var(--card-bg);
-  padding: 20px;
-  border-radius: 16px;
+  padding: 25px;
+  border-radius: 18px;
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certifications a:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .certifications img {
   width: 100%;
-  max-width: 520px; /* 🔥 lisible */
+  max-width: 500px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-/* ========== FOOTER ========== */
+/* ===================== FOOTER ===================== */
 .footer {
   background: var(--card-bg);
   padding: 30px 16px;
   text-align: center;
   margin-top: auto;
+  box-shadow: 0 -3px 10px var(--shadow);
+}
+
+.footer h4 {
+  color: var(--accent);
+  margin-bottom: 16px;
 }
 
 .footer p {
@@ -219,7 +239,24 @@ p {
   opacity: 0.7;
 }
 
-/* ========== THEME SWITCH ========== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 15px 0;
+}
+
+.social-links img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+}
+
+/* ===================== THEME SWITCH ===================== */
 .theme-switch {
   position: fixed;
   bottom: 20px;
@@ -235,15 +272,41 @@ p {
   z-index: 2000;
 }
 
-/* ========== RESPONSIVE ========== */
+.theme-switch i {
+  font-size: 22px;
+}
+
+/* ===================== MULTI LANG FIX ===================== */
+html[lang="ta"] nav a {
+  font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+  nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+
   nav {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul {
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .lang-switch {
+    align-self: flex-end;
     margin-top: 10px;
   }
 
