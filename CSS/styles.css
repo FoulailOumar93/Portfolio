@@ -284,3 +284,45 @@ p {
     margin-top: 60px;
   }
 }
+/* ================================
+   NAVBAR FIX – MULTI LANG
+================================ */
+
+/* Empêche les retours à la ligne */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  white-space: nowrap;   /* 🔥 clé du fix */
+  flex-wrap: nowrap;     /* 🔥 */
+}
+
+/* Chaque item du menu */
+nav li {
+  white-space: nowrap;   /* 🔥 */
+}
+
+/* Liens */
+nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;   /* 🔥 */
+  text-align: center;
+  font-size: 14px;       /* 🔥 un poil plus petit */
+  padding: 8px 10px;
+}
+
+/* Cas des langues longues (Tamil) */
+html[lang="ta"] nav a {
+  font-size: 13px;       /* 🔥 Tamil un peu plus compact */
+}
+
+/* Responsive – on réduit encore */
+@media (max-width: 1100px) {
+  nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
