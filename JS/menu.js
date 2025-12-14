@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.getElementById("nav-links");
 
   if (!burger || !navLinks) {
-    console.warn("Burger ou nav-links introuvable");
+    console.error("Menu.html non chargé");
     return;
   }
 
@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("open");
   });
 
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
+  navLinks.querySelectorAll("a, button").forEach(el => {
+    el.addEventListener("click", () => {
       navLinks.classList.remove("open");
     });
   });
