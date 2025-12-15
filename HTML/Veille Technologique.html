@@ -21,59 +21,98 @@
 
 <body>
 
-  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
+  <!-- Theme switch -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
+  <!-- Menu -->
   <div id="menu-container"></div>
 
+  <!-- CONTENT -->
   <main class="wrapper">
 
-    <h1 data-i18n="veille_heading">Veille Technologique</h1>
-    <p data-i18n="veille_intro">
-      Analyse et suivi des évolutions technologiques dans le domaine du numérique et de l’intelligence artificielle.
-    </p>
-
-    <!-- Définition -->
+    <!-- INTRO -->
     <section>
-      <h2 data-i18n="veille_def_title"><i class="fas fa-search"></i> Définition</h2>
+      <h1 data-i18n="veille_heading">Veille Technologique</h1>
+      <p data-i18n="veille_intro">
+        Analyse et suivi des évolutions technologiques dans le domaine du numérique et de l’intelligence artificielle.
+      </p>
+    </section>
+
+    <!-- DÉFINITION -->
+    <section>
+      <h2 data-i18n="veille_def_title">
+        <i class="fas fa-search"></i> Définition de la veille technologique
+      </h2>
+
       <p data-i18n="veille_def_desc">
-        La veille technologique consiste à surveiller les innovations afin d’anticiper les évolutions et d'adapter ses compétences.
+        La veille technologique consiste à surveiller en continu les innovations, outils et tendances afin d’anticiper les évolutions du secteur informatique.
       </p>
 
       <ul>
-        <li data-i18n="veille_def_1">Identifier les nouvelles technologies</li>
-        <li data-i18n="veille_def_2">Suivre les tendances du marché</li>
-        <li data-i18n="veille_def_3">Repérer les opportunités et menaces</li>
+        <li data-i18n="veille_def_1">Identifier les nouvelles technologies émergentes</li>
+        <li data-i18n="veille_def_2">Suivre l’évolution du marché numérique</li>
+        <li data-i18n="veille_def_3">Anticiper les opportunités et les risques</li>
       </ul>
     </section>
 
+    <!-- IA -->
     <section>
-      <h2><i class="fas fa-brain"></i> IA</h2>
+      <h2>
+        <i class="fas fa-brain"></i> Intelligence Artificielle
+      </h2>
+
       <p data-i18n="veille_ia_desc">
-        L'intelligence artificielle évolue rapidement, notamment avec les modèles génératifs : ChatGPT, Gemini, Mistral AI.
+        L’intelligence artificielle évolue rapidement avec des outils comme ChatGPT, Gemini ou Mistral AI. Ces technologies sont utilisées dans le développement web, l’automatisation, l’analyse de données et la cybersécurité.
+      </p>
+
+      <p>
+        En tant que futur développeur, il est essentiel de comprendre le fonctionnement et les limites de ces outils afin de les utiliser de manière pertinente et responsable.
       </p>
     </section>
 
+    <!-- OUTILS -->
     <section>
-      <h2><i class="fas fa-tools"></i> Google Alerts</h2>
+      <h2>
+        <i class="fas fa-tools"></i> Outils de veille utilisés
+      </h2>
+
       <p data-i18n="veille_google_desc">
-        Google Alerts permet de recevoir automatiquement des articles sur un sujet donné (IA, cybersécurité...).
+        Google Alerts permet de recevoir automatiquement des notifications lorsqu’un sujet précis est mentionné sur Internet, comme l’intelligence artificielle ou les nouvelles technologies.
+      </p>
+
+      <p>
+        Cet outil me permet de rester informé régulièrement sans perdre de temps à rechercher manuellement les informations.
       </p>
     </section>
 
+    <!-- ANALYSE PERSONNELLE -->
     <section>
-      <h2><i class="fas fa-user-check"></i> Analyse personnelle</h2>
+      <h2>
+        <i class="fas fa-user-check"></i> Analyse personnelle
+      </h2>
+
       <p data-i18n="veille_analyse_desc">
-        L’IA est un outil puissant pour améliorer la productivité, mais elle nécessite compréhension et esprit critique.
+        L’intelligence artificielle est un outil puissant pour améliorer la productivité et l’apprentissage. Cependant, elle doit être utilisée avec esprit critique et compréhension.
+      </p>
+
+      <p>
+        La veille technologique me permet d’adapter mon parcours de formation, d’anticiper les évolutions du métier de développeur et de rester en phase avec les besoins du marché.
       </p>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <div id="footer-container"></div>
 
+  <!-- Reveal animation -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+      document.querySelectorAll("section").forEach(section => {
+        section.classList.add("reveal");
+      });
     });
   </script>
 
