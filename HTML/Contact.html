@@ -1,68 +1,25 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="contact_title">Contact</title>
+<section class="contact-section">
+  <h1 data-i18n="contact_title">Contact</h1>
+  <p data-i18n="contact_intro">N’hésitez pas à me contacter.</p>
 
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  </head>
-
-  <body>
-    <!-- Bouton Thème -->
-    <div id="theme-switch" class="theme-switch">
-      <i class="fas fa-moon"></i>
+  <form class="contact-form">
+    <div class="form-group">
+      <label data-i18n="contact_name">Nom</label>
+      <input type="text" required />
     </div>
 
-    <!-- Menu -->
-    <div id="menu-container"></div>
+    <div class="form-group">
+      <label data-i18n="contact_email">Email</label>
+      <input type="email" required />
+    </div>
 
-    <!-- Contenu principal -->
-    <main class="wrapper contact-container">
-      <h1 data-i18n="contact_title">Me Contacter</h1>
+    <div class="form-group">
+      <label data-i18n="contact_message">Message</label>
+      <textarea required></textarea>
+    </div>
 
-      <form action="https://formspree.io/f/mrbkqaeb" method="POST" class="contact-form">
-        <input 
-          type="email"
-          name="email"
-          placeholder=""
-          data-i18n-placeholder="contact_email_placeholder"
-          required
-        />
-
-        <textarea
-          name="message"
-          placeholder=""
-          data-i18n-placeholder="contact_message_placeholder"
-          required
-        ></textarea>
-
-        <button type="submit" data-i18n="contact_button">Envoyer</button>
-      </form>
-
-      <div class="confirmation-message" data-i18n="contact_success" style="display: none">
-        ✅ Message envoyé ! Merci 🙏
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <div id="footer-container"></div>
-
-    <!-- Scripts -->
-    <script src="../JS/toggleTheme.js" defer></script>
-    <script src="../JS/menu.js" defer></script>
-    <script src="../JS/footer.js" defer></script>
-    <script src="../JS/i18n.js" defer></script>
-    <script src="../JS/contact.js" defer></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll("section").forEach((section) => {
-          section.classList.add("reveal");
-        });
-      });
-    </script>
-  </body>
-</html>
+    <button class="contact-btn" data-i18n="contact_send">
+      Envoyer
+    </button>
+  </form>
+</section>
