@@ -321,3 +321,124 @@ body.dark .cv-btn {
   background: linear-gradient(135deg, #004e6f, #003b56);
   color: #e7f1ff;
 }
+/* =====================================================
+   PAGE CONTACT
+===================================================== */
+
+.contact-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITRES */
+.contact-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* FORMULAIRE */
+.contact-form {
+  background: var(--card-bg);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* GROUPES */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* LABEL */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* INPUT / TEXTAREA */
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #cfdfff;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* FOCUS */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 231, 255, 0.25);
+}
+
+/* TEXTAREA */
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* BOUTON ENVOI */
+.contact-btn {
+  align-self: center;
+  margin-top: 10px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  border: none;
+  background: var(--header-grad);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* =====================================================
+   DARK MODE CONTACT
+===================================================== */
+
+body.dark .contact-form {
+  background: rgba(21,32,59,0.95);
+}
+
+body.dark .form-group input,
+body.dark .form-group textarea {
+  background: #0b142a;
+  color: #e7f1ff;
+  border-color: #2c3f66;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-section h1 {
+    font-size: 26px;
+  }
+}
