@@ -1,3 +1,7 @@
+const DEFAULT_LANG = "fr";
+
+let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
+
 async function loadLanguage(lang) {
   try {
     const response = await fetch(`../Lang/JSON/${lang}.json`);
@@ -5,30 +9,41 @@ async function loadLanguage(lang) {
 
     const translations = await response.json();
 
+    // Texte normal
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
       if (translations[key]) {
-        el.innerHTML = translations[key];
+        el.textContent = translations[key];
+      }
+    });
+
+    // Placeholders
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      if (translations[key]) {
+        el.setAttribute("placeholder", translations[key]);
       }
     });
 
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
 
-  } catch (error) {
-    console.error("Erreur chargement langue :", error);
+  } catch (err) {
+    console.error("Erreur de traduction :", err);
   }
 }
 
-// langue au chargement
+// Boutons langue
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "fr";
-  loadLanguage(savedLang);
-});
+  loadLanguage(currentLang);
 
-// boutons langue
-document.addEventListener("click", e => {
-  if (e.target.classList.contains("lang-btn")) {
-    loadLanguage(e.target.dataset.lang);
-  }
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      loadLanguage(lang);
+
+      document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active-lang"));
+      btn.classList.add("active-lang");
+    });
+  });
 });
