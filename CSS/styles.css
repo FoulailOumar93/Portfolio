@@ -471,3 +471,49 @@ body.dark .glow-on-hover {
   background: linear-gradient(135deg, #004e6f, #003b56);
   color: #e7f1ff;
 }
+/* =====================================================
+   PAGE CERTIFICATIONS – FIX FINAL
+===================================================== */
+
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+  align-items: stretch;
+}
+
+.certifications a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certifications a:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+.certifications img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications img {
+    max-width: 100%;
+  }
+}
