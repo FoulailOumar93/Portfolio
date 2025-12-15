@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="profil_title">Profil</title>
 
-  <link rel="stylesheet" href="../CSS/styles.css" />
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
+
+  <!-- Scripts -->
   <script src="../JS/toggleTheme.js" defer></script>
   <script src="../JS/menu.js" defer></script>
   <script src="../JS/footer.js" defer></script>
@@ -17,13 +23,21 @@
 
 <body>
 
-  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
+  <!-- Theme switch -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Menu dynamique -->
   <div id="menu-container"></div>
 
+  <!-- Contenu principal -->
   <main class="wrapper">
 
+    <!-- PROFIL -->
     <section>
-      <h1 data-i18n="profil_title">À propos de moi</h1>
+      <h1 data-i18n="profil_title">Profil</h1>
+
       <p data-i18n="profil_p1"></p>
       <p data-i18n="profil_p2"></p>
       <p data-i18n="profil_p3"></p>
@@ -31,16 +45,25 @@
       <p data-i18n="profil_p5"></p>
     </section>
 
+    <!-- EXPÉRIENCE -->
     <section>
       <h1 data-i18n="profil_exp_title"></h1>
+
       <p data-i18n="profil_exp_p1"></p>
       <p data-i18n="profil_exp_p2"></p>
 
-      <button class="glow-on-hover" data-i18n="profil_exp_cv"
-        onclick="window.location='../Documents/PDF/CV FOULAIL OUMAR.pdf';">
-      </button>
+      <!-- ✅ BOUTON CV CORRIGÉ -->
+      <a
+        href="../Documents/PDF/CV FOULAIL OUMAR.pdf"
+        class="cv-btn"
+        data-i18n="profil_exp_cv"
+        download
+      >
+        Télécharger le CV
+      </a>
     </section>
 
+    <!-- QUALITÉS -->
     <section>
       <h1 data-i18n="profil_qualities_title"></h1>
       <p data-i18n="profil_q_p"></p>
@@ -48,6 +71,7 @@
 
   </main>
 
+  <!-- Footer dynamique -->
   <div id="footer-container"></div>
 
 </body>
