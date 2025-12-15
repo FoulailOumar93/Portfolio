@@ -291,3 +291,33 @@ body.dark .footer {
   background: linear-gradient(135deg, #004e6f, #003b56);
   color: #e7f1ff;
 }
+/* ===============================
+   BOUTON CV – STYLE PRO
+================================ */
+
+.cv-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #081021;
+  background: linear-gradient(135deg, #00e7ff, #01b1ff);
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.cv-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.3);
+  color: #081021;
+}
+
+/* Dark mode */
+body.dark .cv-btn {
+  background: linear-gradient(135deg, #004e6f, #003b56);
+  color: #e7f1ff;
+}
