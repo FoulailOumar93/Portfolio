@@ -3,82 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="bts_intro_title">BTS SIO</title>
+  <title data-i18n="bts_title">BTS SIO</title>
 
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- CSS (CHEMIN ABSOLU) -->
-  <link rel="stylesheet" href="/Portfolio/CSS/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/styles.css">
 
   <!-- JS -->
-  <script src="/Portfolio/JS/toggleTheme.js" defer></script>
-  <script src="/Portfolio/JS/menu.js" defer></script>
-  <script src="/Portfolio/JS/footer.js" defer></script>
-  <script src="/Portfolio/JS/lang.js" defer></script>
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Bouton thème -->
+  <!-- Theme switch -->
   <div id="theme-switch" class="theme-switch">
     <i class="fas fa-moon"></i>
   </div>
 
-  <!-- MENU -->
+  <!-- Menu -->
   <div id="menu-container"></div>
 
-  <!-- CONTENU -->
+  <!-- CONTENT -->
   <main class="wrapper">
 
+    <!-- INTRO -->
     <section>
-      <h1 data-i18n="bts_intro_title">Qu’est-ce que le BTS SIO ?</h1>
-      <p data-i18n="bts_intro_text">
-        Le BTS SIO forme aux métiers de l’informatique avec deux options.
-      </p>
-    </section>
+      <h1 data-i18n="bts_heading">BTS SIO – Option SLAM</h1>
 
-    <section>
-      <h1 data-i18n="bts_voillaume_title">BTS SIO au Lycée Voillaume</h1>
-      <p data-i18n="bts_voillaume_text">
-        Une formation complète avec un encadrement pédagogique solide.
+      <p data-i18n="bts_intro">
+        Le BTS Services Informatiques aux Organisations (SIO) forme aux métiers
+        de l’informatique en entreprise.
       </p>
 
-      <!-- IMAGE (CHEMIN ABSOLU) -->
-      <img 
-        src="/Portfolio/IMG/voillaume.jpg" 
-        alt="Lycée Voillaume" 
-        style="max-width:100%; border-radius:16px; margin-top:20px;"
+      <img
+        src="/Portfolio/IMG/Logo BTS-SIO.png"
+        alt="Logo BTS SIO"
+        width="220"
+        style="display:block;margin:30px auto;"
+        loading="lazy"
       >
     </section>
 
+    <!-- OPTIONS -->
     <section>
-      <h1 data-i18n="bts_slam_title">Option SLAM</h1>
-      <p data-i18n="bts_slam_text">
-        Développement web, logiciel et mobile.
+      <h1 data-i18n="bts_options_title">Les options du BTS SIO</h1>
+
+      <p data-i18n="bts_options_intro">
+        Le BTS SIO propose deux spécialisations :
       </p>
+
+      <ul>
+        <li data-i18n="bts_option_slam">
+          <strong>SLAM</strong> — Développement d’applications
+        </li>
+        <li data-i18n="bts_option_sisr">
+          <strong>SISR</strong> — Réseaux et systèmes
+        </li>
+      </ul>
     </section>
 
+    <!-- SLAM -->
     <section>
-      <h1 data-i18n="bts_sisr_title">Option SISR</h1>
-      <p data-i18n="bts_sisr_text">
-        Réseaux, serveurs et infrastructures informatiques.
+      <h1 data-i18n="bts_slam_title">Option SLAM (choisie)</h1>
+
+      <p data-i18n="bts_slam_p1">
+        L’option SLAM est orientée développement logiciel et web.
       </p>
+
+      <ul>
+        <li data-i18n="bts_slam_skill1">HTML, CSS, JavaScript</li>
+        <li data-i18n="bts_slam_skill2">PHP, SQL</li>
+        <li data-i18n="bts_slam_skill3">Programmation orientée objet</li>
+        <li data-i18n="bts_slam_skill4">Bases de données</li>
+      </ul>
     </section>
 
+    <!-- EXPERIENCE -->
     <section>
-      <h1 data-i18n="bts_after_title">Après le BTS</h1>
-      <p data-i18n="bts_after_text">
-        Licence, alternance ou insertion professionnelle.
+      <h1 data-i18n="bts_experience_title">Expérience & projets</h1>
+
+      <p data-i18n="bts_experience_p">
+        Cette formation m’a permis de réaliser plusieurs projets concrets
+        et stages en milieu professionnel.
       </p>
+
+      <img
+        src="/Portfolio/IMG/Tableau de synthèse.png"
+        alt="Tableau de synthèse BTS SIO"
+        style="max-width:100%;margin-top:30px;border-radius:12px;"
+        loading="lazy"
+      >
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <div id="footer-container"></div>
 
 </body>
