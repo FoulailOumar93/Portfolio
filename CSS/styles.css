@@ -442,3 +442,32 @@ body.dark .form-group textarea {
     font-size: 26px;
   }
 }
+/* ===============================
+   BOUTON PLAQUETTE / GLOW
+================================ */
+
+.glow-on-hover {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #081021;
+  background: linear-gradient(135deg, #00e7ff, #01b1ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.35);
+}
+
+/* Dark mode */
+body.dark .glow-on-hover {
+  background: linear-gradient(135deg, #004e6f, #003b56);
+  color: #e7f1ff;
+}
