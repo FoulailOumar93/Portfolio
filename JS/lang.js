@@ -1,49 +1,60 @@
-const DEFAULT_LANG = "fr";
+// ===============================
+// i18n – Language Manager
+// Compatible GitHub Pages
+// ===============================
 
+const DEFAULT_LANG = "fr";
+const LANG_PATH = "../Lang/JSON/";
+
+let translations = {};
 let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
 
+// Charger la langue
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`../Lang/JSON/${lang}.json`);
-    if (!response.ok) throw new Error("Lang file not found");
-
-    const translations = await response.json();
-
-    // Texte normal
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      if (translations[key]) {
-        el.textContent = translations[key];
-      }
-    });
-
-    // Placeholders
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-      const key = el.getAttribute("data-i18n-placeholder");
-      if (translations[key]) {
-        el.setAttribute("placeholder", translations[key]);
-      }
-    });
-
+    const response = await fetch(`${LANG_PATH}${lang}.json`);
+    translations = await response.json();
+    applyTranslations();
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
-
-  } catch (err) {
-    console.error("Erreur de traduction :", err);
+    setActiveLangButton(lang);
+  } catch (error) {
+    console.error("Erreur chargement langue :", error);
   }
 }
 
-// Boutons langue
+// Appliquer les traductions
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[key]) {
+      el.innerHTML = translations[key];
+    }
+  });
+
+  // Placeholders (inputs / textarea)
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (translations[key]) {
+      el.placeholder = translations[key];
+    }
+  });
+}
+
+// Boutons actifs
+function setActiveLangButton(lang) {
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.classList.toggle("active-lang", btn.dataset.lang === lang);
+  });
+}
+
+// Init
 document.addEventListener("DOMContentLoaded", () => {
   loadLanguage(currentLang);
 
   document.querySelectorAll(".lang-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      const lang = btn.dataset.lang;
-      loadLanguage(lang);
-
-      document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active-lang"));
-      btn.classList.add("active-lang");
+      loadLanguage(btn.dataset.lang);
     });
   });
 });
