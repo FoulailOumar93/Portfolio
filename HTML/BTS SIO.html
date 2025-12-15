@@ -3,79 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="bts_title">BTS SIO</title>
+  <title data-i18n="bts_intro_title">BTS SIO</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS (CHEMIN ABSOLU) -->
+  <link rel="stylesheet" href="/Portfolio/CSS/styles.css">
+
+  <!-- JS -->
+  <script src="/Portfolio/JS/toggleTheme.js" defer></script>
+  <script src="/Portfolio/JS/menu.js" defer></script>
+  <script src="/Portfolio/JS/footer.js" defer></script>
+  <script src="/Portfolio/JS/lang.js" defer></script>
 </head>
 
 <body>
+
+  <!-- Bouton thème -->
   <div id="theme-switch" class="theme-switch">
     <i class="fas fa-moon"></i>
   </div>
 
+  <!-- MENU -->
   <div id="menu-container"></div>
 
+  <!-- CONTENU -->
   <main class="wrapper">
 
     <section>
-      <h1 data-i18n="bts_intro_title">Qu'est-ce que le BTS SIO ?</h1>
+      <h1 data-i18n="bts_intro_title">Qu’est-ce que le BTS SIO ?</h1>
       <p data-i18n="bts_intro_text">
-        Le BTS SIO forme aux métiers de l’informatique avec deux options : SLAM (dev) et SISR (réseaux).
+        Le BTS SIO forme aux métiers de l’informatique avec deux options.
       </p>
     </section>
 
     <section>
       <h1 data-i18n="bts_voillaume_title">BTS SIO au Lycée Voillaume</h1>
       <p data-i18n="bts_voillaume_text">
-        Formation complète avec un encadrement solide.
+        Une formation complète avec un encadrement pédagogique solide.
       </p>
 
-      <button
-        class="glow-on-hover"
-        onclick="window.location='../Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
-        data-i18n="bts_download">
-        Télécharger la plaquette
-      </button>
-    </section>
-
-    <section>
-      <h1 data-i18n="bts_sio_title">Services Informatiques aux Organisations</h1>
-      <p data-i18n="bts_sio_text">
-        Le BTS développe des compétences en dev, réseaux, cybersécurité & gestion du SI.
-      </p>
+      <!-- IMAGE (CHEMIN ABSOLU) -->
+      <img 
+        src="/Portfolio/IMG/voillaume.jpg" 
+        alt="Lycée Voillaume" 
+        style="max-width:100%; border-radius:16px; margin-top:20px;"
+      >
     </section>
 
     <section>
       <h1 data-i18n="bts_slam_title">Option SLAM</h1>
       <p data-i18n="bts_slam_text">
-        Développement web, logiciel, mobile, maintenance applicative.
+        Développement web, logiciel et mobile.
       </p>
     </section>
 
     <section>
       <h1 data-i18n="bts_sisr_title">Option SISR</h1>
       <p data-i18n="bts_sisr_text">
-        Réseaux, serveurs, sécurité & infrastructure informatique.
+        Réseaux, serveurs et infrastructures informatiques.
       </p>
     </section>
 
     <section>
       <h1 data-i18n="bts_after_title">Après le BTS</h1>
       <p data-i18n="bts_after_text">
-        Licence pro, bachelor, alternance ou insertion professionnelle.
+        Licence, alternance ou insertion professionnelle.
       </p>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <div id="footer-container"></div>
 
-  <!-- JS -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
 </body>
 </html>
