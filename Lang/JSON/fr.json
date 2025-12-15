@@ -12,27 +12,28 @@
   "footer_follow": "Me suivre",
   "footer_rights": "© 2025 Tous droits réservés — Foulail Oumar",
 
-  "accueil_title": "Bienvenue Sur Le Portfolio De Foulail Oumar",
+  "accueil_title": "Bienvenue sur le portfolio de Foulail Oumar",
   "accueil_subtitle": "Étudiant O'Clock — Développeur Web & Mobile",
 
   "profil_title": "Profil",
-  "profil_p1": "Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par l’informatique.",
-  "profil_p2": "J’ai d’abord suivi un parcours STMG au lycée Jacques Brel.",
-  "profil_p3": "J’ai ensuite obtenu un BTS SIO option SLAM.",
-  "profil_p4": "Puis j’ai intégré l’école O’Clock pour me former au développement Web et Mobile.",
-  "profil_p5": "",
 
-  "profil_exp_title": "Expérience Professionnelle",
-  "profil_exp_p1": "J’ai réalisé plusieurs stages en structures publiques et privées.",
-  "profil_exp_p2": "Ces expériences m’ont permis de développer mes compétences techniques et professionnelles.",
+  "profil_p1": "Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par le développement informatique.",
+  "profil_p2": "Après l’obtention d’un BTS SIO option SLAM, j’ai choisi de me spécialiser davantage dans le développement web.",
+  "profil_p3": "J’ai intégré l’école O’Clock afin de suivre la formation Développeur Web & Web Mobile (DWWM).",
+  "profil_p4": "Cette formation intensive m’a permis de renforcer mes compétences en front-end, back-end et bases de données.",
+  "profil_p5": "Aujourd’hui, je souhaite évoluer vers un profil développeur full-stack et continuer à apprendre en environnement professionnel.",
+
+  "profil_exp_title": "Expérience professionnelle",
+  "profil_exp_p1": "J’ai effectué plusieurs stages en entreprise dans le domaine de l’informatique et du développement web.",
+  "profil_exp_p2": "Ces expériences m’ont permis de travailler sur des projets concrets, de comprendre le fonctionnement d’une équipe technique et de gagner en autonomie.",
   "profil_exp_cv": "Télécharger le CV",
 
-  "profil_qualities_title": "Mes Qualités",
-  "profil_q_p": "Rigoureux, motivé, curieux et passionné par l’apprentissage.",
+  "profil_qualities_title": "Qualités & état d’esprit",
+  "profil_q_p": "Rigoureux, motivé et curieux, j’aime apprendre en continu, résoudre des problèmes et m’investir pleinement dans les projets qui me sont confiés.",
 
   "certif_title": "Certifications",
   "certif_heading": "Mes certifications",
-  "certif_intro": "Certificats obtenus sur OpenClassrooms :",
+  "certif_intro": "Certificats obtenus au cours de mon parcours de formation :",
 
   "contact_title": "Contact",
   "contact_email": "Votre email...",
