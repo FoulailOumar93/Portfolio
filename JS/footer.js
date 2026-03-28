@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="../IMG/GitHub Icon.png" alt="GitHub" />
         </a>
       </div>
-      <p>© 2025 Tous Droits Réservés — Foulail Oumar</p>
+      <p>© 2026 Tous Droits Réservés — Foulail Oumar</p>
     </footer>
   `;
   const container = document.getElementById("footer-container");
