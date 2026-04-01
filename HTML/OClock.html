@@ -1,8 +1,245 @@
 <!DOCTYPE html>
+<html lang="fr"><!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="oclock_title">Formation O'Clock</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
+
+  <!-- JS -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Theme switch -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Menu -->
+  <div id="menu-container"></div>
+
+  <!-- ===================== CONTENU ===================== -->
+  <main class="wrapper">
+
+    <!-- ===================== O'CLOCK INTRO ===================== -->
+    <section>
+      <h1 data-i18n="oclock_heading">Formation O'Clock</h1>
+
+      <p>
+        J’ai intégré <strong>l’école O’Clock en 2025</strong> afin de suivre la
+        formation <strong>Développeur Web et Web Mobile (DWWM)</strong>.
+        Cette formation intensive est orientée vers la pratique professionnelle
+        et la montée en compétences techniques.
+      </p>
+
+      <p>
+        Le rythme de la formation repose sur un travail quotidien soutenu,
+        des exercices pratiques, des projets encadrés et une forte autonomie,
+        reproduisant les conditions réelles du monde professionnel.
+      </p>
+
+      <center>
+        <img src="../IMG/O'Clock Logo.jpg" width="230" loading="lazy" alt="Logo O'Clock" />
+      </center>
+    </section>
+
+    <!-- ===================== DEROULEMENT ===================== -->
+    <section>
+      <h1 data-i18n="oclock_modules_title">Déroulement de la formation</h1>
+
+      <p>
+        La formation O’Clock est structurée en plusieurs phases progressives,
+        permettant d’acquérir des bases solides puis d’approfondir des technologies
+        modernes utilisées dans le développement web.
+      </p>
+
+      <ul>
+        <li>HTML et CSS : structure et mise en page des sites web</li>
+        <li>JavaScript : programmation côté client</li>
+        <li>Git et GitHub : gestion de versions et travail collaboratif</li>
+        <li>Node.js et Express : développement back-end</li>
+        <li>API REST : communication entre le front-end et le back-end</li>
+        <li>React : développement d’applications web dynamiques (SPA)</li>
+        <li>Projet fil rouge et soutenance finale (Apothéose)</li>
+      </ul>
+    </section>
+
+    <!-- ===================== COMPETENCES ===================== -->
+    <section>
+      <h1 data-i18n="oclock_skills_title">Compétences acquises</h1>
+
+      <p>
+        Cette formation m’a permis de développer des compétences techniques,
+        mais également des compétences méthodologiques et organisationnelles.
+      </p>
+
+      <ul>
+        <li>Développement front-end avec React et JavaScript</li>
+        <li>Développement back-end avec Node.js et Express</li>
+        <li>Gestion de bases de données PostgreSQL avec Sequelize</li>
+        <li>Conception et utilisation d’API REST</li>
+        <li>Application du modèle MVC</li>
+        <li>Travail en équipe, autonomie et gestion du temps</li>
+      </ul>
+    </section>
+
+    <!-- ===================== PROJET FIL ROUGE ===================== -->
+   <!-- ===================== PROJET FIL ROUGE ===================== -->
+<section class="project">
+
+  <h1 data-i18n="oclock_project_title">Projet Fil Rouge : CinéDélices</h1>
+
+  <center>
+    <img src="../IMG/cinedelices-logo.png" width="180" loading="lazy" alt="Logo CinéDélices" />
+  </center>
+
+  <p>
+    Le projet <strong>CinéDélices</strong> est une application web complète
+    réalisée dans le cadre de la formation O’Clock.
+  </p>
+
+  <p>
+    Il permet d’associer des recettes culinaires à des œuvres (films, séries, mangas),
+    avec un système complet de gestion des données.
+  </p>
+
+  <!-- 🔥 GRID DES SCREENS -->
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>🏠 Accueil</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/home-page.jpg" alt="Accueil">
+      </div>
+      <p>Recherche dynamique via API.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🎬 Œuvres</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/media-list.jpg" alt="Oeuvres">
+      </div>
+      <p>Catalogue avec filtres.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🍽️ Recettes</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/recipe-list.jpg" alt="Recettes">
+      </div>
+      <p>Données dynamiques.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🔐 Connexion</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/login-page.png" alt="Login">
+      </div>
+      <p>Authentification JWT.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>📝 Inscription</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/register-page.png" alt="Register">
+      </div>
+      <p>Création de compte.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🛠️ Admin</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/admin-dashboard.jpg" alt="Admin">
+      </div>
+      <p>CRUD complet.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>👤 Utilisateur</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/user-dashboard.jpg" alt="User">
+      </div>
+      <p>Espace personnel.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>➕ Recette</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/create-recipe.png" alt="Create recipe">
+      </div>
+      <p>Upload image.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>➕ Œuvre</h3>
+      <div class="img-wrapper">
+        <img src="../IMG/CinéDélices/create-media.png" alt="Create media">
+      </div>
+      <p>Relation many-to-many.</p>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ===================== STAGE RCAB ===================== -->
+    <section>
+      <h1>Stage – RCAB Technologies</h1>
+
+      <center>
+        <img src="../IMG/rcabtechnologies-logo.webp" width="180" loading="lazy" alt="RCAB Technologies" />
+      </center>
+
+      <p>
+        Dans le cadre de la formation O’Clock, j’ai effectué un stage au sein du
+        <strong>centre de formation RCAB Technologies</strong>.
+        Ce stage avait pour objectif de renforcer mes compétences pratiques
+        en développement web.
+      </p>
+
+      <p>
+        Ce stage s’inscrivait dans une démarche pédagogique, avec la réalisation
+        de travaux concrets et des mises en situation professionnelles.
+      </p>
+
+      <h2>🎯 Activités réalisées</h2>
+      <ul>
+        <li>Création et personnalisation de sites web sous WordPress</li>
+        <li>Mise en page et structuration avec Elementor</li>
+        <li>Création de formulaires avec Forminator</li>
+        <li>Intégration de contenus (textes, images, sections)</li>
+        <li>Optimisation responsive (mobile, tablette, ordinateur)</li>
+      </ul>
+
+      <h2>🧠 Compétences développées</h2>
+      <ul>
+        <li>Utilisation de WordPress dans un cadre pédagogique</li>
+        <li>Notions d’UX / UI</li>
+        <li>Organisation du travail et autonomie</li>
+        <li>Respect des consignes et des délais</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+</body>
+</html>
+dans ce code ajoute le nouveau code
   <title>Formation O'Clock</title>
 
   <!-- Fonts -->
