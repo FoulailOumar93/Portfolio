@@ -1,6 +1,6 @@
 /* =====================================================
    PORTFOLIO – FOULAIL OUMAR
-   CSS FINAL STABLE – TEL / TABLETTE / DESKTOP
+   VERSION FINAL PRO + PROJECT GRID
 ===================================================== */
 
 /* ===================== VARIABLES ===================== */
@@ -14,14 +14,13 @@
   --shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* DARK MODE */
 body.dark {
   --bg: #050a19;
   --fg: #e7f1ff;
   --accent-soft: #004c66;
   --header-grad: linear-gradient(135deg, #004e6f, #003b56);
   --card-bg: rgba(21,32,59,0.95);
-  --shadow: 0 8px 25px rgba(0,0,0,0.5);
+  --shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 /* ===================== RESET ===================== */
@@ -33,487 +32,221 @@ body.dark {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Poppins", system-ui, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--bg);
   color: var(--fg);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* =====================================================
-   HEADER / NAVBAR
-===================================================== */
+/* ===================== NAVBAR ===================== */
 header {
   background: var(--header-grad);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--shadow);
 }
 
 nav {
   max-width: 1200px;
-  height: 64px;
   margin: auto;
-  padding: 0 24px;
+  padding: 18px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-/* ===================== MENU DESKTOP ===================== */
-#nav-links {
-  list-style: none;
-  display: flex;
   align-items: center;
-  gap: 22px;
-  white-space: nowrap;
 }
 
-#nav-links li {
-  white-space: nowrap;
+#nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 #nav-links a {
-  text-decoration: none;
   color: var(--fg);
+  text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   border-radius: 6px;
-  transition: background 0.25s ease;
 }
 
-#nav-links a:hover,
-#nav-links a.active {
+#nav-links a:hover {
   background: var(--accent-soft);
   color: #fff;
 }
 
-/* ===================== LANG SWITCH ===================== */
-.lang-switch {
-  display: flex;
-  gap: 8px;
-}
-
-.lang-btn {
-  border: none;
-  background: rgba(255,255,255,0.35);
-  padding: 6px 8px;
-  border-radius: 6px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.lang-btn:hover {
-  background: rgba(255,255,255,0.6);
-}
-
-/* ===================== BURGER ===================== */
-.burger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.burger span {
-  width: 28px;
-  height: 4px;
-  background: #fff;
-  border-radius: 3px;
-}
-
-/* =====================================================
-   MAIN CONTENT
-===================================================== */
+/* ===================== WRAPPER ===================== */
 .wrapper {
   max-width: 1000px;
-  margin: 90px auto 70px;
-  padding: 0 24px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
 section {
   margin-bottom: 70px;
+  animation: fadeUp 0.6s ease;
 }
 
+/* ===================== TEXT ===================== */
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 25px;
 }
 
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 p {
-  font-size: 17px;
   line-height: 1.7;
   margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* ===================== IMAGE ===================== */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   PROJECT GRID (CINEDELICES)
+===================================================== */
+
+.project {
+  margin-top: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.project-card img {
+  margin: 12px 0;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: var(--accent);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 /* =====================================================
    FOOTER
 ===================================================== */
+
 .footer {
-  background: var(--card-bg);
-  padding: 30px;
+  background: var(--header-grad);
   text-align: center;
-  margin-top: auto;
-  box-shadow: 0 -3px 10px var(--shadow);
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.footer p {
+  font-size: 13px;
+  opacity: 0.7;
 }
 
 /* =====================================================
-   THEME SWITCH (LUNE)
+   BUTTON
 ===================================================== */
+
+.cv-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: var(--header-grad);
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   THEME SWITCH
+===================================================== */
+
 .theme-switch {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 52px;
-  height: 52px;
   background: var(--accent);
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 9999; /* 🔥 au-dessus de tout */
 }
 
 .theme-switch i {
-  font-size: 22px;
-  color: #081021;
-}
-
-/* =====================================================
-   RESPONSIVE – MOBILE & TABLETTE
-===================================================== */
-@media (max-width: 900px) {
-
-  .burger {
-    display: flex;
-    z-index: 2001;
-  }
-
-  #nav-links {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--header-grad);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    transform: translateX(-100%);
-    transition: transform 0.35s ease;
-    z-index: 2000;
-  }
-
-  #nav-links.open {
-    transform: translateX(0);
-  }
-
-  #nav-links a {
-    font-size: 20px;
-    color: #081021;
-  }
-
-  .lang-switch {
-    margin-top: 20px;
-  }
-}
-/* ===============================
-   FOOTER – FIX FINAL
-================================ */
-
-#footer-container {
-  margin-top: 120px;
-}
-
-.footer {
-  background: linear-gradient(135deg, #00e7ff, #01b1ff);
-  color: #081021;
-  padding: 50px 20px 35px;
-  text-align: center;
-  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
-}
-
-/* Titre */
-.footer h4 {
   font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-/* Réseaux */
-.footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 26px;
-  margin-bottom: 25px;
-}
-
-.footer .social-links a {
-  display: inline-flex;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.25);
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.footer .social-links a:hover {
-  transform: translateY(-6px) scale(1.1);
-  background: rgba(255,255,255,0.45);
-}
-
-.footer .social-links img {
-  width: 26px;
-  height: 26px;
-}
-
-/* Copyright */
-.footer p {
-  font-size: 13px;
-  opacity: 0.75;
-}
-
-/* Dark mode */
-body.dark .footer {
-  background: linear-gradient(135deg, #004e6f, #003b56);
-  color: #e7f1ff;
-}
-/* ===============================
-   BOUTON CV – STYLE PRO
-================================ */
-
-.cv-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #081021;
-  background: linear-gradient(135deg, #00e7ff, #01b1ff);
-  border-radius: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
-
-/* Hover */
-.cv-btn:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.3);
-  color: #081021;
-}
-
-/* Dark mode */
-body.dark .cv-btn {
-  background: linear-gradient(135deg, #004e6f, #003b56);
-  color: #e7f1ff;
-}
-/* =====================================================
-   PAGE CONTACT
-===================================================== */
-
-.contact-section {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* TITRES */
-.contact-section h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  font-size: 17px;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-/* FORMULAIRE */
-.contact-form {
-  background: var(--card-bg);
-  padding: 35px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-/* GROUPES */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-/* LABEL */
-.form-group label {
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-/* INPUT / TEXTAREA */
-.form-group input,
-.form-group textarea {
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid #cfdfff;
-  font-size: 15px;
-  font-family: inherit;
-  background: #fff;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-
-/* FOCUS */
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(0, 231, 255, 0.25);
-}
-
-/* TEXTAREA */
-.form-group textarea {
-  min-height: 130px;
-  resize: vertical;
-}
-
-/* BOUTON ENVOI */
-.contact-btn {
-  align-self: center;
-  margin-top: 10px;
-  padding: 14px 36px;
-  border-radius: 30px;
-  border: none;
-  background: var(--header-grad);
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* =====================================================
-   DARK MODE CONTACT
+   ANIMATION
 ===================================================== */
 
-body.dark .contact-form {
-  background: rgba(21,32,59,0.95);
-}
-
-body.dark .form-group input,
-body.dark .form-group textarea {
-  background: #0b142a;
-  color: #e7f1ff;
-  border-color: #2c3f66;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-  .contact-form {
-    padding: 25px 20px;
+  h1 {
+    font-size: 24px;
   }
 
-  .contact-section h1 {
-    font-size: 26px;
-  }
-}
-/* ===============================
-   BOUTON PLAQUETTE / GLOW
-================================ */
-
-.glow-on-hover {
-  display: inline-block;
-  margin: 25px auto;
-  padding: 14px 32px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #081021;
-  background: linear-gradient(135deg, #00e7ff, #01b1ff);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  transition: all 0.3s ease;
-}
-
-.glow-on-hover:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 16px 35px rgba(0,0,0,0.35);
-}
-
-/* Dark mode */
-body.dark .glow-on-hover {
-  background: linear-gradient(135deg, #004e6f, #003b56);
-  color: #e7f1ff;
-}
-/* =====================================================
-   PAGE CERTIFICATIONS – FIX FINAL
-===================================================== */
-
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  align-items: stretch;
-}
-
-.certifications a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certifications a:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
-}
-
-.certifications img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  border-radius: 12px;
-  object-fit: contain;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .certifications {
-    grid-template-columns: 1fr;
+  .project-grid {
+    gap: 20px;
   }
 
-  .certifications img {
-    max-width: 100%;
-  }
 }
