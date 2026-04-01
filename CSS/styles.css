@@ -262,4 +262,268 @@ img {
     height: 150px; /* 🔥 un peu plus petit sur mobile */
   }
 
+}/* =====================================================
+   PORTFOLIO – FOULAIL OUMAR
+   VERSION FINAL PRO + PROJECT GRID FIX
+===================================================== */
+
+/* ===================== VARIABLES ===================== */
+:root {
+  --bg: #edf4ff;
+  --fg: #081021;
+  --accent: #00e7ff;
+  --accent-soft: #79f1ff;
+  --header-grad: linear-gradient(135deg, #00e7ff, #01b1ff);
+  --card-bg: rgba(255,255,255,0.95);
+  --shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+body.dark {
+  --bg: #050a19;
+  --fg: #e7f1ff;
+  --accent-soft: #004c66;
+  --header-grad: linear-gradient(135deg, #004e6f, #003b56);
+  --card-bg: rgba(21,32,59,0.95);
+  --shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* ===================== RESET ===================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+}
+
+/* ===================== NAVBAR ===================== */
+header {
+  background: var(--header-grad);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#nav-links a {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+#nav-links a:hover {
+  background: var(--accent-soft);
+  color: #fff;
+}
+
+/* ===================== WRAPPER ===================== */
+.wrapper {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 70px;
+  animation: fadeUp 0.6s ease;
+}
+
+/* ===================== TEXT ===================== */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* ===================== IMAGE GLOBAL ===================== */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   PROJECT GRID (CINEDELICES) – FIX IMPORTANT
+===================================================== */
+
+.project {
+  margin-top: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* HOVER CARD */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* 🔥 IMAGE FIX (IMPORTANT) */
+.project-card img {
+  width: 100%;
+  height: 180px;          /* 🔥 taille fixe */
+  object-fit: cover;      /* 🔥 coupe propre */
+  border-radius: 12px;
+  margin: 12px 0;
+  transition: transform 0.3s ease;
+}
+
+/* ZOOM IMAGE */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* TITRE */
+.project-card h3 {
+  color: var(--accent);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* TEXTE */
+.project-card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  background: var(--header-grad);
+  text-align: center;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.footer p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.cv-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: var(--header-grad);
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   THEME SWITCH
+===================================================== */
+
+.theme-switch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.theme-switch i {
+  font-size: 20px;
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .project-grid {
+    gap: 20px;
+  }
+
+  .project-card img {
+    height: 150px; /* 🔥 un peu plus petit sur mobile */
+  }
+
 }
