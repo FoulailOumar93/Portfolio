@@ -1,6 +1,6 @@
 /* =====================================================
    PORTFOLIO – FOULAIL OUMAR
-   VERSION FINAL PRO + PROJECT GRID
+   VERSION FINAL PRO + PROJECT GRID FIX
 ===================================================== */
 
 /* ===================== VARIABLES ===================== */
@@ -108,14 +108,14 @@ ul {
   padding-left: 20px;
 }
 
-/* ===================== IMAGE ===================== */
+/* ===================== IMAGE GLOBAL ===================== */
 img {
   max-width: 100%;
   border-radius: 10px;
 }
 
 /* =====================================================
-   PROJECT GRID (CINEDELICES)
+   PROJECT GRID (CINEDELICES) – FIX IMPORTANT
 ===================================================== */
 
 .project {
@@ -138,26 +138,35 @@ img {
   overflow: hidden;
 }
 
+/* HOVER CARD */
 .project-card:hover {
-  transform: translateY(-8px) scale(1.03);
+  transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
+/* 🔥 IMAGE FIX (IMPORTANT) */
 .project-card img {
+  width: 100%;
+  height: 180px;          /* 🔥 taille fixe */
+  object-fit: cover;      /* 🔥 coupe propre */
+  border-radius: 12px;
   margin: 12px 0;
   transition: transform 0.3s ease;
 }
 
+/* ZOOM IMAGE */
 .project-card:hover img {
   transform: scale(1.05);
 }
 
+/* TITRE */
 .project-card h3 {
   color: var(--accent);
   font-size: 18px;
   margin-bottom: 8px;
 }
 
+/* TEXTE */
 .project-card p {
   font-size: 14px;
   opacity: 0.9;
@@ -247,6 +256,10 @@ img {
 
   .project-grid {
     gap: 20px;
+  }
+
+  .project-card img {
+    height: 150px; /* 🔥 un peu plus petit sur mobile */
   }
 
 }
