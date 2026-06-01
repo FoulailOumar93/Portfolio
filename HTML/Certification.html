@@ -2,49 +2,137 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="certif_title">Certifications</title>
 
-  <!-- Fonts & Icons -->
+  <title>Certifications | Portfolio Foulail Oumar</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="../CSS/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Scripts -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
 </head>
 
 <body>
 
-  <div id="theme-switch" class="theme-switch"><i class="fas fa-moon"></i></div>
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
 
   <div id="menu-container"></div>
 
   <main class="wrapper">
+
+    <section class="hero">
+      <h1>Certifications</h1>
+
+      <p class="subtitle">
+        Retrouvez ici les certifications obtenues au cours de mon parcours.
+      </p>
+    </section>
+
+    <section class="about">
+      <h2>Mes certifications</h2>
+
+      <p>
+        Ces certifications m'ont permis de renforcer mes bases techniques
+        dans différents domaines comme le développement web, les bases de données
+        et les outils bureautiques.
+      </p>
+    </section>
+
     <section>
-      <h1 data-i18n="certif_heading">Mes Certifications</h1>
-      <p data-i18n="certif_intro">Certificats obtenus sur OpenClassrooms :</p>
+      <h2>OpenClassrooms</h2>
 
-      <div class="certifications">
-        <a href="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg" target="_blank">
-          <img src="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg" alt="HTML CSS" />
+      <div class="project-grid">
+
+        <a
+          class="project-card"
+          href="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg"
+          target="_blank"
+        >
+          <h3>🌐 HTML5 & CSS3</h3>
+
+          <div class="img-wrapper">
+            <img
+              src="../Certification/Certificat OpenClassroom HTML5 et CSS3.jpg"
+              alt="Certification HTML5 et CSS3"
+            />
+          </div>
+
+          <p>
+            Certification portant sur la structure HTML,
+            la mise en page CSS et les bases de l'intégration web.
+          </p>
         </a>
 
-        <a href="../Certification/Certificat OpenClassroom PHP et MySQL.jpg" target="_blank">
-          <img src="../Certification/Certificat OpenClassroom PHP et MySQL.jpg" alt="PHP SQL" />
+        <a
+          class="project-card"
+          href="../Certification/Certificat OpenClassroom PHP et MySQL.jpg"
+          target="_blank"
+        >
+          <h3>🗄️ PHP & MySQL</h3>
+
+          <div class="img-wrapper">
+            <img
+              src="../Certification/Certificat OpenClassroom PHP et MySQL.jpg"
+              alt="Certification PHP et MySQL"
+            />
+          </div>
+
+          <p>
+            Certification autour du développement côté serveur
+            et de la gestion de bases de données relationnelles.
+          </p>
         </a>
 
-        <a href="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg" target="_blank">
-          <img src="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg" alt="Excel" />
+        <a
+          class="project-card"
+          href="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg"
+          target="_blank"
+        >
+          <h3>📊 Excel</h3>
+
+          <div class="img-wrapper">
+            <img
+              src="../Certification/Certificat OpenClassroom Maîtrisez les fondamentaux d'Excel.jpg"
+              alt="Certification Excel"
+            />
+          </div>
+
+          <p>
+            Certification sur les fondamentaux d'Excel,
+            l'organisation des données et les fonctions de base.
+          </p>
         </a>
+
       </div>
     </section>
+
+    <section class="about">
+      <h2>Objectif</h2>
+
+      <p>
+        Ces certifications complètent mon apprentissage et montrent ma volonté
+        de continuer à progresser dans le domaine du numérique.
+      </p>
+    </section>
+
   </main>
 
   <div id="footer-container"></div>
+
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 
 </body>
 </html>

@@ -19,7 +19,40 @@
 
   <link rel="stylesheet" href="../CSS/styles.css" />
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
 
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+      <img src="" alt="Image agrandie">
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector("img");
+    const closeBtn = lightbox.querySelector(".lightbox-close");
+
+    document.querySelectorAll(".img-wrapper img").forEach((img) => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add("active");
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove("active");
+      }
+    });
+  });
+</script>
 <body>
 
   <div id="theme-switch" class="theme-switch">

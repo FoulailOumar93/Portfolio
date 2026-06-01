@@ -553,3 +553,91 @@ p {
 .lang-btn:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+/* =========================
+   CONTACT
+========================= */
+
+.contact-form {
+  max-width: 700px;
+  margin: 40px auto 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #dbeafe;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #00c8ff;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+}
+
+.form-group textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form .cv-btn {
+  margin-top: 10px;
+}
+/* =====================
+   IMAGE LIGHTBOX
+===================== */
+
+.img-wrapper img {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 28px;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+  font-weight: bold;
+}

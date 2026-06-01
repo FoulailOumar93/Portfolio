@@ -2,77 +2,193 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="profil_title">Profil</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <title>Profil | Portfolio Foulail Oumar</title>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="../CSS/styles.css" />
-
-  <!-- Scripts -->
-  <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
-  <script src="../JS/lang.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Theme switch -->
   <div id="theme-switch" class="theme-switch">
     <i class="fas fa-moon"></i>
   </div>
 
-  <!-- Menu dynamique -->
   <div id="menu-container"></div>
 
-  <!-- Contenu principal -->
   <main class="wrapper">
 
-    <!-- PROFIL -->
-    <section>
-      <h1 data-i18n="profil_title">Profil</h1>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Profil</h1>
 
-      <p data-i18n="profil_p1"></p>
-      <p data-i18n="profil_p2"></p>
-      <p data-i18n="profil_p3"></p>
-      <p data-i18n="profil_p4"></p>
-      <p data-i18n="profil_p5"></p>
-    </section>
+      <p class="subtitle">
+        Découvrez mon parcours, mes objectifs et mes qualités professionnelles.
+      </p>
 
-    <!-- EXPÉRIENCE -->
-    <section>
-      <h1 data-i18n="profil_exp_title"></h1>
-
-      <p data-i18n="profil_exp_p1"></p>
-      <p data-i18n="profil_exp_p2"></p>
-
-      <!-- ✅ BOUTON CV CORRIGÉ -->
       <a
         href="../Documents/PDF/CV FOULAIL OUMAR.pdf"
         class="cv-btn"
-        data-i18n="profil_exp_cv"
         download
       >
-        Télécharger le CV
+        Télécharger mon CV
       </a>
     </section>
 
-    <!-- QUALITÉS -->
+    <!-- PRESENTATION -->
+    <section class="about">
+      <h2>Qui suis-je ?</h2>
+
+      <p>
+        Je m'appelle Foulail Oumar et je suis étudiant chez O'Clock
+        en Développement Web et Web Mobile.
+      </p>
+
+      <p>
+        Passionné par l'informatique, le développement web et les nouvelles
+        technologies, je construis progressivement mon parcours à travers
+        différents projets personnels et professionnels.
+      </p>
+
+      <p>
+        Mon objectif est de continuer à développer mes compétences techniques,
+        gagner en autonomie et évoluer vers des métiers liés au développement web
+        ou au support informatique.
+      </p>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="about">
+      <h2>Mon parcours</h2>
+
+      <p>
+        J'ai suivi une formation intensive chez O'Clock afin d'acquérir les bases
+        du développement web moderne : HTML, CSS, JavaScript, Git, GitHub, Node.js,
+        Express, React et PostgreSQL.
+      </p>
+
+      <p>
+        À travers mes projets comme CinéDélices, AppMeteo et Nexora, j'ai appris
+        à structurer une application, corriger des bugs, améliorer l'interface
+        utilisateur et déployer mes réalisations en ligne.
+      </p>
+    </section>
+
+    <!-- COMPETENCES -->
     <section>
-      <h1 data-i18n="profil_qualities_title"></h1>
-      <p data-i18n="profil_q_p"></p>
+      <h2>Compétences principales</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <span>JSON</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-cloud"></i>
+          <span>Vercel</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Responsive</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUALITES -->
+    <section>
+      <h2>Qualités professionnelles</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <i class="fas fa-search"></i>
+          <span>Curiosité</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-user-check"></i>
+          <span>Autonomie</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <span>Résolution de problèmes</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-clock"></i>
+          <span>Persévérance</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OBJECTIF -->
+    <section class="about">
+      <h2>Objectif professionnel</h2>
+
+      <p>
+        Je souhaite continuer à progresser dans le domaine du numérique,
+        notamment dans le développement web, l'intégration front-end ou le
+        support informatique.
+      </p>
+
+      <p>
+        Mon objectif est de rejoindre une structure dans laquelle je pourrai
+        apprendre, contribuer à des projets concrets et développer mes compétences
+        sur le long terme.
+      </p>
     </section>
 
   </main>
 
-  <!-- Footer dynamique -->
   <div id="footer-container"></div>
+
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
 
 </body>
 </html>

@@ -1,73 +1,157 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="contact_title">Contact</title>
+
+  <title>Contact | Portfolio Foulail Oumar</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 
   <link rel="stylesheet" href="../CSS/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
 
-  <!-- Theme switch -->
+  <!-- Theme Switch -->
+
   <div id="theme-switch" class="theme-switch">
     <i class="fas fa-moon"></i>
   </div>
 
   <!-- Menu -->
+
   <div id="menu-container"></div>
 
-  <!-- CONTENU CONTACT -->
   <main class="wrapper">
-    <section class="contact-section">
 
-      <h1 data-i18n="contact_title">Contact</h1>
-      <p data-i18n="contact_intro">N’hésitez pas à me contacter via le formulaire ci-dessous.</p>
+```
+<!-- HERO -->
+<section class="hero">
 
-      <form class="contact-form" action="https://formspree.io/f/mrbkqaeb" method="POST">
+  <h1>Contact</h1>
 
-        <div class="form-group">
-          <label data-i18n="contact_email_label">Email</label>
-          <input
-            type="email"
-            name="email"
-            data-i18n-placeholder="contact_email_placeholder"
-            required
-          />
-        </div>
+  <p class="subtitle">
+    N'hésitez pas à me contacter pour toute question,
+    collaboration ou opportunité professionnelle.
+  </p>
 
-        <div class="form-group">
-          <label data-i18n="contact_message_label">Message</label>
-          <textarea
-            name="message"
-            data-i18n-placeholder="contact_message_placeholder"
-            required
-          ></textarea>
-        </div>
+</section>
 
-        <button type="submit" class="contact-btn" data-i18n="contact_button">
-          Envoyer
-        </button>
+<!-- INFOS CONTACT -->
+<section>
 
-      </form>
+  <h2>Mes coordonnées</h2>
 
-      <p class="confirmation-message" data-i18n="contact_success" style="display:none;">
-        Message envoyé ! Merci 🙏
-      </p>
+  <div class="skills-grid">
 
-    </section>
+    <div class="skill-card">
+      <i class="fas fa-envelope"></i>
+      <span>Email</span>
+      <p>foulailoumar55@gmail.com</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+      <p>FoulailOumar93</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Localisation</span>
+      <p>La Courneuve (93)</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FORMULAIRE -->
+<section class="about">
+
+  <h2>Formulaire de contact</h2>
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/mrbkqaeb"
+    method="POST"
+  >
+
+    <div class="form-group">
+      <label>Email</label>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Votre adresse email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+
+      <textarea
+        name="message"
+        placeholder="Votre message..."
+        rows="6"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="cv-btn"
+    >
+      Envoyer le message
+    </button>
+
+  </form>
+
+</section>
+
+<!-- DISPO -->
+<section class="about">
+
+  <h2>Disponibilité</h2>
+
+  <p>
+    Je suis actuellement à la recherche d'opportunités
+    dans les domaines du développement web,
+    du support informatique ou des métiers du numérique.
+  </p>
+
+  <p>
+    Vous pouvez me contacter directement via le formulaire
+    ci-dessus ou par email.
+  </p>
+
+</section>
+```
+
   </main>
 
   <!-- Footer -->
+
   <div id="footer-container"></div>
 
-  <!-- Scripts -->
   <script src="../JS/toggleTheme.js" defer></script>
+
   <script src="../JS/menu.js" defer></script>
+
   <script src="../JS/footer.js" defer></script>
+
   <script src="../JS/lang.js" defer></script>
 
 </body>
