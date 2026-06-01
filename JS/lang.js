@@ -70,7 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
       loadLanguage(lang);
 
     }
-
+setTimeout(() => {
+  applyTranslations();
+}, 300);
   });
 
 });
