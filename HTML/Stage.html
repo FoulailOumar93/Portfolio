@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="stage_title">Mes Stages</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../CSS/styles.css" />
+
+  <!-- Scripts -->
+  <script src="../JS/toggleTheme.js" defer></script>
+  <script src="../JS/menu.js" defer></script>
+  <script src="../JS/footer.js" defer></script>
+  <script src="../JS/lang.js" defer></script>
+</head>
+
+<body>
+  <!-- Dark/Light -->
+  <div id="theme-switch" class="theme-switch">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <div id="menu-container"></div>
+
+  <main class="wrapper">
+
+    <!-- ⭐ RCAB -->
+    <section>
+      <h1 data-i18n="stage_rcab_title">Stage O'Clock — RCAB Technologies (2025)</h1>
+      <p data-i18n="stage_rcab_desc">
+        Stage effectué du 22 septembre au 14 novembre 2025 dans l’entreprise RCAB Technologies.
+        Création complète d’un site vitrine professionnel sous WordPress.
+      </p>
+
+      <ul>
+        <li data-i18n="stage_rcab_1">Installation et configuration WordPress</li>
+        <li data-i18n="stage_rcab_2">Création et design des pages avec Elementor</li>
+        <li data-i18n="stage_rcab_3">Formulaires avancés via Forminator</li>
+        <li data-i18n="stage_rcab_4">Optimisation responsive</li>
+      </ul>
+    </section>
+
+    <div style="margin-top:60px;"></div>
+
+    <!-- ⭐ NTIC -->
+    <section>
+      <h1 data-i18n="stage_ntic_title">NTIC Formation Center — Stage BTS (2024)</h1>
+      <p data-i18n="stage_ntic_desc">
+        Stage de 2 mois : développement de deux projets complets.
+      </p>
+
+      <ul>
+        <li data-i18n="stage_ntic_1">Projet IMDB en PHP/SQL (CRUD complet)</li>
+        <li data-i18n="stage_ntic_2">Blog Symfony avec tableau admin</li>
+      </ul>
+    </section>
+
+    <div style="margin-top:60px;"></div>
+
+    <!-- ⭐ MAIRIE -->
+    <section>
+      <h1 data-i18n="stage_mairie_title">Mairie de La Courneuve — Stage 2023</h1>
+
+      <p data-i18n="stage_mairie_desc">
+        Stage au sein du service informatique : migration de postes Windows et dépannage N1/N2.
+      </p>
+
+      <ul>
+        <li data-i18n="stage_mairie_1">Migration Windows 7 → Windows 10/11</li>
+        <li data-i18n="stage_mairie_2">Dépannage matériel et logiciel</li>
+        <li data-i18n="stage_mairie_3">Gestion tickets GLPI</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("section").forEach(s => s.classList.add("reveal"));
+    });
+  </script>
+
+</body>
+</html>

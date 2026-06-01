@@ -1,0 +1,50 @@
+{
+  "menu_home": "Accueil",
+  "menu_profile": "Profil",
+  "menu_bts": "BTS SIO",
+  "menu_oclock": "O'Clock",
+  "menu_projects": "Projets",
+  "menu_stage": "Stages",
+  "menu_veille": "Veille Technologique",
+  "menu_certif": "Certifications",
+  "menu_contact": "Contact",
+
+  "footer_follow": "Me suivre",
+  "footer_rights": "© 2025 Tous droits réservés — Foulail Oumar",
+
+  "accueil_title": "Bienvenue sur le portfolio de Foulail Oumar",
+  "accueil_subtitle": "Étudiant O'Clock — Développeur Web & Mobile",
+
+  "profil_title": "Profil",
+  "profil_p1": "Je m’appelle Foulail Oumar, j’ai 22 ans et je suis passionné par l’informatique.",
+  "profil_p2": "J’ai suivi une formation orientée développement et systèmes informatiques.",
+  "profil_p3": "J’ai obtenu un BTS SIO option SLAM.",
+  "profil_p4": "J’ai ensuite intégré l’école O’Clock pour me spécialiser en développement Web et Mobile.",
+  "profil_p5": "",
+
+  "profil_exp_title": "Expérience professionnelle",
+  "profil_exp_p1": "J’ai réalisé plusieurs stages dans des structures publiques et privées.",
+  "profil_exp_p2": "Ces expériences m’ont permis de renforcer mes compétences techniques et professionnelles.",
+  "profil_exp_cv": "Télécharger le CV",
+
+  "profil_qualities_title": "Mes qualités",
+  "profil_q_p": "Rigoureux, motivé, curieux et passionné par l’apprentissage.",
+
+  "veille_title": "Veille Technologique",
+  "veille_heading": "Veille Technologique",
+  "veille_intro": "Analyse et suivi des évolutions technologiques dans le numérique et l’intelligence artificielle.",
+  "veille_def_title": "Définition",
+  "veille_def_desc": "La veille technologique consiste à surveiller les innovations afin d’anticiper les évolutions.",
+  "veille_def_1": "Identifier les nouvelles technologies",
+  "veille_def_2": "Suivre les tendances du marché",
+  "veille_def_3": "Repérer les opportunités et les risques",
+  "veille_ia_desc": "L’intelligence artificielle évolue rapidement avec des outils comme ChatGPT, Gemini ou Mistral AI.",
+  "veille_google_desc": "Google Alerts permet de recevoir automatiquement des informations ciblées.",
+  "veille_analyse_desc": "L’IA est un outil puissant mais doit être utilisée avec esprit critique.",
+
+  "contact_title": "Contact",
+  "contact_email_placeholder": "Votre email...",
+  "contact_message_placeholder": "Votre message...",
+  "contact_button": "Envoyer",
+  "contact_success": "Message envoyé ! Merci 🙏"
+}
