@@ -1,60 +1,76 @@
 // ===============================
-// i18n – FINAL STABLE VERSION
+// LANG.JS
 // ===============================
 
 const DEFAULT_LANG = "fr";
 
-// Détection automatique du bon chemin
-const BASE_PATH = window.location.pathname.includes("/HTML/")
-  ? "../Lang/JSON/"
-  : "Lang/JSON/";
-
-let translations = {};
-let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
-
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`${BASE_PATH}${lang}.json`);
-    if (!response.ok) throw new Error("JSON not found");
-    translations = await response.json();
 
-    applyTranslations();
+    const path = window.location.pathname.includes("/HTML/")
+      ? `../Lang/JSON/${lang}.json`
+      : `Lang/JSON/${lang}.json`;
+
+    const response = await fetch(path);
+
+    if (!response.ok) {
+      throw new Error(`Impossible de charger ${lang}.json`);
+    }
+
+    const translations = await response.json();
+
+    // Traductions classiques
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+
+      const key = element.getAttribute("data-i18n");
+
+      if (translations[key]) {
+        element.textContent = translations[key];
+      }
+
+    });
+
+    // Placeholders
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+
+      const key = element.getAttribute("data-i18n-placeholder");
+
+      if (translations[key]) {
+        element.placeholder = translations[key];
+      }
+
+    });
+
     localStorage.setItem("lang", lang);
+
     document.documentElement.lang = lang;
-    setActiveLangButton(lang);
-  } catch (err) {
-    console.error("❌ Lang load error:", err);
+
+    console.log(`✅ Langue chargée : ${lang}`);
+
+  } catch (error) {
+
+    console.error("❌ Erreur traduction :", error);
+
   }
 }
 
-function applyTranslations() {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.dataset.i18n;
-    if (translations[key]) {
-      el.innerHTML = translations[key];
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.dataset.i18nPlaceholder;
-    if (translations[key]) {
-      el.placeholder = translations[key];
-    }
-  });
-}
-
-function setActiveLangButton(lang) {
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.classList.toggle("active-lang", btn.dataset.lang === lang);
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  loadLanguage(currentLang);
 
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      loadLanguage(btn.dataset.lang);
-    });
+  const savedLang =
+    localStorage.getItem("lang") || DEFAULT_LANG;
+
+  loadLanguage(savedLang);
+
+  document.addEventListener("click", (event) => {
+
+    if (event.target.classList.contains("lang-btn")) {
+
+      const lang = event.target.dataset.lang;
+
+      loadLanguage(lang);
+
+    }
+
   });
+
 });
