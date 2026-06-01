@@ -641,3 +641,12 @@ p {
   cursor: pointer;
   font-weight: bold;
 }
+a.project-card{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+a.project-card:hover{
+  transform:translateY(-8px);
+}
