@@ -4,147 +4,232 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BTS SIO</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <title>BTS SIO | Portfolio Foulail Oumar</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="../CSS/styles.css" />
 </head>
 
 <body>
 
-  <!-- Thème sombre -->
+  <!-- Theme Switch -->
+
   <div id="theme-switch" class="theme-switch">
     <i class="fas fa-moon"></i>
   </div>
 
   <!-- Menu -->
+
   <div id="menu-container"></div>
 
-  <!-- CONTENU -->
   <main class="wrapper">
 
-    <!-- INTRO -->
-    <section>
-      <h1>Qu’est-ce que le BTS SIO ?</h1>
-      <p>
-        Le BTS SIO (Services Informatiques aux Organisations) est un diplôme d’État
-        préparé en deux ans qui forme aux métiers de l’informatique.
-      </p>
-      <p>
-        Il propose deux parcours :
-        <strong>SISR</strong> (réseaux & systèmes) et
-        <strong>SLAM</strong> (développement d’applications).
-      </p>
-    </section>
 
-    <!-- LYCEE -->
-    <section>
-      <h1>BTS SIO au Lycée Voillaume</h1>
+<!-- HERO -->
+<section class="hero">
 
-      <p>
-        Le lycée Voillaume d’Aulnay-sous-Bois propose cette formation avec un
-        accompagnement pédagogique rigoureux, mêlant théorie et pratique.
-      </p>
+  <h1>BTS SIO</h1>
 
-      <button
-        class="glow-on-hover"
-        onclick="window.location='../Documents/PDF/Plaquette_SIO_JPO_2018.pdf';"
-      >
-        Télécharger la plaquette
-      </button>
+  <p class="subtitle">
+    Services Informatiques aux Organisations
+  </p>
 
-      <p>
-        Ce BTS est accessible après un bac général, technologique ou professionnel
-        et prépare à une insertion rapide dans le monde du travail.
-      </p>
+  <a
+    href="../Documents/PDF/Plaquette_SIO_JPO_2018.pdf"
+    class="cv-btn"
+    target="_blank"
+  >
+    Télécharger la plaquette
+  </a>
 
-      <img
-        src="../IMG/Logo BTS-SIO.png"
-        alt="Logo BTS SIO"
-        loading="lazy"
-        style="display:block;margin:30px auto;max-width:200px;"
-      />
-    </section>
+</section>
 
-    <!-- GENERALITES -->
-    <section>
-      <h1>Services Informatiques aux Organisations</h1>
-      <p>
-        Le BTS SIO permet d’acquérir des compétences solides en développement,
-        cybersécurité, administration réseau, gestion de projet et maintenance
-        des systèmes informatiques.
-      </p>
-    </section>
+<!-- PRESENTATION -->
+<section class="about">
 
-    <!-- SLAM -->
-    <section>
-      <h1>Option SLAM</h1>
+  <h2>Présentation du BTS SIO</h2>
+
+  <p>
+    Le BTS SIO (Services Informatiques aux Organisations)
+    est un diplôme d'État préparé en deux ans qui forme
+    aux métiers de l'informatique.
+  </p>
+
+  <p>
+    Cette formation permet d'acquérir des compétences
+    solides en développement, administration système,
+    réseau, cybersécurité et gestion de projet.
+  </p>
+
+  <p>
+    Elle prépare aussi bien à une poursuite d'études
+    qu'à une insertion professionnelle rapide.
+  </p>
+
+</section>
+
+<!-- VOILLAUME -->
+<section class="about">
+
+  <h2>BTS SIO au Lycée Voillaume</h2>
+
+  <p>
+    Le lycée Voillaume d'Aulnay-sous-Bois propose
+    cette formation avec un enseignement mêlant
+    théorie, pratique et projets professionnels.
+  </p>
+
+  <img
+    src="../IMG/Logo BTS-SIO.png"
+    alt="Logo BTS SIO"
+    style="
+      max-width:220px;
+      margin:30px auto;
+    "
+  />
+
+</section>
+
+<!-- OPTIONS -->
+<section>
+
+  <h2>Les deux spécialités</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
 
       <img
         src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-slam-768x512.jpg"
-        alt="Option SLAM"
-        loading="lazy"
-        style="display:block;margin:20px auto;max-width:260px;"
+        alt="SLAM"
       />
 
-      <p>
-        L’option SLAM (Solutions Logicielles et Applications Métiers) est orientée
-        développement. Elle prépare aux métiers de développeur d’applications,
-        programmeur analyste ou concepteur logiciel.
-      </p>
-    </section>
+      <h3>💻 Option SLAM</h3>
 
-    <!-- SISR -->
-    <section>
-      <h1>Option SISR</h1>
+      <p>
+        Solutions Logicielles et Applications Métiers.
+      </p>
+
+      <p>
+        Cette spécialité est orientée vers le développement
+        d'applications, la programmation, les bases de données
+        et la conception logicielle.
+      </p>
+
+    </div>
+
+    <div class="project-card">
 
       <img
         src="https://aymeric-cucherousset.fr/wp-content/uploads/2021/10/bts-sio-sisr.jpeg"
-        alt="Option SISR"
-        loading="lazy"
-        style="display:block;margin:20px auto;max-width:260px;"
+        alt="SISR"
       />
 
-      <p>
-        L’option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) forme à
-        l’installation, la configuration et la sécurisation des infrastructures
-        informatiques.
-      </p>
-    </section>
+      <h3>🌐 Option SISR</h3>
 
-    <!-- APRES -->
-    <section>
-      <h1>Après le BTS SIO</h1>
       <p>
-        Après le BTS SIO, il est possible de poursuivre en licence professionnelle,
-        bachelor informatique ou d’intégrer directement le monde du travail dans
-        des entreprises du numérique ou des administrations.
+        Solutions d'Infrastructure, Systèmes et Réseaux.
       </p>
-    </section>
+
+      <p>
+        Cette spécialité forme à l'administration réseau,
+        aux systèmes informatiques, à la cybersécurité
+        et à la maintenance des infrastructures.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- POURQUOI -->
+<section class="about">
+
+  <h2>Pourquoi j'ai choisi cette formation</h2>
+
+  <p>
+    J'ai choisi le BTS SIO car il me permettait
+    de découvrir différents domaines de l'informatique
+    tout en développant des compétences techniques
+    concrètes et professionnelles.
+  </p>
+
+  <p>
+    Cette formation m'a permis d'acquérir des bases
+    solides qui m'ont ensuite conduit vers le
+    développement web et web mobile.
+  </p>
+
+</section>
+
+<!-- DEBOUCHES -->
+<section>
+
+  <h2>Débouchés</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <i class="fas fa-code"></i>
+      <span>Développeur Web</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-laptop-code"></i>
+      <span>Développeur Logiciel</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-network-wired"></i>
+      <span>Administrateur Réseau</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-headset"></i>
+      <span>Technicien Support</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- POURSUITE -->
+<section class="about">
+
+  <h2>Poursuite d'études</h2>
+
+  <p>
+    Après un BTS SIO, il est possible de poursuivre
+    vers une licence professionnelle, un bachelor,
+    une école spécialisée ou encore une formation
+    en développement web et web mobile.
+  </p>
+
+</section>
+
 
   </main>
 
   <!-- Footer -->
+
   <div id="footer-container"></div>
 
-  <!-- JS -->
   <script src="../JS/toggleTheme.js" defer></script>
-  <script src="../JS/menu.js" defer></script>
-  <script src="../JS/footer.js" defer></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("section").forEach(section => {
-        section.classList.add("reveal");
-      });
-    });
-  </script>
+  <script src="../JS/menu.js" defer></script>
+
+  <script src="../JS/footer.js" defer></script>
 
 </body>
 </html>

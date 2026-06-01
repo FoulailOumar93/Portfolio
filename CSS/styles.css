@@ -530,3 +530,26 @@ p {
     font-size: 28px;
   }
 }
+.burger {
+  display: none;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
